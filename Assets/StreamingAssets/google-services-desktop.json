@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904450935308",
+    "firebase_url": "https://ar-visualguide-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ar-visualguide",
+    "storage_bucket": "ar-visualguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904450935308:android:727912b3c2e3a82d603c29",
+        "android_client_info": {
+          "package_name": "com.ar_applications.visual_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904450935308-ruvlq3nnua7p7854rp9pteegihv0tccd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsJYZrPmICYlOqEbGgsD0tAswaCJhTnMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904450935308-ruvlq3nnua7p7854rp9pteegihv0tccd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
