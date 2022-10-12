@@ -256,12 +256,10 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct Wall_t937177F3C848F0B028993DB85C6BDFF844EB1334;
 // UnityEngine.Application/LogCallback
 struct LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413;
-// FirebaseTest/<>c
-struct U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363;
-// FirebaseTest/<SignInUser>d__8
-struct U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB;
-// FirebaseTest/<writeNewUser>d__6
-struct U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A;
+// FirebaseTest/<SignInUser>d__6
+struct U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF;
+// FirebaseTest/<writeNewUser>d__4
+struct U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4;
 // FirebaseTest/User
 struct User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
@@ -277,9 +275,8 @@ IL2CPP_EXTERN_C RuntimeClass* LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NavMeshPath_tC77ABF4A25FC0F0A94E8A70E304E114FE690A3A7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral139F69C93C042496A8E958EC5930662C6CCCAFBF;
@@ -290,12 +287,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral840B40C9136D96D5D3A27C5A9AA17798E1CBB4C2
 IL2CPP_EXTERN_C String_t* _stringLiteral8BDB2B51F26EBAE72DE1760A3E90AF8B1C1A8590;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D;
 IL2CPP_EXTERN_C String_t* _stringLiteralE8F97FBA9104D1EA5047948E6DFB67FACD9F5B73;
+IL2CPP_EXTERN_C const RuntimeMethod* FirebaseTest_U3CSignInUserU3Eb__6_0_m1614617BE0D3F5342BD672C43F635F910DFE7842_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MobileLogger_LogToText_m7017BCF3D726137E83488EE131A166E9C81E9051_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ContinueWith_m549608C19B9ED5ECA2FD9094527278477B3A2E38_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskExtension_ContinueWithOnMainThread_TisFirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A_mD5BE69D2600038AE98F9B00302CEB3CE0497401D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CSignInUserU3Ed__8_System_Collections_IEnumerator_Reset_m5B7770332DA2AE744B848B262F44F00427ADE506_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CSignInUserU3Eb__8_0_m4B1489EE559BB88FDF5402BB4EF209C2BF88B78D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CwriteNewUserU3Ed__6_System_Collections_IEnumerator_Reset_mE350BD6B1E1E2C4F2632B962F6E6450CC1787E99_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CSignInUserU3Ed__6_System_Collections_IEnumerator_Reset_m7A879169906FB31BFFA3B4571F56389C9279F612_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CwriteNewUserU3Ed__4_System_Collections_IEnumerator_Reset_m662AD9A08C6074B076EFFDA1992A2B7754E0BDB0_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -454,50 +451,37 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
 };
 
-// FirebaseTest/<>c
-struct U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363  : public RuntimeObject
+// FirebaseTest/<SignInUser>d__6
+struct U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF  : public RuntimeObject
 {
-};
-
-struct U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields
-{
-	// FirebaseTest/<>c FirebaseTest/<>c::<>9
-	U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* ___U3CU3E9_0;
-	// System.Action`1<System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>> FirebaseTest/<>c::<>9__8_0
-	Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* ___U3CU3E9__8_0_1;
-};
-
-// FirebaseTest/<SignInUser>d__8
-struct U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB  : public RuntimeObject
-{
-	// System.Int32 FirebaseTest/<SignInUser>d__8::<>1__state
+	// System.Int32 FirebaseTest/<SignInUser>d__6::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FirebaseTest/<SignInUser>d__8::<>2__current
+	// System.Object FirebaseTest/<SignInUser>d__6::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// FirebaseTest FirebaseTest/<SignInUser>d__8::<>4__this
+	// FirebaseTest FirebaseTest/<SignInUser>d__6::<>4__this
 	FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* ___U3CU3E4__this_2;
 };
 
-// FirebaseTest/<writeNewUser>d__6
-struct U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A  : public RuntimeObject
+// FirebaseTest/<writeNewUser>d__4
+struct U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4  : public RuntimeObject
 {
-	// System.Int32 FirebaseTest/<writeNewUser>d__6::<>1__state
+	// System.Int32 FirebaseTest/<writeNewUser>d__4::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FirebaseTest/<writeNewUser>d__6::<>2__current
+	// System.Object FirebaseTest/<writeNewUser>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String FirebaseTest/<writeNewUser>d__6::userId
+	// System.String FirebaseTest/<writeNewUser>d__4::userId
 	String_t* ___userId_2;
-	// System.String FirebaseTest/<writeNewUser>d__6::name
+	// System.String FirebaseTest/<writeNewUser>d__4::name
 	String_t* ___name_3;
-	// System.String FirebaseTest/<writeNewUser>d__6::email
+	// System.String FirebaseTest/<writeNewUser>d__4::email
 	String_t* ___email_4;
-	// FirebaseTest FirebaseTest/<writeNewUser>d__6::<>4__this
+	// FirebaseTest FirebaseTest/<writeNewUser>d__4::<>4__this
 	FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* ___U3CU3E4__this_5;
-	// FirebaseTest/User FirebaseTest/<writeNewUser>d__6::<user>5__1
+	// FirebaseTest/User FirebaseTest/<writeNewUser>d__4::<user>5__1
 	User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0* ___U3CuserU3E5__1_6;
-	// System.String FirebaseTest/<writeNewUser>d__6::<json>5__2
+	// System.String FirebaseTest/<writeNewUser>d__4::<json>5__2
 	String_t* ___U3CjsonU3E5__2_7;
-	// Firebase.Database.DatabaseReference FirebaseTest/<writeNewUser>d__6::<reference>5__3
+	// Firebase.Database.DatabaseReference FirebaseTest/<writeNewUser>d__4::<reference>5__3
 	DatabaseReference_tD6F9941BEAE8109991B814490DA64099EECBFA6D* ___U3CreferenceU3E5__3_8;
 };
 
@@ -1875,16 +1859,12 @@ struct BuildingCreator_t4DF683362887B2B9E871F5C174AEFBB112168524  : public MonoB
 // FirebaseTest
 struct FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String FirebaseTest::message
-	String_t* ___message_4;
-	// System.Int32 FirebaseTest::number
-	int32_t ___number_5;
-	// System.Boolean FirebaseTest::isCool
-	bool ___isCool_6;
+	// TMPro.TMP_Text FirebaseTest::tmpText
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___tmpText_4;
 	// System.Boolean FirebaseTest::hasRun
-	bool ___hasRun_7;
+	bool ___hasRun_5;
 	// Firebase.Auth.FirebaseAuth FirebaseTest::auth
-	FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* ___auth_8;
+	FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* ___auth_6;
 };
 
 // MobileLogger
@@ -2642,8 +2622,8 @@ struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C  : public Runtime
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Task_1_get_Result_m6897AA7D4A583F9E81EC01C1BF788372D64C5A26_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
-// System.Threading.Tasks.Task System.Threading.Tasks.Task`1<System.Object>::ContinueWith(System.Action`1<System.Threading.Tasks.Task`1<TResult>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_1_ContinueWith_mA0846133B2903064AAD1D23FE61AE736A033F866_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* __this, Action_1_t0328A8A468C762DAECEC2BDBE23D4E47955D8678* ___continuationAction0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task Firebase.Extensions.TaskExtension::ContinueWithOnMainThread<System.Object>(System.Threading.Tasks.Task`1<T>,System.Action`1<System.Threading.Tasks.Task`1<T>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* TaskExtension_ContinueWithOnMainThread_TisRuntimeObject_m8F426832790ADC614F3A870ECFAB11ABBBDDDC43_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___task0, Action_1_t0328A8A468C762DAECEC2BDBE23D4E47955D8678* ___continuation1, const RuntimeMethod* method) ;
 
 // UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_CreatePrimitive_m13C0A691E679A83DD595913200A1DD9A906EB47B (int32_t ___type0, const RuntimeMethod* method) ;
@@ -2685,10 +2665,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FirebaseTest_SignInUser_mBB56F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator FirebaseTest::writeNewUser(System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FirebaseTest_writeNewUser_m71C728C494D5449A57A87982CEA9A52A8AA34FF2 (FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* __this, String_t* ___userId0, String_t* ___name1, String_t* ___email2, const RuntimeMethod* method) ;
-// System.Void FirebaseTest/<writeNewUser>d__6::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__6__ctor_m83CA1AD546542ECEA3D3ED671B88E5399E35370D (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
-// System.Void FirebaseTest/<SignInUser>d__8::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__8__ctor_m4A7A8A031AED5FF28A8699641D0F287A3AF119DD (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Void FirebaseTest/<writeNewUser>d__4::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__4__ctor_m84B28012C86B66D199E8FEFD63CC4290A0448F16 (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Void FirebaseTest/<SignInUser>d__6::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__6__ctor_m5D69BC07DD045B5C06BF4BA5E3394FC60074EA3C (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// TResult System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>::get_Result()
+inline FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* __this, const RuntimeMethod* method)
+{
+	return ((  FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* (*) (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B*, const RuntimeMethod*))Task_1_get_Result_m6897AA7D4A583F9E81EC01C1BF788372D64C5A26_gshared)(__this, method);
+}
+// System.String Firebase.Auth.FirebaseUser::get_UserId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FirebaseUser_get_UserId_mAF49403FBD3030631002AAC0B21BAE9E4F9473E0 (FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void FirebaseTest/User::.ctor(System.String,System.String)
@@ -2705,17 +2694,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DatabaseReference_tD6F9941BEAE8109991B814490D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* DatabaseReference_SetRawJsonValueAsync_m9490E9CAA051A1E371954DF33B34505FC09AA080 (DatabaseReference_tD6F9941BEAE8109991B814490DA64099EECBFA6D* __this, String_t* ___jsonValue0, const RuntimeMethod* method) ;
 // System.Void System.NotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
-// System.Void FirebaseTest/<>c::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m098C1C3A506D57F8F451454244612C18A7FB34C4 (U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* __this, const RuntimeMethod* method) ;
-// TResult System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>::get_Result()
-inline FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* __this, const RuntimeMethod* method)
-{
-	return ((  FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* (*) (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B*, const RuntimeMethod*))Task_1_get_Result_m6897AA7D4A583F9E81EC01C1BF788372D64C5A26_gshared)(__this, method);
-}
-// System.String Firebase.Auth.FirebaseUser::get_UserId()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FirebaseUser_get_UserId_mAF49403FBD3030631002AAC0B21BAE9E4F9473E0 (FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // Firebase.Auth.FirebaseAuth Firebase.Auth.FirebaseAuth::get_DefaultInstance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* FirebaseAuth_get_DefaultInstance_m86A4E32D8DCDB80079317B58210090F3D3B1711F (const RuntimeMethod* method) ;
 // System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> Firebase.Auth.FirebaseAuth::SignInWithEmailAndPasswordAsync(System.String,System.String)
@@ -2725,10 +2703,10 @@ inline void Action_1__ctor_mA1A3987C0999C379F2DE5C4FC11270A1C6B91007 (Action_1_t
 {
 	((  void (*) (Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
 }
-// System.Threading.Tasks.Task System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>::ContinueWith(System.Action`1<System.Threading.Tasks.Task`1<TResult>>)
-inline Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_1_ContinueWith_m549608C19B9ED5ECA2FD9094527278477B3A2E38 (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* __this, Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* ___continuationAction0, const RuntimeMethod* method)
+// System.Threading.Tasks.Task Firebase.Extensions.TaskExtension::ContinueWithOnMainThread<Firebase.Auth.FirebaseUser>(System.Threading.Tasks.Task`1<T>,System.Action`1<System.Threading.Tasks.Task`1<T>>)
+inline Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* TaskExtension_ContinueWithOnMainThread_TisFirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A_mD5BE69D2600038AE98F9B00302CEB3CE0497401D (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* ___task0, Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* ___continuation1, const RuntimeMethod* method)
 {
-	return ((  Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* (*) (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B*, Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9*, const RuntimeMethod*))Task_1_ContinueWith_mA0846133B2903064AAD1D23FE61AE736A033F866_gshared)(__this, ___continuationAction0, method);
+	return ((  Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* (*) (Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B*, Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9*, const RuntimeMethod*))TaskExtension_ContinueWithOnMainThread_TisRuntimeObject_m8F426832790ADC614F3A870ECFAB11ABBBDDDC43_gshared)(___task0, ___continuation1, method);
 }
 // System.Void UnityEngine.Application/LogCallback::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogCallback__ctor_m327A4C69691F8A4B01D405858E48B8A7D9D2A79D (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
@@ -2969,7 +2947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseTest_Update_m993E1CEE696A7CA2A31
 		}
 	}
 	{
-		bool L_1 = __this->___hasRun_7;
+		bool L_1 = __this->___hasRun_5;
 		G_B3_0 = ((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 		goto IL_0019;
 	}
@@ -2990,7 +2968,7 @@ IL_0019:
 	}
 	{
 		// hasRun = true;
-		__this->___hasRun_7 = (bool)1;
+		__this->___hasRun_5 = (bool)1;
 		// IEnumerator cor = SignInUser();
 		RuntimeObject* L_3;
 		L_3 = FirebaseTest_SignInUser_mBB56F3CC812DCFA7E3BAC7B54D2A4E3D54D2A931(__this, NULL);
@@ -3021,28 +2999,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FirebaseTest_writeNewUser_m71C
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* L_0 = (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A*)il2cpp_codegen_object_new(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A_il2cpp_TypeInfo_var);
+		U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* L_0 = (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4*)il2cpp_codegen_object_new(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CwriteNewUserU3Ed__6__ctor_m83CA1AD546542ECEA3D3ED671B88E5399E35370D(L_0, 0, NULL);
-		U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* L_1 = L_0;
+		U3CwriteNewUserU3Ed__4__ctor_m84B28012C86B66D199E8FEFD63CC4290A0448F16(L_0, 0, NULL);
+		U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_5 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_5), (void*)__this);
-		U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* L_2 = L_1;
+		U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* L_2 = L_1;
 		String_t* L_3 = ___userId0;
 		NullCheck(L_2);
 		L_2->___userId_2 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___userId_2), (void*)L_3);
-		U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* L_4 = L_2;
+		U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* L_4 = L_2;
 		String_t* L_5 = ___name1;
 		NullCheck(L_4);
 		L_4->___name_3 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___name_3), (void*)L_5);
-		U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* L_6 = L_4;
+		U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* L_6 = L_4;
 		String_t* L_7 = ___email2;
 		NullCheck(L_6);
 		L_6->___email_4 = L_7;
@@ -3056,14 +3034,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FirebaseTest_SignInUser_mBB56F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* L_0 = (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB*)il2cpp_codegen_object_new(U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB_il2cpp_TypeInfo_var);
+		U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* L_0 = (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF*)il2cpp_codegen_object_new(U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CSignInUserU3Ed__8__ctor_m4A7A8A031AED5FF28A8699641D0F287A3AF119DD(L_0, 0, NULL);
-		U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* L_1 = L_0;
+		U3CSignInUserU3Ed__6__ctor_m5D69BC07DD045B5C06BF4BA5E3394FC60074EA3C(L_0, 0, NULL);
+		U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
@@ -3075,8 +3053,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseTest__ctor_mB67F7E3C6A6560453C5D
 {
 	{
 		// bool hasRun = false;
-		__this->___hasRun_7 = (bool)0;
+		__this->___hasRun_5 = (bool)0;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void FirebaseTest::<SignInUser>b__6_0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseTest_U3CSignInUserU3Eb__6_0_m1614617BE0D3F5342BD672C43F635F910DFE7842 (FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* __this, Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* ___task0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// tmpText.text = task.Result.UserId;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___tmpText_4;
+		Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* L_1 = ___task0;
+		NullCheck(L_1);
+		FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* L_2;
+		L_2 = Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F(L_1, Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var);
+		NullCheck(L_2);
+		String_t* L_3;
+		L_3 = FirebaseUser_get_UserId_mAF49403FBD3030631002AAC0B21BAE9E4F9473E0(L_2, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_0, L_3);
+		// Debug.Log(task.Result.UserId.ToString());
+		Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* L_4 = ___task0;
+		NullCheck(L_4);
+		FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* L_5;
+		L_5 = Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F(L_4, Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var);
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = FirebaseUser_get_UserId_mAF49403FBD3030631002AAC0B21BAE9E4F9473E0(L_5, NULL);
+		NullCheck(L_6);
+		String_t* L_7;
+		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_6);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		// });
 		return;
 	}
 }
@@ -3124,8 +3141,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m243C5074E23953E7715E4557DFC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void FirebaseTest/<writeNewUser>d__6::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__6__ctor_m83CA1AD546542ECEA3D3ED671B88E5399E35370D (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<writeNewUser>d__4::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__4__ctor_m84B28012C86B66D199E8FEFD63CC4290A0448F16 (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -3134,15 +3151,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__6__ctor_m83CA1AD546
 		return;
 	}
 }
-// System.Void FirebaseTest/<writeNewUser>d__6::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__6_System_IDisposable_Dispose_mD16D673C2DE6206C034AB89205242AD384528AC3 (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<writeNewUser>d__4::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__4_System_IDisposable_Dispose_m5E1459F1AD3C925DE074B2D049B27AD85CAECB1C (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean FirebaseTest/<writeNewUser>d__6::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CwriteNewUserU3Ed__6_MoveNext_m3B68FA52C52D11A4F85F4937040DE6346E671B5F (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, const RuntimeMethod* method) 
+// System.Boolean FirebaseTest/<writeNewUser>d__4::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CwriteNewUserU3Ed__4_MoveNext_mFC1BCC138E4B491D60279FD98DF34F025F34F54B (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3246,26 +3263,26 @@ IL_008f:
 		return (bool)0;
 	}
 }
-// System.Object FirebaseTest/<writeNewUser>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CwriteNewUserU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB28AEA02C13BEE6ADF834B5420629AEEF2D48F18 (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, const RuntimeMethod* method) 
+// System.Object FirebaseTest/<writeNewUser>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CwriteNewUserU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC825687931E95C634BBAF46F3D8BDE35B8D4E007 (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void FirebaseTest/<writeNewUser>d__6::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__6_System_Collections_IEnumerator_Reset_mE350BD6B1E1E2C4F2632B962F6E6450CC1787E99 (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<writeNewUser>d__4::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CwriteNewUserU3Ed__4_System_Collections_IEnumerator_Reset_m662AD9A08C6074B076EFFDA1992A2B7754E0BDB0 (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CwriteNewUserU3Ed__6_System_Collections_IEnumerator_Reset_mE350BD6B1E1E2C4F2632B962F6E6450CC1787E99_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CwriteNewUserU3Ed__4_System_Collections_IEnumerator_Reset_m662AD9A08C6074B076EFFDA1992A2B7754E0BDB0_RuntimeMethod_var)));
 	}
 }
-// System.Object FirebaseTest/<writeNewUser>d__6::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CwriteNewUserU3Ed__6_System_Collections_IEnumerator_get_Current_m9C7EDEC4BBEF50F63D821DC8B33AB9547767F999 (U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A* __this, const RuntimeMethod* method) 
+// System.Object FirebaseTest/<writeNewUser>d__4::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CwriteNewUserU3Ed__4_System_Collections_IEnumerator_get_Current_m66181AABDAC51348F9549A4EE75DD6274A89E955 (U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -3280,70 +3297,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CwriteNewUserU3Ed__6_System_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void FirebaseTest/<>c::.cctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m4A5E486ED565F84FAEC0CD58212B30A6A7DDBC3C (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* L_0 = (U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363*)il2cpp_codegen_object_new(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		U3CU3Ec__ctor_m098C1C3A506D57F8F451454244612C18A7FB34C4(L_0, NULL);
-		((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
-		return;
-	}
-}
-// System.Void FirebaseTest/<>c::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m098C1C3A506D57F8F451454244612C18A7FB34C4 (U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-// System.Void FirebaseTest/<>c::<SignInUser>b__8_0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CSignInUserU3Eb__8_0_m4B1489EE559BB88FDF5402BB4EF209C2BF88B78D (U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* __this, Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* ___task0, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Debug.Log(task.Result.UserId.ToString());
-		Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* L_0 = ___task0;
-		NullCheck(L_0);
-		FirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A* L_1;
-		L_1 = Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F(L_0, Task_1_get_Result_m26F14C4A359E9DF5528B9C5045782846D1ABE73F_RuntimeMethod_var);
-		NullCheck(L_1);
-		String_t* L_2;
-		L_2 = FirebaseUser_get_UserId_mAF49403FBD3030631002AAC0B21BAE9E4F9473E0(L_1, NULL);
-		NullCheck(L_2);
-		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_2);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
-		// });
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void FirebaseTest/<SignInUser>d__8::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__8__ctor_m4A7A8A031AED5FF28A8699641D0F287A3AF119DD (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<SignInUser>d__6::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__6__ctor_m5D69BC07DD045B5C06BF4BA5E3394FC60074EA3C (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -3352,33 +3307,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__8__ctor_m4A7A8A031AED
 		return;
 	}
 }
-// System.Void FirebaseTest/<SignInUser>d__8::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__8_System_IDisposable_Dispose_mC123C01D632462F68279B774ABDB2A00D10A9426 (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<SignInUser>d__6::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__6_System_IDisposable_Dispose_m410E8C3300D63F9CB3C86B93F64032EC600F3804 (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean FirebaseTest/<SignInUser>d__8::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSignInUserU3Ed__8_MoveNext_m9BE2E48BB6D4DAF7B62FA7363349C5D3D3B74E22 (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, const RuntimeMethod* method) 
+// System.Boolean FirebaseTest/<SignInUser>d__6::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSignInUserU3Ed__6_MoveNext_m8711F92A9981DFFFF33FAC8CEA67EC768F86C7FD (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ContinueWith_m549608C19B9ED5ECA2FD9094527278477B3A2E38_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CSignInUserU3Eb__8_0_m4B1489EE559BB88FDF5402BB4EF209C2BF88B78D_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FirebaseTest_U3CSignInUserU3Eb__6_0_m1614617BE0D3F5342BD672C43F635F910DFE7842_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskExtension_ContinueWithOnMainThread_TisFirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A_mD5BE69D2600038AE98F9B00302CEB3CE0497401D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24E44E9BEBD26B4D54643A87E01870D7B3EB4386);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE8F97FBA9104D1EA5047948E6DFB67FACD9F5B73);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* G_B9_0 = NULL;
-	Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* G_B9_1 = NULL;
-	Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* G_B8_0 = NULL;
-	Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* G_B8_1 = NULL;
 	{
 		int32_t L_0 = __this->___U3CU3E1__state_0;
 		V_0 = L_0;
@@ -3411,7 +3361,7 @@ IL_0012:
 
 IL_0014:
 	{
-		goto IL_007f;
+		goto IL_0071;
 	}
 
 IL_0016:
@@ -3428,48 +3378,26 @@ IL_0018:
 		FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* L_4;
 		L_4 = FirebaseAuth_get_DefaultInstance_m86A4E32D8DCDB80079317B58210090F3D3B1711F(NULL);
 		NullCheck(L_3);
-		L_3->___auth_8 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&L_3->___auth_8), (void*)L_4);
-		// auth.SignInWithEmailAndPasswordAsync("toliasj@yahoo.gr", "password").ContinueWith(task =>
+		L_3->___auth_6 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___auth_6), (void*)L_4);
+		// auth.SignInWithEmailAndPasswordAsync("toliasj@yahoo.gr", "password").ContinueWithOnMainThread(task =>
 		// {
+		//     tmpText.text = task.Result.UserId;
+		// 
 		//     Debug.Log(task.Result.UserId.ToString());
 		// });
 		FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* L_5 = __this->___U3CU3E4__this_2;
 		NullCheck(L_5);
-		FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* L_6 = L_5->___auth_8;
+		FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* L_6 = L_5->___auth_6;
 		NullCheck(L_6);
 		Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* L_7;
 		L_7 = FirebaseAuth_SignInWithEmailAndPasswordAsync_mAA4074C7F5BC11678AF9FCAFB7BE86F751072E5E(L_6, _stringLiteral24E44E9BEBD26B4D54643A87E01870D7B3EB4386, _stringLiteralE8F97FBA9104D1EA5047948E6DFB67FACD9F5B73, NULL);
-		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var);
-		Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* L_8 = ((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9__8_0_1;
-		Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* L_9 = L_8;
-		G_B8_0 = L_9;
-		G_B8_1 = L_7;
-		if (L_9)
-		{
-			G_B9_0 = L_9;
-			G_B9_1 = L_7;
-			goto IL_0069;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var);
-		U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* L_10 = ((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9_0;
-		Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* L_11 = (Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9*)il2cpp_codegen_object_new(Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9_il2cpp_TypeInfo_var);
-		NullCheck(L_11);
-		Action_1__ctor_mA1A3987C0999C379F2DE5C4FC11270A1C6B91007(L_11, L_10, (intptr_t)((void*)U3CU3Ec_U3CSignInUserU3Eb__8_0_m4B1489EE559BB88FDF5402BB4EF209C2BF88B78D_RuntimeMethod_var), NULL);
-		Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* L_12 = L_11;
-		((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9__8_0_1 = L_12;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_il2cpp_TypeInfo_var))->___U3CU3E9__8_0_1), (void*)L_12);
-		G_B9_0 = L_12;
-		G_B9_1 = G_B8_1;
-	}
-
-IL_0069:
-	{
-		NullCheck(G_B9_1);
-		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_13;
-		L_13 = Task_1_ContinueWith_m549608C19B9ED5ECA2FD9094527278477B3A2E38(G_B9_1, G_B9_0, Task_1_ContinueWith_m549608C19B9ED5ECA2FD9094527278477B3A2E38_RuntimeMethod_var);
+		FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* L_8 = __this->___U3CU3E4__this_2;
+		Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* L_9 = (Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9*)il2cpp_codegen_object_new(Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		Action_1__ctor_mA1A3987C0999C379F2DE5C4FC11270A1C6B91007(L_9, L_8, (intptr_t)((void*)FirebaseTest_U3CSignInUserU3Eb__6_0_m1614617BE0D3F5342BD672C43F635F910DFE7842_RuntimeMethod_var), NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_10;
+		L_10 = TaskExtension_ContinueWithOnMainThread_TisFirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A_mD5BE69D2600038AE98F9B00302CEB3CE0497401D(L_7, L_9, TaskExtension_ContinueWithOnMainThread_TisFirebaseUser_t119C5023B23CA61BCB1A51D0A2424DC7B4E42A3A_mD5BE69D2600038AE98F9B00302CEB3CE0497401D_RuntimeMethod_var);
 		// yield return null;
 		__this->___U3CU3E2__current_1 = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)NULL);
@@ -3477,33 +3405,33 @@ IL_0069:
 		return (bool)1;
 	}
 
-IL_007f:
+IL_0071:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// }
 		return (bool)0;
 	}
 }
-// System.Object FirebaseTest/<SignInUser>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSignInUserU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF8D16AA421F46F35B07B47E6C84D7185C1900F87 (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, const RuntimeMethod* method) 
+// System.Object FirebaseTest/<SignInUser>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSignInUserU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m25AAEFAE40653419C04A64E65E8F4B123CCCF1AC (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void FirebaseTest/<SignInUser>d__8::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__8_System_Collections_IEnumerator_Reset_m5B7770332DA2AE744B848B262F44F00427ADE506 (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, const RuntimeMethod* method) 
+// System.Void FirebaseTest/<SignInUser>d__6::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSignInUserU3Ed__6_System_Collections_IEnumerator_Reset_m7A879169906FB31BFFA3B4571F56389C9279F612 (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSignInUserU3Ed__8_System_Collections_IEnumerator_Reset_m5B7770332DA2AE744B848B262F44F00427ADE506_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSignInUserU3Ed__6_System_Collections_IEnumerator_Reset_m7A879169906FB31BFFA3B4571F56389C9279F612_RuntimeMethod_var)));
 	}
 }
-// System.Object FirebaseTest/<SignInUser>d__8::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSignInUserU3Ed__8_System_Collections_IEnumerator_get_Current_m740F8CA5E222EE0FDC4519ED15CD61F92A9FFDD6 (U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB* __this, const RuntimeMethod* method) 
+// System.Object FirebaseTest/<SignInUser>d__6::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSignInUserU3Ed__6_System_Collections_IEnumerator_get_Current_mCB5C2095DAB3E92B808F335CFBDB65ABE40B8257 (U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;

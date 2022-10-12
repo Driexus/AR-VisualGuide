@@ -12,8 +12,6 @@
 
 
 
-// System.Action`1<System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>>
-struct Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9;
 // System.Action`1<UnityEngine.Camera[]>
 struct Action_1_tC29A810A03B1CC8C8CEDCEA7BE30A80C5D962EBD;
 // System.Action`1<UnityEngine.XR.ARCore.ARCoreBeforeGetCameraConfigurationEventArgs>
@@ -752,6 +750,10 @@ struct VerificationCompletedDelegate_tF55B9109A15CAB9EF2CAECDEDA082D6FA15C10C4;
 struct VerificationFailedDelegate_t0774384FF44CDE5C89A4A85ED4C2CD6045F5CFD5;
 // Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
 struct KeyGeneratedEventHandler_t5EDD824AAD4D47A4C32E693596793AB83DB84107;
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass0_0
+struct U3CU3Ec__DisplayClass0_0_t5F382822D64CF7CC951C5E6071BAA3624BE89C9B;
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass1_0
+struct U3CU3Ec__DisplayClass1_0_t0882492776F3253C07B95D5303766211406C3636;
 // UnityEngine.TerrainCallbacks/HeightmapChangedCallback
 struct HeightmapChangedCallback_tDF97623B4D5F5E1F3F7F75CC922345B098036EC0;
 // UnityEngine.TerrainCallbacks/TextureChangedCallback
@@ -2996,50 +2998,37 @@ struct U3CU3Ec__DisplayClass34_0_tE3D18106558CC198CD57D17F7F7937D650FADD08  : pu
 	RuntimeObject* ___appUtils_0;
 };
 
-// FirebaseTest/<>c
-struct U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363  : public RuntimeObject
+// FirebaseTest/<SignInUser>d__6
+struct U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF  : public RuntimeObject
 {
-};
-
-struct U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields
-{
-	// FirebaseTest/<>c FirebaseTest/<>c::<>9
-	U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363* ___U3CU3E9_0;
-	// System.Action`1<System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>> FirebaseTest/<>c::<>9__8_0
-	Action_1_t7A72BB5CDA51C7604122D1F351F54CD826121DA9* ___U3CU3E9__8_0_1;
-};
-
-// FirebaseTest/<SignInUser>d__8
-struct U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB  : public RuntimeObject
-{
-	// System.Int32 FirebaseTest/<SignInUser>d__8::<>1__state
+	// System.Int32 FirebaseTest/<SignInUser>d__6::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FirebaseTest/<SignInUser>d__8::<>2__current
+	// System.Object FirebaseTest/<SignInUser>d__6::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// FirebaseTest FirebaseTest/<SignInUser>d__8::<>4__this
+	// FirebaseTest FirebaseTest/<SignInUser>d__6::<>4__this
 	FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* ___U3CU3E4__this_2;
 };
 
-// FirebaseTest/<writeNewUser>d__6
-struct U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A  : public RuntimeObject
+// FirebaseTest/<writeNewUser>d__4
+struct U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4  : public RuntimeObject
 {
-	// System.Int32 FirebaseTest/<writeNewUser>d__6::<>1__state
+	// System.Int32 FirebaseTest/<writeNewUser>d__4::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FirebaseTest/<writeNewUser>d__6::<>2__current
+	// System.Object FirebaseTest/<writeNewUser>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String FirebaseTest/<writeNewUser>d__6::userId
+	// System.String FirebaseTest/<writeNewUser>d__4::userId
 	String_t* ___userId_2;
-	// System.String FirebaseTest/<writeNewUser>d__6::name
+	// System.String FirebaseTest/<writeNewUser>d__4::name
 	String_t* ___name_3;
-	// System.String FirebaseTest/<writeNewUser>d__6::email
+	// System.String FirebaseTest/<writeNewUser>d__4::email
 	String_t* ___email_4;
-	// FirebaseTest FirebaseTest/<writeNewUser>d__6::<>4__this
+	// FirebaseTest FirebaseTest/<writeNewUser>d__4::<>4__this
 	FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083* ___U3CU3E4__this_5;
-	// FirebaseTest/User FirebaseTest/<writeNewUser>d__6::<user>5__1
+	// FirebaseTest/User FirebaseTest/<writeNewUser>d__4::<user>5__1
 	User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0* ___U3CuserU3E5__1_6;
-	// System.String FirebaseTest/<writeNewUser>d__6::<json>5__2
+	// System.String FirebaseTest/<writeNewUser>d__4::<json>5__2
 	String_t* ___U3CjsonU3E5__2_7;
-	// Firebase.Database.DatabaseReference FirebaseTest/<writeNewUser>d__6::<reference>5__3
+	// Firebase.Database.DatabaseReference FirebaseTest/<writeNewUser>d__4::<reference>5__3
 	DatabaseReference_tD6F9941BEAE8109991B814490DA64099EECBFA6D* ___U3CreferenceU3E5__3_8;
 };
 
@@ -3566,6 +3555,38 @@ struct StringStringMapEnumerator_t8F216585B1B600BF44AF6A75F58BAB83DDAB3D18  : pu
 	RuntimeObject* ___currentObject_3;
 	// System.Int32 Firebase.StringStringMap/StringStringMapEnumerator::currentSize
 	int32_t ___currentSize_4;
+};
+
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass0_0
+struct U3CU3Ec__DisplayClass0_0_t5F382822D64CF7CC951C5E6071BAA3624BE89C9B  : public RuntimeObject
+{
+	// System.Action`1<System.Threading.Tasks.Task> Firebase.Extensions.TaskExtension/<>c__DisplayClass0_0::continuation
+	Action_1_t5EBB3AEBB9FE27F01C5BD35C3A6AD36CB3AA357A* ___continuation_0;
+};
+
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass0_1
+struct U3CU3Ec__DisplayClass0_1_t155F3844B6D696CA1D7B64593780C0D7F96AE2DA  : public RuntimeObject
+{
+	// System.Threading.Tasks.Task Firebase.Extensions.TaskExtension/<>c__DisplayClass0_1::t
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_0;
+	// Firebase.Extensions.TaskExtension/<>c__DisplayClass0_0 Firebase.Extensions.TaskExtension/<>c__DisplayClass0_1::CS$<>8__locals1
+	U3CU3Ec__DisplayClass0_0_t5F382822D64CF7CC951C5E6071BAA3624BE89C9B* ___CSU24U3CU3E8__locals1_1;
+};
+
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass1_0
+struct U3CU3Ec__DisplayClass1_0_t0882492776F3253C07B95D5303766211406C3636  : public RuntimeObject
+{
+	// System.Action`1<System.Threading.Tasks.Task> Firebase.Extensions.TaskExtension/<>c__DisplayClass1_0::continuation
+	Action_1_t5EBB3AEBB9FE27F01C5BD35C3A6AD36CB3AA357A* ___continuation_0;
+};
+
+// Firebase.Extensions.TaskExtension/<>c__DisplayClass1_1
+struct U3CU3Ec__DisplayClass1_1_t68BF2E68E875F5440BD5A2262AA4181E7804AB92  : public RuntimeObject
+{
+	// System.Threading.Tasks.Task Firebase.Extensions.TaskExtension/<>c__DisplayClass1_1::t
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_0;
+	// Firebase.Extensions.TaskExtension/<>c__DisplayClass1_0 Firebase.Extensions.TaskExtension/<>c__DisplayClass1_1::CS$<>8__locals1
+	U3CU3Ec__DisplayClass1_0_t0882492776F3253C07B95D5303766211406C3636* ___CSU24U3CU3E8__locals1_1;
 };
 
 // UnityEngine.TerrainUtils.TerrainMap/<>c__DisplayClass3_0
@@ -11827,16 +11848,12 @@ struct DefaultObserverEventHandler_t7CF27A0CC5B1FAEDDB5964C3A11F29C2A14E1FC0  : 
 // FirebaseTest
 struct FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String FirebaseTest::message
-	String_t* ___message_4;
-	// System.Int32 FirebaseTest::number
-	int32_t ___number_5;
-	// System.Boolean FirebaseTest::isCool
-	bool ___isCool_6;
+	// TMPro.TMP_Text FirebaseTest::tmpText
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___tmpText_4;
 	// System.Boolean FirebaseTest::hasRun
-	bool ___hasRun_7;
+	bool ___hasRun_5;
 	// Firebase.Auth.FirebaseAuth FirebaseTest::auth
-	FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* ___auth_8;
+	FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* ___auth_6;
 };
 
 // MobileLogger
@@ -14359,52 +14376,85 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7134[2] =
 	static_cast<int32_t>(offsetof(User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0, ___username_0)),static_cast<int32_t>(offsetof(User_t7B4D8808D7DCBA206312E14D7B985EE0AF19AFF0, ___email_1)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7135[9] = 
 {
-	static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___userId_2)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___name_3)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___email_4)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CU3E4__this_5)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CuserU3E5__1_6)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CjsonU3E5__2_7)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__6_tD510CA858A58DC4CD4FAD20D4A1B7D52397B5B0A, ___U3CreferenceU3E5__3_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7136[2] = 
+	static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___userId_2)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___name_3)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___email_4)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CU3E4__this_5)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CuserU3E5__1_6)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CjsonU3E5__2_7)),static_cast<int32_t>(offsetof(U3CwriteNewUserU3Ed__4_tE1D03B48373AAA34111183E6663376E585FAF0F4, ___U3CreferenceU3E5__3_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7136[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tD058653E0B1D5EC5E261A5CBA96B7E668520A363_StaticFields, ___U3CU3E9__8_0_1)),};
+	static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__6_tC9BE9D1BB5B308E90C4FADC4E63A0D37A57AB0EF, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7137[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CSignInUserU3Ed__8_t581B08A17D966D2A18F1C6E9E62E6B185EBCA6DB, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7138[5] = 
-{
-	static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___message_4)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___number_5)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___isCool_6)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___hasRun_7)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___auth_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7139[1] = 
+	static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___tmpText_4)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___hasRun_5)),static_cast<int32_t>(offsetof(FirebaseTest_t6D3275679DC4322C0F703216D2200D568AD8A083, ___auth_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7138[1] = 
 {
 	static_cast<int32_t>(offsetof(MobileLogger_t68F043E3DC35D9604F34ADF1B5CE3F633F61A008, ___tmp_text_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7140[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7139[1] = 
 {
 	static_cast<int32_t>(offsetof(NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2, ___surfaces_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7141[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7140[5] = 
 {
 	static_cast<int32_t>(offsetof(NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412, ___target_4)),static_cast<int32_t>(offsetof(NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412, ___pathLine_5)),static_cast<int32_t>(offsetof(NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412, ___path_6)),static_cast<int32_t>(offsetof(NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412, ___refreshTime_7)),static_cast<int32_t>(offsetof(NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412, ___elapsed_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7142[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7141[2] = 
 {
 	static_cast<int32_t>(offsetof(PathPlacer_tDB937E241E57AAD33D3076D912352A1296AAFDBD, ___devicePoseBehaviour_4)),static_cast<int32_t>(offsetof(PathPlacer_tDB937E241E57AAD33D3076D912352A1296AAFDBD, ___planeFinderBehaviour_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7143[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7142[1] = 
 {
 	static_cast<int32_t>(offsetof(SimpleRotation_t3EC38818F3C88BEC2C80E1DB76C40B08C440020E, ___rotSpeed_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7144[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7143[2] = 
 {
 	static_cast<int32_t>(offsetof(Wall_t937177F3C848F0B028993DB85C6BDFF844EB1334, ___start_0)),static_cast<int32_t>(offsetof(Wall_t937177F3C848F0B028993DB85C6BDFF844EB1334, ___end_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7154[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7153[13] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7155[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7154[3] = 
 {
 	0,0,static_cast<int32_t>(offsetof(Parser_t210EE2AD527340A4E80AF8C5F48F62D2CD48DA8A, ___json_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7156[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7155[1] = 
 {
 	static_cast<int32_t>(offsetof(Serializer_t10F73A5DAB5B9F4861729F29359E374AA273F0B4, ___builder_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7161[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7160[1] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass0_0_t5F382822D64CF7CC951C5E6071BAA3624BE89C9B, ___continuation_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7161[2] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass0_1_t155F3844B6D696CA1D7B64593780C0D7F96AE2DA, ___t_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass0_1_t155F3844B6D696CA1D7B64593780C0D7F96AE2DA, ___CSU24U3CU3E8__locals1_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7162[1] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass1_0_t0882492776F3253C07B95D5303766211406C3636, ___continuation_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7163[2] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass1_1_t68BF2E68E875F5440BD5A2262AA4181E7804AB92, ___t_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass1_1_t68BF2E68E875F5440BD5A2262AA4181E7804AB92, ___CSU24U3CU3E8__locals1_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7164[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7165[2] = 
+{
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7166[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7167[2] = 
+{
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7168[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7169[2] = 
+{
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7170[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7171[2] = 
+{
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7174[1] = 
 {
 	static_cast<int32_t>(offsetof(DataContractAttribute_tD065D7D14CC8AA548815166AB8B8210D1B3C699F, ___isReference_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7162[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7175[4] = 
 {
 	static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___name_0)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___order_1)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___isRequired_2)),static_cast<int32_t>(offsetof(DataMemberAttribute_t8AE446BE9032B9BC8E7B2EDC785F5C6FA0E5BB73, ___emitDefaultValue_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7163[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7176[1] = 
 {
 	static_cast<int32_t>(offsetof(EnumMemberAttribute_t65B5E85E642C96791DD6AE5EAD0276350954126F, ___value_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7168[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7181[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
