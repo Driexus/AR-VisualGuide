@@ -1,18 +1,21 @@
 using Unity.AI.Navigation;
 using UnityEngine;
 
+[RequireComponent(typeof(NavMeshSurface))]
 public class NavBaker : MonoBehaviour
 {
-    public NavMeshSurface[] surfaces;
+    public NavMeshSurface surface;
+    public BuildingCreator buildingCreator;
 
     // Use this for initialization
     void Update()
     {
+        buildingCreator.WallsUpdated += new BuildingCreator.WallsUpdatedEventHandler(UpdateNavMesh);
+    }
 
-        for (int i = 0; i < surfaces.Length; i++)
-        {
-            surfaces[i].BuildNavMesh();
-        }
+    public void UpdateNavMesh(Wall[] walls)
+    {
+        surface.BuildNavMesh();
     }
 
 }

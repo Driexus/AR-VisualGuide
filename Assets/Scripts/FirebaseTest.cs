@@ -15,12 +15,27 @@ public class FirebaseTest : MonoBehaviour
 
     bool hasRun = false;
 
-    DatabaseReference db;
-    FirebaseAuth auth;
+    private DatabaseReference db;
+    private FirebaseAuth auth;
+
+    // Using array insted of dictionary and calling event from update as a workaround for
+    // https://stackoverflow.com/questions/71403836/continuewith-continuewithonmainthread-breaks-when-invoking-an-action-in-unity
+
+    public delegate void BuildingsUpdatedEventHandler();
+    public event BuildingsUpdatedEventHandler BuildingsUpdated;
+    private bool _mustCallBuildingsUpdatedListener = false;
+
+    private Building[] _buildings;
+    public Building[] Buildings { get { return _buildings; } }
 
     private void Awake()
     {
         db = FirebaseDatabase.DefaultInstance.RootReference;
+    }
+
+    private void Start()
+    {
+        FetchBuildingCollection();
     }
 
     private void Update()
@@ -36,6 +51,12 @@ public class FirebaseTest : MonoBehaviour
 
             IEnumerator cor3 = FetchBuildingData();
             StartCoroutine(cor3);
+        }
+
+        if (_mustCallBuildingsUpdatedListener)
+        {
+            _mustCallBuildingsUpdatedListener = false;
+            BuildingsUpdated?.Invoke();
         }
     }
 
@@ -59,7 +80,7 @@ public class FirebaseTest : MonoBehaviour
     {
         User user = new User(name, email);
         string json = JsonUtility.ToJson(user);
-        
+
         db.Child("users").Child(userId).SetRawJsonValueAsync(json);
 
         yield return null;
@@ -74,7 +95,7 @@ public class FirebaseTest : MonoBehaviour
             if (task.IsCompleted)
             {
                 Debug.Log("Building data successfully fetched");
-                
+
                 DataSnapshot snapshot = task.Result;
 
                 string jsonString = snapshot.GetRawJsonValue();
@@ -101,5 +122,37 @@ public class FirebaseTest : MonoBehaviour
         });
 
         yield return null;
+    }
+
+    private void FetchBuildingCollection()
+    {
+        Debug.Log("Fetching buildings collection");
+        db.Child("buildings").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Buildings collection successfully fetched");
+                DataSnapshot snapshot = task.Result;
+
+                int i = 0;
+                _buildings = new Building[snapshot.ChildrenCount];
+
+                foreach (DataSnapshot building in snapshot.Children)
+                {
+                    string buildingId = building.Key;
+                    Building aBuilding = new Building(buildingId);
+
+                    string json = building.GetRawJsonValue();
+                    JsonUtility.FromJsonOverwrite(json, aBuilding);
+
+                    _buildings[i] = aBuilding;
+                    i++;
+                }
+
+                _mustCallBuildingsUpdatedListener = true;
+            }
+            else
+                Debug.Log("Failed to fetch buildings collection");
+        });
     }
 }
