@@ -2,11 +2,12 @@ using UnityEngine;
 
 namespace ExtensionMethods
 {
-    public static class TransformExtensions
-    { 
-        public static void SetThisTransformAsParent(this Transform transform, Transform anotherTransform)
+    public static class TransormExtensions
+    {
+        public static void SetPositionAndRotation(this Transform transform, IWorldObject worldObject)
         {
-            anotherTransform.SetParent(transform);
+            transform.position = worldObject.Position;
+            transform.rotation = Quaternion.Euler(worldObject.Rotation);
         }
     }
 }
