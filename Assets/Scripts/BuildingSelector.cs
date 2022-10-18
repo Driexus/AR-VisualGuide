@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -7,20 +5,24 @@ using TMPro;
 public class BuildingSelector : MonoBehaviour
 {
     public FirebaseTest repository;
-    TMP_Dropdown dropdown;
+    public BuildingViewModel buildingVM;
+    private TMP_Dropdown dropdown;
 
     private void Awake()
     {
         gameObject.TryGetComponent(out dropdown);
-        repository.BuildingsUpdated += new FirebaseTest.BuildingsUpdatedEventHandler(populateDropdown);
+        repository.BuildingsUpdated += new FirebaseTest.BuildingsUpdatedEventHandler(PopulateDropdown);
+
+        PopulateDropdown();
+        dropdown.onValueChanged.AddListener(OnBuildingSelected);
     }
 
-    void Start()
+    private void OnBuildingSelected(int optionIndex)
     {
-        populateDropdown();
+        buildingVM.CurrentBuilding = repository.Buildings[optionIndex];
     }
 
-    public void populateDropdown()
+    public void PopulateDropdown()
     {
         dropdown.options = new();
 

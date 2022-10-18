@@ -1,18 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
-using TMPro;
 using Firebase.Extensions;
 
 public class FirebaseTest : MonoBehaviour
 {
-    public TMP_Text tmpText;
-
-    public BuildingCreator buildingCreator;
-
     bool hasRun = false;
 
     private DatabaseReference db;
@@ -51,6 +44,8 @@ public class FirebaseTest : MonoBehaviour
 
             IEnumerator cor3 = FetchBuildingData();
             StartCoroutine(cor3);
+            
+            FetchBuildingCollection();
         }
 
         if (_mustCallBuildingsUpdatedListener)
@@ -58,6 +53,8 @@ public class FirebaseTest : MonoBehaviour
             _mustCallBuildingsUpdatedListener = false;
             BuildingsUpdated?.Invoke();
         }
+
+        
     }
 
     public class User
@@ -101,7 +98,6 @@ public class FirebaseTest : MonoBehaviour
                 string jsonString = snapshot.GetRawJsonValue();
 
                 Wall[] walls = JsonHelper.FromServerJson<Wall>(jsonString);
-                buildingCreator.Walls = walls;
             }
             else
                 Debug.Log("Failed to fetch building data");
@@ -116,8 +112,6 @@ public class FirebaseTest : MonoBehaviour
 
         auth.SignInWithEmailAndPasswordAsync("toliasj@yahoo.gr", "password").ContinueWithOnMainThread(task =>
         {
-            tmpText.text = task.Result.UserId;
-
             Debug.Log(task.Result.UserId.ToString());
         });
 

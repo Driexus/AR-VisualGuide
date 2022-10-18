@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -346,22 +346,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Firebase/Plugins
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Firebase/Plugins
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Projects\AR-VisualGuide
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe630000
-    m_LastClickedID: 25598
-    m_ExpandedIDs: 00000000186300001a6300001c630000
+    m_SelectedIDs: f4630000
+    m_LastClickedID: 25588
+    m_ExpandedIDs: 00000000d2630000d4630000d663000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186300001a6300001c630000
+    m_ExpandedIDs: 00000000d2630000d4630000d6630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -414,9 +414,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 5a620000
+    m_LastClickedInstanceID: 25178
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -433,7 +433,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 3}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 625
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -517,9 +517,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30620000
-      m_LastClickedID: 25136
-      m_ExpandedIDs: 30fbffff40620000
+      m_SelectedIDs: 5a620000
+      m_LastClickedID: 25178
+      m_ExpandedIDs: 30fbffff026300001863000062630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -685,7 +685,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: -180, y: -61}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
@@ -768,9 +768,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.30379835, y: 0.4151168, z: -1.0321842}
+    m_Target: {x: -0.5709119, y: -2.9349856, z: 105.007614}
     speed: 2
-    m_Value: {x: -0.30379835, y: 0.4151168, z: -1.0321842}
+    m_Value: {x: -0.5709119, y: -2.9349856, z: 105.007614}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -817,13 +817,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.64994377, y: 0.2700187, z: -0.26647085, w: -0.6585607}
+    m_Target: {x: -0.26115987, y: 0.025195424, z: -0.00679994, w: -0.9649668}
     speed: 2
-    m_Value: {x: -0.64992887, y: 0.27001253, z: -0.26646474, w: -0.6585456}
+    m_Value: {x: -0.26115382, y: 0.02519484, z: -0.0067997826, w: -0.9649445}
   m_Size:
-    m_Target: 3.5892777
+    m_Target: 372.6944
     speed: 2
-    m_Value: 3.758406
+    m_Value: 390.25592
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -909,7 +909,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

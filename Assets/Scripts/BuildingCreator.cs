@@ -3,6 +3,8 @@ using static System.Math;
 
 public class BuildingCreator : MonoBehaviour
 {
+    public BuildingViewModel buildingVM;
+
     public delegate void WallsUpdatedEventHandler(Wall[] walls);
     public event WallsUpdatedEventHandler WallsUpdated;    
 
@@ -13,40 +15,94 @@ public class BuildingCreator : MonoBehaviour
         set
         {
             _walls = value;
-            DestroyChildren();
-            CreateWalls();
-            CreateFloor();
+            LoadWalls();
+            LoadFloor();
             WallsUpdated(_walls);
         }
     }
     public float wallWidth;
     public float wallHeight;
+    public uint initialWallCount;
 
-    private void CreateWalls()
+    private GameObject wallObjectPool;
+    private GameObject floor;
+    private GameObject wallCollection;
+
+    private void Awake()
     {
-        for (int i = 0; i < _walls.Length; i++)
+        InstantiateWallObjectPool();
+
+        // Create floor
+        floor = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        floor.gameObject.name = "Floor";
+        floor.transform.parent = transform;
+
+        // Create walls collection
+        wallCollection = new GameObject();
+        wallCollection.gameObject.name = "Walls";
+        wallCollection.transform.parent = transform;
+
+        // Change the walls when the current building changes
+        buildingVM.CurrentBuildingChanged += new BuildingViewModel.CurrentBuildingChangedEventHandler((Building building) => Walls = building.walls);
+    }
+
+    // Create a pool for unused walls and add some walls to use later
+    private void InstantiateWallObjectPool()
+    {
+        wallObjectPool = new GameObject("Wall Object Pool");
+        wallObjectPool.transform.parent = transform;
+        wallObjectPool.SetActive(false);
+
+        for (int i = 0; i < initialWallCount; i++)
         {
-            GameObject wall = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            wall.transform.parent = transform;
-            wall.name = "Wall (" + (i + 1).ToString() + ")";
-
-            wall.transform.localScale = new Vector3(_walls[i].Length, wallHeight, wallWidth);
-
-            wall.transform.position = new Vector3(_walls[i].MiddlePoint.x, wallHeight / 2, _walls[i].MiddlePoint.y);
-
-            wall.transform.localRotation = Quaternion.Euler(new Vector3(0, _walls[i].Angle, 0));
-
-            wall.gameObject.layer = LayerMask.NameToLayer("Geometry");
+            CreateWall(wallObjectPool.transform);
         }
     }
 
-    private void DestroyChildren()
+    // Load the wall characteristics
+    private void LoadWalls()
     {
-        foreach (Transform child in transform)
-            Destroy(child.gameObject);
+        int activeWallCount = wallCollection.transform.childCount;
+
+        // If we have more active walls than needed move the extra to the object pool
+        if (activeWallCount > _walls.Length)
+        {
+            for (int i = 0; i < activeWallCount - _walls.Length; i++)
+                wallCollection.transform.GetChild(0).parent = wallObjectPool.transform;
+        }
+
+        for (int i = 0; i < _walls.Length; i++)
+        {
+            /* Get a new wall transform to set its characteristics later. The order is:
+             * 1) From currently active walls
+             * 2) From object pool
+             * 3) Create new gameobject
+            */
+            Transform wallTransform;
+            if (i < activeWallCount)
+            {
+                wallTransform = wallCollection.transform.GetChild(i);
+            }                
+            else if (wallObjectPool.transform.childCount > 0)
+            {
+                wallTransform = wallObjectPool.transform.GetChild(0);
+                wallTransform.parent = wallCollection.transform;
+            }
+            else
+            {
+                wallTransform = CreateWall(wallCollection.transform);
+            }
+
+            // Set the characteristics of the wall
+            wallTransform.transform.localScale = new Vector3(_walls[i].Length, wallHeight, wallWidth);
+            wallTransform.transform.position = new Vector3(_walls[i].MiddlePoint.x, wallHeight / 2, _walls[i].MiddlePoint.y);
+            wallTransform.transform.localRotation = Quaternion.Euler(new Vector3(0, _walls[i].Angle, 0));
+            wallTransform.gameObject.layer = LayerMask.NameToLayer("Geometry");
+        }
     }
 
-    private void CreateFloor()
+    // Load the floor characteristics
+    private void LoadFloor()
     {
         float maxX = 0;
         float minX = 0;
@@ -73,16 +129,27 @@ public class BuildingCreator : MonoBehaviour
             }
         }
 
-        GameObject floor = GameObject.CreatePrimitive(PrimitiveType.Plane);
-        floor.gameObject.name = "Floor";
-        floor.transform.parent = transform;
         floor.transform.position = new Vector3((maxX + minX) / 2, 0, (maxY + minY) / 2);
 
         // A plane is 10* scaled compared to the rest of unity primitives so we need to divide by 10
         // https://forum.unity.com/threads/really-dumb-question-scale-of-plane-compared-to-cube.33835/
         floor.transform.localScale = new Vector3(Abs(maxX - minX) / 10, 0, Abs(maxY - minY) / 10);
+    }
 
-        floor.gameObject.layer = LayerMask.NameToLayer("Geometry");
+    // Counts the total created walls
+    private int wallCounter = 0;
+
+    // Create a new wall and set its parent
+    private Transform CreateWall(Transform parent)
+    {
+        GameObject wall = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        wall.transform.parent = parent;
+        wall.name = "Wall (" + wallCounter.ToString() + ")";
+        wall.gameObject.layer = LayerMask.NameToLayer("Geometry");
+
+        wallCounter++;
+
+        return wall.transform;
     }
 
     private float MaxOfThree(float a, float b, float c)

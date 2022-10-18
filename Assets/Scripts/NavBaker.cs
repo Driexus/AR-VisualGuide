@@ -17,5 +17,4 @@ public class NavBaker : MonoBehaviour
     {
         surface.BuildNavMesh();
     }
-
 }
