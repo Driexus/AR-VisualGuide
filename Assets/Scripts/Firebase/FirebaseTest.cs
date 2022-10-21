@@ -28,7 +28,7 @@ public class FirebaseTest : MonoBehaviour
 
     private void Start()
     {
-        FetchBuildingCollection();
+        //FetchBuildingCollection();
     }
 
     private void Update()
@@ -44,8 +44,6 @@ public class FirebaseTest : MonoBehaviour
 
             IEnumerator cor3 = FetchBuildingData();
             StartCoroutine(cor3);
-            
-            FetchBuildingCollection();
         }
 
         if (_mustCallBuildingsUpdatedListener)
