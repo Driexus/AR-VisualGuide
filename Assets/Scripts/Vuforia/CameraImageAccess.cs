@@ -9,11 +9,7 @@ public class CameraImageAccess : MonoBehaviour
 
     #region PRIVATE_MEMBERS
 
-#if UNITY_EDITOR
-    PixelFormat mPixelFormat = PixelFormat.RGB888; // Editor passes in a RGBA8888 texture instead of RGB888
-#else
-    PixelFormat mPixelFormat = PIXEL_FORMAT.RGB888; // Use RGB888 for mobile
-#endif
+    private PixelFormat mPixelFormat = PixelFormat.RGB888;
     private bool mFormatRegistered = false;
 
     private int width;

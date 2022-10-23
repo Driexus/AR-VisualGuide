@@ -956,6 +956,8 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 struct TurnOffBehaviour_tE62375129356E9ACC96DB05711E1A530245CDD3C;
 // System.Type
 struct Type_t;
+// System.Text.UnicodeEncoding
+struct UnicodeEncoding_t2C90D9E1E55C16081FACA57B229053C1EF05DAF0;
 // UnityEngine.Events.UnityAction
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 // System.Uri
@@ -4850,9 +4852,15 @@ struct StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8  : public TextRead
 struct StringWriter_tF48052BE4F980E5C85403221E835768E4156267D  : public TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3
 {
 	// System.Text.StringBuilder System.IO.StringWriter::_sb
-	StringBuilder_t* ____sb_6;
+	StringBuilder_t* ____sb_7;
 	// System.Boolean System.IO.StringWriter::_isOpen
-	bool ____isOpen_7;
+	bool ____isOpen_8;
+};
+
+struct StringWriter_tF48052BE4F980E5C85403221E835768E4156267D_StaticFields
+{
+	// System.Text.UnicodeEncoding modreq(System.Runtime.CompilerServices.IsVolatile) System.IO.StringWriter::m_encoding
+	UnicodeEncoding_t2C90D9E1E55C16081FACA57B229053C1EF05DAF0* ___m_encoding_6;
 };
 
 // Vuforia.Internal.Observers.VirtualButtonObserver
@@ -25951,7 +25959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* VuforiaRuntimeUtilities_DecodeUfoLi
 		L_2 = Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C(L_1, NULL);
 		NullCheck(L_0);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_0, L_2);
+		L_3 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(35 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_0, L_2);
 		return L_3;
 	}
 }
@@ -25970,7 +25978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* VuforiaRuntimeUtilities_EncodeUfoLi
 		String_t* L_1 = ___ufoKey0;
 		NullCheck(L_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
-		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		String_t* L_3;
 		L_3 = Convert_ToBase64String_mD0680EF77270244071965AFA1207921C73EEA323(L_2, NULL);
@@ -28726,7 +28734,7 @@ IL_0040:
 		{// begin try (depth: 1)
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_6 = V_1;
 			NullCheck(L_6);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_6, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_6, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_7 = V_1;
 			DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_8 = V_0;
 			int32_t L_9 = ___format1;
@@ -28737,7 +28745,7 @@ IL_0040:
 			DateTimeUtils_WriteDateTimeString_m41A5AB7406D377FD375E549BFA8F827095D1FF51(L_7, L_8, L_9, (String_t*)NULL, L_10, NULL);
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_11 = V_1;
 			NullCheck(L_11);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_11, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_11, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_12 = V_1;
 			NullCheck(L_12);
 			String_t* L_13;
@@ -28821,7 +28829,7 @@ IL_0038:
 		{// begin try (depth: 1)
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_3 = V_0;
 			NullCheck(L_3);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_3, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_3, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_4 = V_0;
 			DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_5 = ___value0;
 			int32_t L_6 = ___format1;
@@ -28832,7 +28840,7 @@ IL_0038:
 			DateTimeUtils_WriteDateTimeOffsetString_m9EDABF588BC284F0B388D4E1101773BAD81E7A52(L_4, L_5, L_6, (String_t*)NULL, L_7, NULL);
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_8 = V_0;
 			NullCheck(L_8);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_8, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_8, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_9 = V_0;
 			NullCheck(L_9);
 			String_t* L_10;

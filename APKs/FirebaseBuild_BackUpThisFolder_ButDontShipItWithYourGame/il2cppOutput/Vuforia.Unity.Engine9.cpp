@@ -26381,7 +26381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VuMarkInstanceIdImpl__ctor_mCBF567DF7860
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = ___buffer0;
 		NullCheck(L_10);
 		String_t* L_12;
-		L_12 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_10, L_11);
+		L_12 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(35 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_10, L_11);
 		__this->___U3CStringValueU3Ek__BackingField_2 = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CStringValueU3Ek__BackingField_2), (void*)L_12);
 	}
@@ -29337,7 +29337,7 @@ IL_0014:
 		int32_t L_24 = __this->___mInitError_8;
 		NullCheck(L_23);
 		bool L_25;
-		L_25 = InterfaceFuncInvoker2< bool, int32_t, String_t** >::Invoke(0 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Vuforia.VuforiaInitError,System.String>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t64CFE489500CA30EF36164136BDD927BF61173DF_il2cpp_TypeInfo_var, L_23, L_24, (&V_2));
+		L_25 = InterfaceFuncInvoker2< bool, int32_t, String_t** >::Invoke(1 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Vuforia.VuforiaInitError,System.String>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t64CFE489500CA30EF36164136BDD927BF61173DF_il2cpp_TypeInfo_var, L_23, L_24, (&V_2));
 		if (L_25)
 		{
 			goto IL_00fb;

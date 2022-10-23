@@ -14829,7 +14829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_1 = XRReferenceImageLibrary_get_dataStore_mDB5DF12926E7B9F0B02C43C376C23CA99A371F64(L_0, NULL);
 		NullCheck(L_1);
 		bool L_2;
-		L_2 = InterfaceFuncInvoker2< bool, String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** >::Invoke(0 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Byte[]>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t97FD4FEBA26DC444E19159FCE117EB26780A1816_il2cpp_TypeInfo_var, L_1, _stringLiteral373F4251BE2B104627C07D3CB55124893FC38853, (&V_0));
+		L_2 = InterfaceFuncInvoker2< bool, String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031** >::Invoke(1 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Byte[]>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t97FD4FEBA26DC444E19159FCE117EB26780A1816_il2cpp_TypeInfo_var, L_1, _stringLiteral373F4251BE2B104627C07D3CB55124893FC38853, (&V_0));
 		V_2 = L_2;
 		bool L_3 = V_2;
 		if (!L_3)
@@ -15336,7 +15336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t81F55263465517B73C455D3400CF67
 		String_t* L_1 = ___s0;
 		NullCheck(L_0);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker1< int32_t, String_t* >::Invoke(11 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< int32_t, String_t* >::Invoke(12 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_0, L_1);
 		V_0 = L_2;
 		// var utf8Bytes = new NativeArray<byte>(byteCount + 1, Allocator.Persistent);
 		int32_t L_3 = V_0;
@@ -15378,7 +15378,7 @@ IL_0029:
 		int32_t L_15 = V_0;
 		NullCheck(L_9);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(20 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, L_10, L_12, (uint8_t*)L_14, L_15);
+		L_16 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(21 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, L_10, L_12, (uint8_t*)L_14, L_15);
 		goto IL_0053;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -16329,7 +16329,7 @@ IL_0037:
 		L_9 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_8, NULL);
 		NullCheck(L_9);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_9);
+		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_9);
 		String_t* L_11;
 		L_11 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8F75ECDB116DCBBF6FC5A38C92B230BE664085FE)), L_10, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral1CA5F011288BCBF98331BBD2D5505E1A91FD9790)), NULL);
 		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_12 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
@@ -26837,7 +26837,7 @@ IL_0014:
 		String_t* L_4 = ___string0;
 		NullCheck(L_3);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker1< int32_t, String_t* >::Invoke(11 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< int32_t, String_t* >::Invoke(12 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_3, L_4);
 		V_0 = L_5;
 		// var bytes = new NativeArray<byte>(byteCount + 1, allocator);
 		int32_t L_6 = V_0;
@@ -26876,7 +26876,7 @@ IL_003a:
 		int32_t L_19 = V_0;
 		NullCheck(L_13);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(20 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_13, L_14, L_16, (uint8_t*)L_18, L_19);
+		L_20 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(21 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_13, L_14, L_16, (uint8_t*)L_18, L_19);
 		V_4 = (String_t*)NULL;
 		// return bytes;
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_21 = V_1;
