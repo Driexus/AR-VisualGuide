@@ -7,24 +7,14 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Random = UnityEngine.Random;
 
-public class VuforiaTest : MonoBehaviour
+public static class VuforiaTest
 {
     private const string serverAccessKey = "b0a8d1d27636853b119960f0166c852772d22800";
     private const string serverSecretKey = "b7ebd46f82514942244bda0b89e7879d4318b78a";
     private const string host = "https://vws.vuforia.com";
 
-    void Start()
-    {
-        string targetID = "0904b277d93e49c9835bd32de7e1aaeb";
-
-        var cor = GetImageTargetRating(targetID, (int rating) => Debug.Log(rating));
-        StartCoroutine(cor);
-
-        StartCoroutine(CreateImageTarget((string a) => Debug.Log(a)));
-    }
-
-    // Returns the image target rating (0-5) in the callback or -1 if the request failed
-    public IEnumerator GetImageTargetRating(string targetId, Action<int> callback)
+    // Returns the image target rating (0-5) in the callback, -1 if the request failed, or -2 if the target is being processed
+    public static IEnumerator GetImageTargetRating(string targetId, Action<int> callback)
     {
         var http_verb = "GET";
         string content = "";
@@ -42,41 +32,45 @@ public class VuforiaTest : MonoBehaviour
 
             yield return webRequest.SendWebRequest();
 
+            Debug.Log(webRequest.downloadHandler.text);
             if (webRequest.responseCode == 200)
             {
                 var json = JObject.Parse(webRequest.downloadHandler.text);
-                Debug.Log(webRequest.downloadHandler.text);
-                var trackingRating = json["target_record"]["tracking_rating"];
+                var trackingRating = json["target_record"]["tracking_rating"].ToObject<int>();
+                var status = json["status"].ToObject<string>();
 
-                if (trackingRating.Type is JTokenType.Integer)
-                    callback(trackingRating.ToObject<int>());
-                else
+                if (status == "success")
+                    callback(trackingRating);
+                else if (status == "failed")
                     callback(-1);
+                else if (status == "processing")
+                    callback(-2);
             }
             else
                 callback(-1);
         }
     }
 
-    public Texture2D texture;
-
-    public IEnumerator CreateImageTarget(Action<string> callback)
+    // Attempts to create an image target in the vuforia cloud. Callback returns the id of the target or null if the operation failed.
+    public static IEnumerator CreateImageTarget(Texture2D texture, Action<string> callback)
     {
+        // Convert the texture to RGB24 format
         var tex24 = new Texture2D(texture.width, texture.height, TextureFormat.RGB24, false);
         tex24.SetPixels(texture.GetPixels());
         tex24.Apply();
 
+        // Get the base64 representation of a jpg image based on the RGB24 texture
         var imageBytes = tex24.EncodeToJPG();
         var imageString = Convert.ToBase64String(imageBytes);
 
+        // Create a new ImageTarget with default values
         var target = new ImageTarget()
         {
+            // Name must be unique in database according to vuforia docs
             name = GetRandomString(60),
             image = imageString,
             width = 1
         };
-
-        WWWForm form = new();
 
         var http_verb = "POST";
         string content = JsonUtility.ToJson(target);
@@ -85,9 +79,9 @@ public class VuforiaTest : MonoBehaviour
         var date = GetDateNow();
         var auth = GetVWSAuth(http_verb, content, contentType, date, requestPath);
 
-        using (UnityWebRequest webRequest = UnityWebRequest.Post(host + requestPath, form))
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(host + requestPath, new WWWForm()))
         {
-            //
+            // Set the message body of the post request
             var contentBytes = Encoding.UTF8.GetBytes(content);
             webRequest.uploadHandler = new UploadHandlerRaw(contentBytes);
 
@@ -101,7 +95,6 @@ public class VuforiaTest : MonoBehaviour
 
             yield return webRequest.SendWebRequest();
 
-            Debug.Log(webRequest.responseCode);
             Debug.Log(webRequest.downloadHandler.text);
             if (webRequest.responseCode == 201)
             {
@@ -118,6 +111,7 @@ public class VuforiaTest : MonoBehaviour
         }
     }
 
+    // Returns a random string of custom length containing letters (both upper and lower) and numbers
     private static string GetRandomString(int length)
     {
         const string glyphs = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
