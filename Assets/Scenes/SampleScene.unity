@@ -1178,6 +1178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514851247}
   - component: {fileID: 514851249}
+  - component: {fileID: 514851250}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -1214,6 +1215,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rawImage: {fileID: 0}
   texture: {fileID: 0}
+--- !u!114 &514851250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514851245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a66e7ebe8a9eb4e87a5886003e88bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureFile: {fileID: 0}
+  printedTargetSize: 0
+  targetName: 
 --- !u!1 &650447061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,8 +1890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageAccess: {fileID: 514851249}
-  maxTries: 60
-  waitTime: 1
+  maxTries: 20
+  waitTime: 0.5
 --- !u!114 &757073957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1952,7 +1968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b4de8b11b4820e4e895e96f550c7a3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4a72bd8a7082b648a5cd847f4d57a3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

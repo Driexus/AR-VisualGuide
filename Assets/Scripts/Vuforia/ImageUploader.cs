@@ -10,13 +10,15 @@ public class ImageUploader : MonoBehaviour
 
     public void UploadImage()
     {
-        var cor1 = VuforiaTest.CreateImageTarget(imageAccess.texture, (string targetId) =>
+        var cor1 = VuforiaRepository.CreateImageTarget(imageAccess.texture, (string targetId) =>
         {
             if (targetId != null)
             {
                 var cor2 = TryGetRating(targetId, (int rating) => Debug.Log(rating));
                 StartCoroutine(cor2);
             }
+            else
+                Debug.Log("Upload failed");
         });
 
         StartCoroutine(cor1);
@@ -24,12 +26,12 @@ public class ImageUploader : MonoBehaviour
 
     private IEnumerator TryGetRating(string targetId, Action<int> callback)
     {
-        int imageRating = -2;
+        int imageRating = -1;
         int tries = 0;
 
-        while (imageRating == -2 && tries < maxTries)
+        while (imageRating == -1 && tries < maxTries)
         {
-            yield return VuforiaTest.GetImageTargetRating(targetId, (int rating) =>
+            yield return VuforiaRepository.GetImageTargetRating(targetId, (int rating) =>
             {
                 imageRating = rating;
                 tries++;

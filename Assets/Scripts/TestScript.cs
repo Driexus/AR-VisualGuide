@@ -24,13 +24,13 @@ public class TestScript : MonoBehaviour
         if (Time.realtimeSinceStartup >= 12 && !hasRun)
         {
             hasRun = true;
-            string url = "https://www.e-shop.gr/images/BKS/BKS.0481156.jpg";
-            var cor = RetrieveTextureFromWeb(url);
-            StartCoroutine(cor);
+            /*            string url = "https://www.e-shop.gr/images/BKS/BKS.0481156.jpg";
+                        var cor = RetrieveTextureFromWeb(url);
+                        StartCoroutine(cor);
 
-            string url2 = "https://production-metabook-covers-4.ams3.digitaloceanspaces.com/files/4e/24/32b5bfd0-f2bb-45fe-bdbf-9bd92568c235.jpg";
-            var cor2 = RetrieveTextureFromWeb(url2);
-            StartCoroutine(cor2);
+                        string url2 = "https://production-metabook-covers-4.ams3.digitaloceanspaces.com/files/4e/24/32b5bfd0-f2bb-45fe-bdbf-9bd92568c235.jpg";
+                        var cor2 = RetrieveTextureFromWeb(url2);
+                        StartCoroutine(cor2);*/            
         }
 
     }

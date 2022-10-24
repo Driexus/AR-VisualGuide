@@ -7,13 +7,76 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Random = UnityEngine.Random;
 
-public static class VuforiaTest
+public static class VuforiaRepository
 {
     private const string serverAccessKey = "b0a8d1d27636853b119960f0166c852772d22800";
     private const string serverSecretKey = "b7ebd46f82514942244bda0b89e7879d4318b78a";
     private const string host = "https://vws.vuforia.com";
 
-    // Returns the image target rating (0-5) in the callback, -1 if the request failed, or -2 if the target is being processed
+    public static IEnumerator UpdateImageTarget(string targetId, string name, float width, Action<bool> callback)
+    {
+        // Create a new ImageTarget with default values
+        var target = new PatchImageTarget()
+        {
+            // Name must be unique in database according to vuforia docs
+            name = name,
+            width = width
+        };
+
+        var http_verb = "PUT";
+        string content = JsonUtility.ToJson(target);
+        string contentType = "application/json";
+        var requestPath = "/targets/" + targetId; // Documentation says that the request path is "/targets", which is wrong...
+        var date = GetDateNow();
+        var auth = GetVWSAuth(http_verb, content, contentType, date, requestPath);
+
+        var contentBytes = Encoding.UTF8.GetBytes(content);
+        
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(host + requestPath, contentBytes))
+        {
+            // This line promts a warning but it is the only way i have found to calculate the auth key,
+            // since the date must be known before the request is sent
+            webRequest.SetRequestHeader("Date", date);
+            webRequest.SetRequestHeader("Authorization", auth);
+
+            // Setting the uploadHandler.contentType property does not work properly
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.responseCode == 200)
+                callback(true);
+            else
+                callback(false);
+        }
+    }
+
+    public static IEnumerator DeleteImageTarget(string targetId, Action<bool> callback)
+    {
+        var http_verb = "DELETE";
+        string content = "";
+        string contentType = "";
+        var requestPath = "/targets/" + targetId;
+        var date = GetDateNow();
+        var auth = GetVWSAuth(http_verb, content, contentType, date, requestPath);
+
+        using (UnityWebRequest webRequest = UnityWebRequest.Delete(host + requestPath))
+        {
+            // This line promts a warning but it is the only way i have found to calculate the auth key,
+            // since the date must be known before the request is sent
+            webRequest.SetRequestHeader("Date", date);
+            webRequest.SetRequestHeader("Authorization", auth);
+
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.responseCode == 200)
+                callback(true);
+            else
+                callback(false);
+        }
+    }
+
+    // Returns the image target rating (0-5) in the callback, -1 if the rating is being processed (server value), or -2 if the request failed
     public static IEnumerator GetImageTargetRating(string targetId, Action<int> callback)
     {
         var http_verb = "GET";
@@ -37,17 +100,10 @@ public static class VuforiaTest
             {
                 var json = JObject.Parse(webRequest.downloadHandler.text);
                 var trackingRating = json["target_record"]["tracking_rating"].ToObject<int>();
-                var status = json["status"].ToObject<string>();
-
-                if (status == "success")
-                    callback(trackingRating);
-                else if (status == "failed")
-                    callback(-1);
-                else if (status == "processing")
-                    callback(-2);
+                callback(trackingRating);
             }
             else
-                callback(-1);
+                callback(-2);
         }
     }
 
