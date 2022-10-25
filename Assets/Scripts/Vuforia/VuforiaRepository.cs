@@ -13,13 +13,10 @@ public static class VuforiaRepository
     private const string serverSecretKey = "b7ebd46f82514942244bda0b89e7879d4318b78a";
     private const string host = "https://vws.vuforia.com";
 
-    public static IEnumerator UpdateImageTarget(string targetId, string name, float width, Action<bool> callback)
+    public static IEnumerator UpdateImageTargetDimensions(string targetId, float width, Action<bool> callback)
     {
-        // Create a new ImageTarget with default values
         var target = new PatchImageTarget()
         {
-            // Name must be unique in database according to vuforia docs
-            name = name,
             width = width
         };
 
