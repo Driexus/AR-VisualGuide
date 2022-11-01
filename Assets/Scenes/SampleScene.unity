@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 120564001}
   - component: {fileID: 120564000}
   - component: {fileID: 120563999}
-  - component: {fileID: 120564003}
   m_Layer: 0
   m_Name: Plane Finder
   m_TagString: Untagged
@@ -226,20 +225,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &120564003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120563998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5be880bbb41931746a96b4df3b776b40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  devicePoseBehaviour: {fileID: 0}
-  planeFinderBehaviour: {fileID: 0}
 --- !u!1 &175518657
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +237,7 @@ GameObject:
   - component: {fileID: 175518659}
   - component: {fileID: 175518658}
   - component: {fileID: 175518661}
+  - component: {fileID: 175518662}
   m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
@@ -332,8 +318,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be22bbd1d4801da4f85673533a0945d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  surface: {fileID: 175518658}
-  buildingCreator: {fileID: 650776517}
+  buildingCreator: {fileID: 175518662}
+--- !u!114 &175518662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175518657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5945b0bebcb3efd48a97a44768628029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingVM: {fileID: 1734727933}
+  wallWidth: 0.01
+  wallHeight: 2
+  initialWallCount: 1000
 --- !u!1 &176247610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1180,6 @@ GameObject:
   - component: {fileID: 514851247}
   - component: {fileID: 514851249}
   - component: {fileID: 514851250}
-  - component: {fileID: 514851251}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -1231,18 +1231,6 @@ MonoBehaviour:
   textureFile: {fileID: 0}
   printedTargetSize: 0
   targetName: 
---- !u!114 &514851251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514851245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 064011cae6d598a4aa0ae843a123df47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &650447061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,54 +1268,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &650776516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 650776518}
-  - component: {fileID: 650776517}
-  m_Layer: 0
-  m_Name: BuildingCreator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &650776517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650776516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5945b0bebcb3efd48a97a44768628029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildingVM: {fileID: 1734727933}
-  wallWidth: 0.01
-  wallHeight: 2
-  initialWallCount: 20
---- !u!4 &650776518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650776516}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1423239491}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678136635
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,7 +3177,7 @@ Transform:
   - {fileID: 786658677}
   - {fileID: 1238682053}
   m_Father: {fileID: 1423239491}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179579440
 GameObject:
@@ -3875,7 +3815,6 @@ Transform:
   - {fileID: 1925728907}
   - {fileID: 911825110}
   - {fileID: 175518660}
-  - {fileID: 650776518}
   - {fileID: 1128651357}
   m_Father: {fileID: 0}
   m_RootOrder: 7

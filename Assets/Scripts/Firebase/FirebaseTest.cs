@@ -28,7 +28,7 @@ public class FirebaseTest : MonoBehaviour
 
     private void Start()
     {
-        //FetchBuildingCollection();
+        FetchBuildingCollection();
     }
 
     private void Update()
@@ -50,6 +50,7 @@ public class FirebaseTest : MonoBehaviour
         {
             _mustCallBuildingsUpdatedListener = false;
             BuildingsUpdated?.Invoke(this, null);
+            Debug.Log("buildings updated");
         }        
     }
 

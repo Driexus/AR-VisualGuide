@@ -23,10 +23,11 @@ public class BuildingViewModel : MonoBehaviour
     {
         // Select the first building
         EventHandler handler = null;
-        handler = new EventHandler((object sender, EventArgs args) => 
+        handler = new EventHandler((object sender, EventArgs args) =>
         {
             CurrentBuilding = repository.Buildings[0];
             repository.BuildingsUpdated -= handler;
+            Debug.Log(CurrentBuilding);
         });
         repository.BuildingsUpdated += handler;
     }
