@@ -1842,6 +1842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb13874656c86c34287fa255c317b936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firebaseRepo: {fileID: 1968082308}
   imageAccess: {fileID: 514851249}
   maxTries: 20
   waitTime: 0.5
@@ -4764,7 +4765,7 @@ GameObject:
   - component: {fileID: 1968082309}
   - component: {fileID: 1968082308}
   m_Layer: 0
-  m_Name: FirebaseTest
+  m_Name: FirebaseRepo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

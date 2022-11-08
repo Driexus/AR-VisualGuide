@@ -2,6 +2,8 @@ using ExtensionMethods;
 using UnityEngine;
 using static System.Math;
 using System;
+using Vuforia;
+using System.Collections.Generic;
 
 public class BuildingCreator : MonoBehaviour
 {
@@ -10,21 +12,12 @@ public class BuildingCreator : MonoBehaviour
     public delegate void WallsUpdatedEventHandler(Wall[] walls);
     public event WallsUpdatedEventHandler WallsUpdated;    
 
-    private Wall[] _walls;
-    public Wall[] Walls
-    {
-        get { return _walls; }
-        set
-        {
-            _walls = value;
-            LoadWalls();
-            LoadFloor();
-            WallsUpdated(_walls);
-        }
-    }
     public float wallWidth;
     public float wallHeight;
     public uint initialWallCount;
+
+    private Wall[] _walls;
+    private Dictionary<string, ImageTarget> _imageTargets;
 
     private GameObject wallObjectPool;
     private GameObject floor;
@@ -46,7 +39,29 @@ public class BuildingCreator : MonoBehaviour
         wallCollection.transform.parent = transform;
 
         // Change the walls when the current building changes
-        buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => Walls = buildingVM.CurrentBuilding.walls);
+        buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => LoadNewBuilding());
+    }
+
+    private void LoadNewBuilding()
+    {
+        _walls = buildingVM.CurrentBuilding.walls;
+        _imageTargets = buildingVM.CurrentBuilding.image_targets;
+        LoadWalls();
+        LoadFloor();
+        LoadImageTargets();
+        WallsUpdated(_walls);
+    }
+
+    private void LoadImageTargets()
+    {
+        foreach (ImageTarget target in _imageTargets.Values)
+        {
+            var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
+            var bytes = Convert.FromBase64String(target.image);
+            ImageConversion.LoadImage(texture, bytes);
+            
+            var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, target.name);
+        }
     }
 
     // Create a pool for unused walls and add some walls to use later

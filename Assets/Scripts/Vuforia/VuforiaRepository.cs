@@ -1,6 +1,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
@@ -105,7 +106,7 @@ public static class VuforiaRepository
     }
 
     // Attempts to create an image target in the vuforia cloud. Callback returns the id of the target or null if the operation failed.
-    public static IEnumerator CreateImageTarget(Texture2D texture, Action<string> callback)
+    public static IEnumerator CreateImageTarget(Texture2D texture, Action<KeyValuePair<String, ImageTarget>> callback)
     {
         // Convert the texture to RGB24 format
         var tex24 = new Texture2D(texture.width, texture.height, TextureFormat.RGB24, false);
@@ -155,12 +156,12 @@ public static class VuforiaRepository
                 var targetId = json["target_id"];
 
                 if (targetId.Type is JTokenType.String)
-                    callback(targetId.ToObject<string>());
+                    callback(new KeyValuePair<String, ImageTarget>(targetId.ToObject<string>(), target));
                 else
-                    callback(null);
+                    callback(new KeyValuePair<String, ImageTarget>());
             }
             else
-                callback(null);
+                callback(new KeyValuePair<String, ImageTarget>());
         }
     }
 

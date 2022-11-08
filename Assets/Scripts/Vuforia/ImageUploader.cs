@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ImageUploader : MonoBehaviour
 {
+    public FirebaseRepository firebaseRepo;
     public CameraImageAccess imageAccess;
     public int maxTries = 20;
     public float waitTime = 0.5f;
@@ -34,11 +36,20 @@ public class ImageUploader : MonoBehaviour
     {
         if (_textureToUpload != null)
         {
-            var cor1 = VuforiaRepository.CreateImageTarget(_textureToUpload, (string targetId) =>
+            var cor1 = VuforiaRepository.CreateImageTarget(_textureToUpload, (KeyValuePair<String, ImageTarget> target) =>
             {
-                if (targetId != null)
+                if (!target.Equals(default(KeyValuePair<String, ImageTarget>)))
                 {
-                    var cor2 = TryGetRating(targetId, (int rating) => Debug.Log(rating));
+                    var cor2 = TryGetRating(target.Key, (int rating) =>
+                    {
+                        Debug.Log(rating);
+                        if (rating >= 3)
+                        {
+                            var cor3 = firebaseRepo.UploadImageTarget("home", target);
+                            StartCoroutine(cor3);
+                        }
+                            
+                    });
                     StartCoroutine(cor2);
                 }
                 else

@@ -2,7 +2,7 @@ using System;
 
 public class BuildingSelector : DropdownWrapper
 {
-    public FirebaseTest repository;
+    public FirebaseRepository repository;
     public BuildingViewModel buildingVM;
 
     private void Start()

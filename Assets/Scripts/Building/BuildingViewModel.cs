@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BuildingViewModel : MonoBehaviour
 {
-    public FirebaseTest repository;
+    public FirebaseRepository repository;
 
     private Building _currentBuilding;
     public Building CurrentBuilding
@@ -13,7 +13,6 @@ public class BuildingViewModel : MonoBehaviour
         { 
             _currentBuilding = value;
             CurrentBuildingChanged?.Invoke(this, null);
-            Debug.Log(_currentBuilding.targets[0]);
         }
     }
 
@@ -27,7 +26,6 @@ public class BuildingViewModel : MonoBehaviour
         {
             CurrentBuilding = repository.Buildings[0];
             repository.BuildingsUpdated -= handler;
-            Debug.Log(CurrentBuilding);
         });
         repository.BuildingsUpdated += handler;
     }
