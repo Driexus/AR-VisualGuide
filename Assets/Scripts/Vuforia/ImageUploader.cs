@@ -25,7 +25,7 @@ public class ImageUploader : MonoBehaviour
             if (path != null)
             {
                 // Create a Texture2D from the captured image
-                _textureToUpload = NativeCamera.LoadImageAtPath(path, markTextureNonReadable: false);
+                _textureToUpload = NativeCamera.LoadImageAtPath(path, maxSize: 1000, markTextureNonReadable: false);
                 TryUploadTexture();
             }
         });

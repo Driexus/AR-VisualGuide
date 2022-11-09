@@ -4,6 +4,8 @@ using static System.Math;
 using System;
 using Vuforia;
 using System.Collections.Generic;
+using System.Collections;
+using UnityEngine.Networking;
 
 public class BuildingCreator : MonoBehaviour
 {
@@ -61,6 +63,7 @@ public class BuildingCreator : MonoBehaviour
             ImageConversion.LoadImage(texture, bytes);
             
             var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, target.name);
+            vuTarget.gameObject.AddComponent<DefaultObserverEventHandler>();
         }
     }
 
