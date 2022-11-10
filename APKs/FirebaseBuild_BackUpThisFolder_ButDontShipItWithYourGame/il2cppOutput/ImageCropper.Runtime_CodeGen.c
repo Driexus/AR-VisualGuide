@@ -1,0 +1,639 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 ImageCropper ImageCropper::get_Instance()
+extern void ImageCropper_get_Instance_m7563710A6D38B123978A0867F3C85275F281B63B (void);
+// 0x00000002 System.Single ImageCropper::get_SelectionSnapToEdgeThreshold()
+extern void ImageCropper_get_SelectionSnapToEdgeThreshold_m70652C503410616AC6177CDB948E379D5C3DE5B5 (void);
+// 0x00000003 UnityEngine.RectTransform ImageCropper::get_Viewport()
+extern void ImageCropper_get_Viewport_mA3410F26F2F2AFF7C2BEF68B3B70C06B9CC1FED3 (void);
+// 0x00000004 UnityEngine.RectTransform ImageCropper::get_ImageHolder()
+extern void ImageCropper_get_ImageHolder_mED261B36450556B6C346A656B4538C022FC6E46C (void);
+// 0x00000005 UnityEngine.UI.RawImage ImageCropper::get_OrientedImage()
+extern void ImageCropper_get_OrientedImage_m3A238CB5F61399408E1C77D9107BEC528BE40037 (void);
+// 0x00000006 UnityEngine.RectTransform ImageCropper::get_Selection()
+extern void ImageCropper_get_Selection_mC538C5B65CDD6980DEAAD6DE113FCAA53AA8A828 (void);
+// 0x00000007 UnityEngine.RectTransform ImageCropper::get_SelectionGraphics()
+extern void ImageCropper_get_SelectionGraphics_m64A007CB7FF756C6F2592A1644E0A8717B67B871 (void);
+// 0x00000008 System.Boolean ImageCropper::get_IsOpen()
+extern void ImageCropper_get_IsOpen_mE564B3643A3F8B095534D0C3AD7350FB5CC69767 (void);
+// 0x00000009 ImageCropper/Settings ImageCropper::get_DefaultSettings()
+extern void ImageCropper_get_DefaultSettings_m3603A4B72C72E4A0B64473B7FA57DF11F5AC6910 (void);
+// 0x0000000A System.Boolean ImageCropper::get_AutoZoomEnabled()
+extern void ImageCropper_get_AutoZoomEnabled_mA75FEBC23D7B7304F2BC6B25122576460BC3B988 (void);
+// 0x0000000B System.Void ImageCropper::set_AutoZoomEnabled(System.Boolean)
+extern void ImageCropper_set_AutoZoomEnabled_m6CA5A2089BD60726B0C345B8287FA9548B653A8E (void);
+// 0x0000000C System.Boolean ImageCropper::get_PixelPerfectSelection()
+extern void ImageCropper_get_PixelPerfectSelection_mFC2D99A6AE650E25CAEDEB3A7B7C400F517EE44D (void);
+// 0x0000000D System.Void ImageCropper::set_PixelPerfectSelection(System.Boolean)
+extern void ImageCropper_set_PixelPerfectSelection_m13EDB52B85301B4FA5602925DE7BB38FCFBC4C44 (void);
+// 0x0000000E System.Boolean ImageCropper::get_OvalSelection()
+extern void ImageCropper_get_OvalSelection_m4ED1716D701328B5E27D67E8B6E38A23287D127F (void);
+// 0x0000000F System.Void ImageCropper::set_OvalSelection(System.Boolean)
+extern void ImageCropper_set_OvalSelection_mD832D0366DB542A650C869F1828F1F723FAA683F (void);
+// 0x00000010 ImageCropper/Visibility ImageCropper::get_GuidelinesVisibility()
+extern void ImageCropper_get_GuidelinesVisibility_mA1040B1BC39C1FD18F069A232E2420EB891A5171 (void);
+// 0x00000011 System.Void ImageCropper::set_GuidelinesVisibility(ImageCropper/Visibility)
+extern void ImageCropper_set_GuidelinesVisibility_m966DBF042058CDE4ABA9F001AF1B0E849E488429 (void);
+// 0x00000012 System.Boolean ImageCropper::get_MarkTextureNonReadable()
+extern void ImageCropper_get_MarkTextureNonReadable_mEFF3600F631486EC373C0CB8CDD1692F8E5BEA20 (void);
+// 0x00000013 System.Void ImageCropper::set_MarkTextureNonReadable(System.Boolean)
+extern void ImageCropper_set_MarkTextureNonReadable_mCB414FBDD1A5F9C3AF74C2AD577F7E03531B121B (void);
+// 0x00000014 UnityEngine.Color ImageCropper::get_ImageBackground()
+extern void ImageCropper_get_ImageBackground_m753EC4DD5F1C68FCC34E67FBF935947C3FFF623B (void);
+// 0x00000015 System.Void ImageCropper::set_ImageBackground(UnityEngine.Color)
+extern void ImageCropper_set_ImageBackground_m7E5A3D8309BF128DE480AA51052482C9C36EA3AC (void);
+// 0x00000016 UnityEngine.Vector2 ImageCropper::get_ViewportSize()
+extern void ImageCropper_get_ViewportSize_m7DD5EF86737B7A14C95C69FF5EB754631EF9340B (void);
+// 0x00000017 UnityEngine.Vector2 ImageCropper::get_OriginalImageSize()
+extern void ImageCropper_get_OriginalImageSize_mE7230DAA6778768305B2F171E90F5F23CF8AC871 (void);
+// 0x00000018 UnityEngine.Vector2 ImageCropper::get_OrientedImageSize()
+extern void ImageCropper_get_OrientedImageSize_m40649E191CA14B9FE480249553B817521D9CBAB1 (void);
+// 0x00000019 UnityEngine.Vector2 ImageCropper::get_SelectionSize()
+extern void ImageCropper_get_SelectionSize_m0BC2C9F9A5C958943584FE1D3521C311D3B1748E (void);
+// 0x0000001A System.Void ImageCropper::Awake()
+extern void ImageCropper_Awake_m4A43CF0299B382BBD1AFAED74351B276544CB34F (void);
+// 0x0000001B System.Void ImageCropper::OnDisable()
+extern void ImageCropper_OnDisable_mBAA822CC644B7AF7559757E1BEE3089B78D181F5 (void);
+// 0x0000001C System.Void ImageCropper::LateUpdate()
+extern void ImageCropper_LateUpdate_m1E9B6D7DAF40E602DB0D69FDAC5B6F52BA94F9FD (void);
+// 0x0000001D System.Void ImageCropper::OnViewportDimensionsChange(UnityEngine.Vector2)
+extern void ImageCropper_OnViewportDimensionsChange_mDE32369CEC0F2C348753F6D356BBFB939BF2B0FD (void);
+// 0x0000001E System.Void ImageCropper::Show(UnityEngine.Texture,ImageCropper/Settings)
+extern void ImageCropper_Show_mDD5497174FD1D4030E56AAF77783BF7E6095F5D1 (void);
+// 0x0000001F System.Void ImageCropper::Show(UnityEngine.Texture,ImageCropper/CropResult,ImageCropper/Settings,ImageCropper/ImageResizePolicy)
+extern void ImageCropper_Show_mDDEA5F5F4F1933DB335157CA6B055911C91133F4 (void);
+// 0x00000020 System.Void ImageCropper::Hide()
+extern void ImageCropper_Hide_m95FBBB51D7EE499C6C767EB42395481446770413 (void);
+// 0x00000021 System.Void ImageCropper::ResetView(System.Boolean)
+extern void ImageCropper_ResetView_m75A480044959DD462C6BB298D4E377F67D79BD9E (void);
+// 0x00000022 System.Void ImageCropper::Cancel()
+extern void ImageCropper_Cancel_m442FDCAFCA8356E31476F4A7E9684ED9CFD8190B (void);
+// 0x00000023 System.Void ImageCropper::Crop()
+extern void ImageCropper_Crop_mB0E845AE16860F2B21909FEBFC07CF5263DBF640 (void);
+// 0x00000024 UnityEngine.Texture2D ImageCropper::CropSelection()
+extern void ImageCropper_CropSelection_mBE9948ECEE3E522D28C21F1C14CF3E7D6E2B0C7F (void);
+// 0x00000025 UnityEngine.Texture2D ImageCropper::CropSelection(System.Int32,System.Int32)
+extern void ImageCropper_CropSelection_m35CA6FC33E687C46C9987BDA4CCF182E1C3C9EDB (void);
+// 0x00000026 System.Void ImageCropper::Rotate90Clockwise()
+extern void ImageCropper_Rotate90Clockwise_mD0F49D58FA6BDC968746AB0E60782F85046DA2A6 (void);
+// 0x00000027 System.Void ImageCropper::Rotate180Clockwise()
+extern void ImageCropper_Rotate180Clockwise_m42BBC6408A0C9C4DCB43DA09DAC1E62DB99F20EB (void);
+// 0x00000028 System.Void ImageCropper::Rotate270Clockwise()
+extern void ImageCropper_Rotate270Clockwise_mFB5EADAB267842EE94B41A528C0124AAA240C3CF (void);
+// 0x00000029 System.Void ImageCropper::RotateClockwise(System.Int32)
+extern void ImageCropper_RotateClockwise_mADB728DF260AB2EBA668BF85AB8B429B09DA4577 (void);
+// 0x0000002A System.Void ImageCropper::FlipHorizontal()
+extern void ImageCropper_FlipHorizontal_mE82FF65603EE9F895C62BA96C461BEF26DB1AF3C (void);
+// 0x0000002B System.Void ImageCropper::FlipVertical()
+extern void ImageCropper_FlipVertical_m986687D13277B2AFDB92B154B5E380FD55DA4A76 (void);
+// 0x0000002C System.Void ImageCropper::SetOrientation(ImageCropper/Orientation)
+extern void ImageCropper_SetOrientation_m4AE862D8BC4C59C00457F640D468B45273FD6EEB (void);
+// 0x0000002D System.Void ImageCropper::StartAutoZoom(System.Boolean)
+extern void ImageCropper_StartAutoZoom_mD2DA1F4851822D5A7D635A7485278FB706542971 (void);
+// 0x0000002E System.Collections.IEnumerator ImageCropper::AutoZoom(System.Single,System.Boolean)
+extern void ImageCropper_AutoZoom_m1E15C105151E36C0FD2A47815CC180FDE436AF22 (void);
+// 0x0000002F System.Void ImageCropper::StopAutoZoom()
+extern void ImageCropper_StopAutoZoom_m83614FBD595053EDFCADC679407A4184EBEE76CB (void);
+// 0x00000030 System.Boolean ImageCropper::CanModifySelectionWith(ImageCropperNamespace.ISelectionHandler)
+extern void ImageCropper_CanModifySelectionWith_m849C3291BCCFE5FC82DBADB9AC491C58DE73805D (void);
+// 0x00000031 System.Void ImageCropper::StopModifySelectionWith(ImageCropperNamespace.ISelectionHandler)
+extern void ImageCropper_StopModifySelectionWith_mC48D8422A1768DD62D31062865628352E0A80EAF (void);
+// 0x00000032 System.Void ImageCropper::MakePixelPerfectSelection()
+extern void ImageCropper_MakePixelPerfectSelection_mAD54D05F1B90EF39861478B1BC2E2DFB0BDA00BA (void);
+// 0x00000033 System.Void ImageCropper::UpdateSelection(UnityEngine.Vector2)
+extern void ImageCropper_UpdateSelection_m029DF565AC7BB2D873C7310B03622395CBC6E943 (void);
+// 0x00000034 System.Void ImageCropper::UpdateSelection(UnityEngine.Vector2,UnityEngine.Vector2,ImageCropper/Direction,System.Boolean)
+extern void ImageCropper_UpdateSelection_m1AB88B93DC6948B2F045FDD2B43F00CE464B432F (void);
+// 0x00000035 UnityEngine.Vector2 ImageCropper::RestrictImageToViewport(UnityEngine.Vector2,System.Single)
+extern void ImageCropper_RestrictImageToViewport_mF1AB8CD9C02E9FC6853F8FB6D8D3163210FC20B0 (void);
+// 0x00000036 UnityEngine.Vector2 ImageCropper::ScrollImage(UnityEngine.Vector2,ImageCropper/Direction)
+extern void ImageCropper_ScrollImage_mD210D83BC94A503918341CD3902FE441777F0496 (void);
+// 0x00000037 UnityEngine.Vector2 ImageCropper::GetTouchPosition(UnityEngine.Vector2,UnityEngine.Camera)
+extern void ImageCropper_GetTouchPosition_mA2276D3CDB7730839FCF54A09142B895C45969F7 (void);
+// 0x00000038 System.Void ImageCropper::.ctor()
+extern void ImageCropper__ctor_m8A157ABA0E5F2B6665F9D5F692F1E188887D9603 (void);
+// 0x00000039 System.Void ImageCropper/Settings::.ctor()
+extern void Settings__ctor_m75E3F038BEE35F0BC924BB73718DB89FED60B6DF (void);
+// 0x0000003A System.Void ImageCropper/CropResult::.ctor(System.Object,System.IntPtr)
+extern void CropResult__ctor_m73027D83B97458F16268DFF5BB87B9ED7A0480B9 (void);
+// 0x0000003B System.Void ImageCropper/CropResult::Invoke(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
+extern void CropResult_Invoke_mAE2B7E0A2A52A7E221E695001C760FF018F36970 (void);
+// 0x0000003C System.IAsyncResult ImageCropper/CropResult::BeginInvoke(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D,System.AsyncCallback,System.Object)
+extern void CropResult_BeginInvoke_mEA9669FF2C4C9EA063A749E9742EDB2BBAAE4424 (void);
+// 0x0000003D System.Void ImageCropper/CropResult::EndInvoke(System.IAsyncResult)
+extern void CropResult_EndInvoke_mE9558E07741760FCE5B477D0A71AD507656BA192 (void);
+// 0x0000003E System.Void ImageCropper/ImageResizePolicy::.ctor(System.Object,System.IntPtr)
+extern void ImageResizePolicy__ctor_mE27648850070826641FBAA6A3ED67AFAC8782FF0 (void);
+// 0x0000003F System.Void ImageCropper/ImageResizePolicy::Invoke(System.Int32&,System.Int32&)
+extern void ImageResizePolicy_Invoke_m341ACAE059981DEA0DC94A356814501C496D386E (void);
+// 0x00000040 System.IAsyncResult ImageCropper/ImageResizePolicy::BeginInvoke(System.Int32&,System.Int32&,System.AsyncCallback,System.Object)
+extern void ImageResizePolicy_BeginInvoke_m639EE287781C6314C7583DE2EDDCB826E152A201 (void);
+// 0x00000041 System.Void ImageCropper/ImageResizePolicy::EndInvoke(System.Int32&,System.Int32&,System.IAsyncResult)
+extern void ImageResizePolicy_EndInvoke_m18D0A0A1EFB7FDBA041260FEDF6B7070E70B79CB (void);
+// 0x00000042 System.Void ImageCropper/<AutoZoom>d__121::.ctor(System.Int32)
+extern void U3CAutoZoomU3Ed__121__ctor_mA710C978E765D54A68830663C0C120F496E34C07 (void);
+// 0x00000043 System.Void ImageCropper/<AutoZoom>d__121::System.IDisposable.Dispose()
+extern void U3CAutoZoomU3Ed__121_System_IDisposable_Dispose_m6AC1552224B3079AD46BB3C1887F9181935DE42C (void);
+// 0x00000044 System.Boolean ImageCropper/<AutoZoom>d__121::MoveNext()
+extern void U3CAutoZoomU3Ed__121_MoveNext_m943EF50743E47BA205D936FE123A8CFBC8C22A0A (void);
+// 0x00000045 System.Object ImageCropper/<AutoZoom>d__121::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CAutoZoomU3Ed__121_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42CCC8C6039BB615BE2855E5F1ABC0FDA97C6EFD (void);
+// 0x00000046 System.Void ImageCropper/<AutoZoom>d__121::System.Collections.IEnumerator.Reset()
+extern void U3CAutoZoomU3Ed__121_System_Collections_IEnumerator_Reset_m38B6245CC76775CDF821BEBD6BBA86B6C53B922D (void);
+// 0x00000047 System.Object ImageCropper/<AutoZoom>d__121::System.Collections.IEnumerator.get_Current()
+extern void U3CAutoZoomU3Ed__121_System_Collections_IEnumerator_get_Current_m980519348BA1148EA851F29FB4661CC88FADDFB7 (void);
+// 0x00000048 System.Void ImageCropperNamespace.ImageCropperDemo::Crop()
+extern void ImageCropperDemo_Crop_m6A949CB3FE964DA2AC42A13805989CDBEDACA17C (void);
+// 0x00000049 System.Collections.IEnumerator ImageCropperNamespace.ImageCropperDemo::TakeScreenshotAndCrop()
+extern void ImageCropperDemo_TakeScreenshotAndCrop_mF9E85B66735266A8A0DB960BCAAE24B8EC85CCCB (void);
+// 0x0000004A System.Void ImageCropperNamespace.ImageCropperDemo::.ctor()
+extern void ImageCropperDemo__ctor_mE8325D56CF0FB87A905337EC5B9D65EA6B7A01BE (void);
+// 0x0000004B System.Void ImageCropperNamespace.ImageCropperDemo/<>c__DisplayClass7_0::.ctor()
+extern void U3CU3Ec__DisplayClass7_0__ctor_mD3DCCFABEF1900718E6F0A44780E84AAB77036D6 (void);
+// 0x0000004C System.Void ImageCropperNamespace.ImageCropperDemo/<>c__DisplayClass7_0::<TakeScreenshotAndCrop>b__0(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
+extern void U3CU3Ec__DisplayClass7_0_U3CTakeScreenshotAndCropU3Eb__0_m6E9B2DD59936ACF19FE21BFD8823317EEA138305 (void);
+// 0x0000004D System.Void ImageCropperNamespace.ImageCropperDemo/<>c::.cctor()
+extern void U3CU3Ec__cctor_mBC6FC64D825A4EF12BA917CDECD39AC349621265 (void);
+// 0x0000004E System.Void ImageCropperNamespace.ImageCropperDemo/<>c::.ctor()
+extern void U3CU3Ec__ctor_mD56F2B763F554561FDE0F5F25C548F308A0A559D (void);
+// 0x0000004F System.Void ImageCropperNamespace.ImageCropperDemo/<>c::<TakeScreenshotAndCrop>b__7_1(System.Int32&,System.Int32&)
+extern void U3CU3Ec_U3CTakeScreenshotAndCropU3Eb__7_1_m362548C3B6299A14FAB8C606EEF5E77F50A90432 (void);
+// 0x00000050 System.Void ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::.ctor(System.Int32)
+extern void U3CTakeScreenshotAndCropU3Ed__7__ctor_mEE76CB290C3FD78229E8C505CF9B922B542B2DEB (void);
+// 0x00000051 System.Void ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::System.IDisposable.Dispose()
+extern void U3CTakeScreenshotAndCropU3Ed__7_System_IDisposable_Dispose_m15644B654DF958B53FDEE74CF2C428F1E29F7556 (void);
+// 0x00000052 System.Boolean ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::MoveNext()
+extern void U3CTakeScreenshotAndCropU3Ed__7_MoveNext_m983800AEB8497311745771D6AC5550E47C99697C (void);
+// 0x00000053 System.Object ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTakeScreenshotAndCropU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6ED2ECE68364C28CA20804EC45031D78D52D7829 (void);
+// 0x00000054 System.Void ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CTakeScreenshotAndCropU3Ed__7_System_Collections_IEnumerator_Reset_m8B36DF463622C280E0D9307B265E68EF125A2942 (void);
+// 0x00000055 System.Object ImageCropperNamespace.ImageCropperDemo/<TakeScreenshotAndCrop>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CTakeScreenshotAndCropU3Ed__7_System_Collections_IEnumerator_get_Current_m1E7F1FA6FE377323F5F7AA3B78082CE5CAB22F24 (void);
+// 0x00000056 UnityEngine.Texture ImageCropperNamespace.CircleGraphic::get_mainTexture()
+extern void CircleGraphic_get_mainTexture_m83EB278D653B25EE74AAEE10489EE5A67CACDA9C (void);
+// 0x00000057 System.Void ImageCropperNamespace.CircleGraphic::Awake()
+extern void CircleGraphic_Awake_m979C001A134411780901253D7C077F959DC48E89 (void);
+// 0x00000058 System.Void ImageCropperNamespace.CircleGraphic::OnPopulateMesh(UnityEngine.UI.VertexHelper)
+extern void CircleGraphic_OnPopulateMesh_mEBCBD0D0F72681B2455A229C16D616FD65FEB0A1 (void);
+// 0x00000059 System.Void ImageCropperNamespace.CircleGraphic::Cull(UnityEngine.Rect,System.Boolean)
+extern void CircleGraphic_Cull_mEE9FDCEA22302346E38EADF5F4E3F274A8A0979D (void);
+// 0x0000005A System.Void ImageCropperNamespace.CircleGraphic::FillInside(UnityEngine.UI.VertexHelper)
+extern void CircleGraphic_FillInside_m413B411752B09EBDD0D5499AA20DFE7BCB87741F (void);
+// 0x0000005B System.Void ImageCropperNamespace.CircleGraphic::FillOutside(UnityEngine.UI.VertexHelper,UnityEngine.Vector3,System.Int32,System.Int32,System.Int32&)
+extern void CircleGraphic_FillOutside_mF0B3E71C71AF14E4C0C603679380B169F0B654BE (void);
+// 0x0000005C System.Void ImageCropperNamespace.CircleGraphic::GenerateEdges(UnityEngine.UI.VertexHelper)
+extern void CircleGraphic_GenerateEdges_m8FCC956137D053959CA1EE206C50F6226BB6C4B7 (void);
+// 0x0000005D System.Void ImageCropperNamespace.CircleGraphic::.ctor()
+extern void CircleGraphic__ctor_mAD0A7B2FD0C060BB139E26B27DDF7FE2FCC66BD9 (void);
+// 0x0000005E System.Void ImageCropperNamespace.EventSystemHandler::OnEnable()
+extern void EventSystemHandler_OnEnable_m1F2ECF78C20E6C9C014CED88C2F8351D764A436C (void);
+// 0x0000005F System.Void ImageCropperNamespace.EventSystemHandler::OnDisable()
+extern void EventSystemHandler_OnDisable_m782B90D9E46B8770AF79A0E30E48F44E5B61ACEE (void);
+// 0x00000060 System.Void ImageCropperNamespace.EventSystemHandler::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+extern void EventSystemHandler_OnSceneLoaded_mEAE56912B7FAF15CDADD5C249D3195D674026D71 (void);
+// 0x00000061 System.Void ImageCropperNamespace.EventSystemHandler::OnSceneUnloaded(UnityEngine.SceneManagement.Scene)
+extern void EventSystemHandler_OnSceneUnloaded_m903A043E7EBE3A1512016A052634A307DD6EA9CE (void);
+// 0x00000062 System.Void ImageCropperNamespace.EventSystemHandler::ActivateEventSystemIfNeeded()
+extern void EventSystemHandler_ActivateEventSystemIfNeeded_mCEC2BD012763853C07243106E32DC20DCF7CF581 (void);
+// 0x00000063 System.Void ImageCropperNamespace.EventSystemHandler::DeactivateEventSystem()
+extern void EventSystemHandler_DeactivateEventSystem_mBF43D9AEA6B35225E4D9D5398547F133DBB54834 (void);
+// 0x00000064 System.Void ImageCropperNamespace.EventSystemHandler::.ctor()
+extern void EventSystemHandler__ctor_mD866C69D6862E6EA4A7C81AFF81ECDD9679F982D (void);
+// 0x00000065 UnityEngine.Texture ImageCropperNamespace.FadeOverlayGraphic::get_mainTexture()
+extern void FadeOverlayGraphic_get_mainTexture_mAE09407F17B211DB1758BA05987D96443662B8D5 (void);
+// 0x00000066 System.Void ImageCropperNamespace.FadeOverlayGraphic::Awake()
+extern void FadeOverlayGraphic_Awake_m088EA833C3B26BDEA7F2D3A105B7AE38D9EAE097 (void);
+// 0x00000067 System.Void ImageCropperNamespace.FadeOverlayGraphic::OnPopulateMesh(UnityEngine.UI.VertexHelper)
+extern void FadeOverlayGraphic_OnPopulateMesh_m8054E68D23A438C64861E24D646FD4F4C516ADC3 (void);
+// 0x00000068 System.Void ImageCropperNamespace.FadeOverlayGraphic::GenerateMesh(UnityEngine.UI.VertexHelper,System.Single,System.Single,System.Single,System.Single,System.Int32)
+extern void FadeOverlayGraphic_GenerateMesh_mB86477CD653EB337DAD4B9EABC6CD438DE0D68AD (void);
+// 0x00000069 System.Void ImageCropperNamespace.FadeOverlayGraphic::.ctor()
+extern void FadeOverlayGraphic__ctor_m15CF93D6289D9A9531FECC5D0FE955442372D1F3 (void);
+// 0x0000006A System.Void ImageCropperNamespace.FontSizeSynchronizer::Awake()
+extern void FontSizeSynchronizer_Awake_m6254319F756EE5B0E9578DE158EAE5A8AE249E3D (void);
+// 0x0000006B System.Void ImageCropperNamespace.FontSizeSynchronizer::Synchronize()
+extern void FontSizeSynchronizer_Synchronize_m17B19EF73FBA278E588718323C6940A102454C1C (void);
+// 0x0000006C System.Void ImageCropperNamespace.FontSizeSynchronizer::.ctor()
+extern void FontSizeSynchronizer__ctor_mEE07C5C44E49B12679FFE3A61BA7E444753F8FB2 (void);
+// 0x0000006D UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::RoundToInt(UnityEngine.Vector2)
+extern void ImageCropperUtils_RoundToInt_m19D6FA6CBFBF006299F8B4AF5BA05D8661EF4B1F (void);
+// 0x0000006E UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::CeilToInt(UnityEngine.Vector2)
+extern void ImageCropperUtils_CeilToInt_m232ABCB677D6AD78501B51C830D69E8FF6CEBE60 (void);
+// 0x0000006F UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::FloorToInt(UnityEngine.Vector2)
+extern void ImageCropperUtils_FloorToInt_mE34706BBE2CE287460EE3A3E4D6102CEC11FC66B (void);
+// 0x00000070 UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::ClampBetween(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+extern void ImageCropperUtils_ClampBetween_m2C62C6E17BA7EDABF01DE29DC8252975D332380C (void);
+// 0x00000071 UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::LerpTo(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+extern void ImageCropperUtils_LerpTo_m5A583C50074B45EE14AD162244C38F6093A8D8E3 (void);
+// 0x00000072 UnityEngine.Vector2 ImageCropperNamespace.ImageCropperUtils::ScaleWith(UnityEngine.Vector2,UnityEngine.Vector2)
+extern void ImageCropperUtils_ScaleWith_mBE8BCAA5749C2DFC7844283E20579C5AC7402387 (void);
+// 0x00000073 ImageCropper/Orientation ImageCropperNamespace.ImageCropperUtils::GetExifFixOrientation(ImageCropper/Orientation)
+extern void ImageCropperUtils_GetExifFixOrientation_m9499BD28F13BE6AD1492D686DDBC41A5EDF256E7 (void);
+// 0x00000074 System.Void ImageCropperNamespace.ISelectionHandler::OnUpdate()
+// 0x00000075 System.Void ImageCropperNamespace.ISelectionHandler::Stop()
+// 0x00000076 System.Void ImageCropperNamespace.NotchCompensator::Awake()
+extern void NotchCompensator_Awake_m22F244A529EA6098FF3B77AEDC7B6855FC222360 (void);
+// 0x00000077 System.Void ImageCropperNamespace.NotchCompensator::OnRectTransformDimensionsChange()
+extern void NotchCompensator_OnRectTransformDimensionsChange_m15413FA4E96DFE80AFEAD8042ED71CBD6921D2DE (void);
+// 0x00000078 System.Void ImageCropperNamespace.NotchCompensator::LateUpdate()
+extern void NotchCompensator_LateUpdate_mC9D8C971D1DB41F76169C80F07D7A1C717E7C092 (void);
+// 0x00000079 System.Void ImageCropperNamespace.NotchCompensator::CheckScreenCutout()
+extern void NotchCompensator_CheckScreenCutout_m2E2E49CBA751DF86B8B6C80F48E447AC246A4D24 (void);
+// 0x0000007A System.Void ImageCropperNamespace.NotchCompensator::.ctor()
+extern void NotchCompensator__ctor_m51F319CFBBC43C952991814B596AE3BAF9B77AB7 (void);
+// 0x0000007B System.Void ImageCropperNamespace.SelectionCornersFitter::OnEnable()
+extern void SelectionCornersFitter_OnEnable_m5317B096F086E28AE85A1FA7F7B0188416E9C026 (void);
+// 0x0000007C System.Void ImageCropperNamespace.SelectionCornersFitter::OnRectTransformDimensionsChange()
+extern void SelectionCornersFitter_OnRectTransformDimensionsChange_mD6A621D7E346250D7F65F508C48A7273421CA76A (void);
+// 0x0000007D System.Void ImageCropperNamespace.SelectionCornersFitter::.ctor()
+extern void SelectionCornersFitter__ctor_m5443ABD6F27ADD4DAA84C91727562A875F1B9B42 (void);
+// 0x0000007E System.Void ImageCropperNamespace.SelectionGraphicsSynchronizer::Awake()
+extern void SelectionGraphicsSynchronizer_Awake_m111BF484EB14A04B99932BC6705491019BF624C8 (void);
+// 0x0000007F System.Void ImageCropperNamespace.SelectionGraphicsSynchronizer::Start()
+extern void SelectionGraphicsSynchronizer_Start_mF23B340A289881B49BCFA44EB7218BE5510C31FF (void);
+// 0x00000080 System.Void ImageCropperNamespace.SelectionGraphicsSynchronizer::Synchronize()
+extern void SelectionGraphicsSynchronizer_Synchronize_mF678C5C810F0541DD021369CF80100374CA73325 (void);
+// 0x00000081 System.Void ImageCropperNamespace.SelectionGraphicsSynchronizer::Synchronize(UnityEngine.Vector2,UnityEngine.Vector2)
+extern void SelectionGraphicsSynchronizer_Synchronize_m5D2510D370CA2B6627C0FA8277C2C33A8197011F (void);
+// 0x00000082 System.Void ImageCropperNamespace.SelectionGraphicsSynchronizer::.ctor()
+extern void SelectionGraphicsSynchronizer__ctor_mAD4CF28563FB473D9F58A01E18426025155D6D74 (void);
+// 0x00000083 System.Void ImageCropperNamespace.SelectionMovementHandler::Awake()
+extern void SelectionMovementHandler_Awake_mB85FDE387B5F18DE57CA22A82D2874A33D3607CA (void);
+// 0x00000084 System.Void ImageCropperNamespace.SelectionMovementHandler::OnDisable()
+extern void SelectionMovementHandler_OnDisable_m845F8CBDDD9764527345A09CCC75CD7B6AF29122 (void);
+// 0x00000085 System.Void ImageCropperNamespace.SelectionMovementHandler::OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionMovementHandler_OnBeginDrag_mFB9F269D126A1462900943332A9D2D222E26F1D6 (void);
+// 0x00000086 System.Void ImageCropperNamespace.SelectionMovementHandler::OnDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionMovementHandler_OnDrag_m692DA53719A160ACB88341F1F08C00CB2D000D85 (void);
+// 0x00000087 System.Void ImageCropperNamespace.SelectionMovementHandler::OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionMovementHandler_OnEndDrag_mE48618840C6FA464DBE0613D435679B14D7EBC47 (void);
+// 0x00000088 System.Void ImageCropperNamespace.SelectionMovementHandler::OnUpdate()
+extern void SelectionMovementHandler_OnUpdate_mD36FC8140445411AD2EEFB39188E112E9A55676E (void);
+// 0x00000089 System.Void ImageCropperNamespace.SelectionMovementHandler::Stop()
+extern void SelectionMovementHandler_Stop_m8F46797885EB1CBFE743301A9ABB9824023F984C (void);
+// 0x0000008A System.Void ImageCropperNamespace.SelectionMovementHandler::.ctor()
+extern void SelectionMovementHandler__ctor_mB8154B6A9AEFEEE67B9FE29FCC57A3825FBAF269 (void);
+// 0x0000008B System.Void ImageCropperNamespace.SelectionResizeHandler::Awake()
+extern void SelectionResizeHandler_Awake_mBB3A727E0D6AD542D2845EB1F55E9852B6E9C798 (void);
+// 0x0000008C System.Void ImageCropperNamespace.SelectionResizeHandler::OnDisable()
+extern void SelectionResizeHandler_OnDisable_m59C9AF38F0C94BC481A1E938576089299B165471 (void);
+// 0x0000008D System.Void ImageCropperNamespace.SelectionResizeHandler::OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionResizeHandler_OnBeginDrag_m9BFE63B78EBA6803887ADC404EEDC7969E8204C1 (void);
+// 0x0000008E System.Void ImageCropperNamespace.SelectionResizeHandler::OnDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionResizeHandler_OnDrag_m8F1A672764B6EA162D049B67BB673F76C5421A98 (void);
+// 0x0000008F System.Void ImageCropperNamespace.SelectionResizeHandler::OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+extern void SelectionResizeHandler_OnEndDrag_m1F04A3B436C22EAB620E9D9F93911C821260322B (void);
+// 0x00000090 System.Void ImageCropperNamespace.SelectionResizeHandler::OnUpdate()
+extern void SelectionResizeHandler_OnUpdate_m5981B3AA0994AE94A7480A13E09B900943EB32C3 (void);
+// 0x00000091 System.Void ImageCropperNamespace.SelectionResizeHandler::Stop()
+extern void SelectionResizeHandler_Stop_m09EE94C37AFD95EC4643A9CECA2C507D2C4BD3E3 (void);
+// 0x00000092 System.Void ImageCropperNamespace.SelectionResizeHandler::.ctor()
+extern void SelectionResizeHandler__ctor_m77B9B9A1F3ED9BBFF3EFD36A3423E5328E9B4DF8 (void);
+// 0x00000093 System.Void ImageCropperNamespace.SizeChangeListener::Awake()
+extern void SizeChangeListener_Awake_m3376ED99B7A0B0E8CF08470FAB3B997D316D50F0 (void);
+// 0x00000094 System.Void ImageCropperNamespace.SizeChangeListener::Start()
+extern void SizeChangeListener_Start_m7DAD5A16161F2FA4C7E5AEA9386693C24FC8DD3C (void);
+// 0x00000095 System.Void ImageCropperNamespace.SizeChangeListener::OnRectTransformDimensionsChange()
+extern void SizeChangeListener_OnRectTransformDimensionsChange_mF1716EFABC2B0EFD3151685A03FEAF06023D3210 (void);
+// 0x00000096 System.Void ImageCropperNamespace.SizeChangeListener::.ctor()
+extern void SizeChangeListener__ctor_m545A5E1E06DD40F0C57AC3F1C481A6E483AF2138 (void);
+static Il2CppMethodPointer s_methodPointers[150] = 
+{
+	ImageCropper_get_Instance_m7563710A6D38B123978A0867F3C85275F281B63B,
+	ImageCropper_get_SelectionSnapToEdgeThreshold_m70652C503410616AC6177CDB948E379D5C3DE5B5,
+	ImageCropper_get_Viewport_mA3410F26F2F2AFF7C2BEF68B3B70C06B9CC1FED3,
+	ImageCropper_get_ImageHolder_mED261B36450556B6C346A656B4538C022FC6E46C,
+	ImageCropper_get_OrientedImage_m3A238CB5F61399408E1C77D9107BEC528BE40037,
+	ImageCropper_get_Selection_mC538C5B65CDD6980DEAAD6DE113FCAA53AA8A828,
+	ImageCropper_get_SelectionGraphics_m64A007CB7FF756C6F2592A1644E0A8717B67B871,
+	ImageCropper_get_IsOpen_mE564B3643A3F8B095534D0C3AD7350FB5CC69767,
+	ImageCropper_get_DefaultSettings_m3603A4B72C72E4A0B64473B7FA57DF11F5AC6910,
+	ImageCropper_get_AutoZoomEnabled_mA75FEBC23D7B7304F2BC6B25122576460BC3B988,
+	ImageCropper_set_AutoZoomEnabled_m6CA5A2089BD60726B0C345B8287FA9548B653A8E,
+	ImageCropper_get_PixelPerfectSelection_mFC2D99A6AE650E25CAEDEB3A7B7C400F517EE44D,
+	ImageCropper_set_PixelPerfectSelection_m13EDB52B85301B4FA5602925DE7BB38FCFBC4C44,
+	ImageCropper_get_OvalSelection_m4ED1716D701328B5E27D67E8B6E38A23287D127F,
+	ImageCropper_set_OvalSelection_mD832D0366DB542A650C869F1828F1F723FAA683F,
+	ImageCropper_get_GuidelinesVisibility_mA1040B1BC39C1FD18F069A232E2420EB891A5171,
+	ImageCropper_set_GuidelinesVisibility_m966DBF042058CDE4ABA9F001AF1B0E849E488429,
+	ImageCropper_get_MarkTextureNonReadable_mEFF3600F631486EC373C0CB8CDD1692F8E5BEA20,
+	ImageCropper_set_MarkTextureNonReadable_mCB414FBDD1A5F9C3AF74C2AD577F7E03531B121B,
+	ImageCropper_get_ImageBackground_m753EC4DD5F1C68FCC34E67FBF935947C3FFF623B,
+	ImageCropper_set_ImageBackground_m7E5A3D8309BF128DE480AA51052482C9C36EA3AC,
+	ImageCropper_get_ViewportSize_m7DD5EF86737B7A14C95C69FF5EB754631EF9340B,
+	ImageCropper_get_OriginalImageSize_mE7230DAA6778768305B2F171E90F5F23CF8AC871,
+	ImageCropper_get_OrientedImageSize_m40649E191CA14B9FE480249553B817521D9CBAB1,
+	ImageCropper_get_SelectionSize_m0BC2C9F9A5C958943584FE1D3521C311D3B1748E,
+	ImageCropper_Awake_m4A43CF0299B382BBD1AFAED74351B276544CB34F,
+	ImageCropper_OnDisable_mBAA822CC644B7AF7559757E1BEE3089B78D181F5,
+	ImageCropper_LateUpdate_m1E9B6D7DAF40E602DB0D69FDAC5B6F52BA94F9FD,
+	ImageCropper_OnViewportDimensionsChange_mDE32369CEC0F2C348753F6D356BBFB939BF2B0FD,
+	ImageCropper_Show_mDD5497174FD1D4030E56AAF77783BF7E6095F5D1,
+	ImageCropper_Show_mDDEA5F5F4F1933DB335157CA6B055911C91133F4,
+	ImageCropper_Hide_m95FBBB51D7EE499C6C767EB42395481446770413,
+	ImageCropper_ResetView_m75A480044959DD462C6BB298D4E377F67D79BD9E,
+	ImageCropper_Cancel_m442FDCAFCA8356E31476F4A7E9684ED9CFD8190B,
+	ImageCropper_Crop_mB0E845AE16860F2B21909FEBFC07CF5263DBF640,
+	ImageCropper_CropSelection_mBE9948ECEE3E522D28C21F1C14CF3E7D6E2B0C7F,
+	ImageCropper_CropSelection_m35CA6FC33E687C46C9987BDA4CCF182E1C3C9EDB,
+	ImageCropper_Rotate90Clockwise_mD0F49D58FA6BDC968746AB0E60782F85046DA2A6,
+	ImageCropper_Rotate180Clockwise_m42BBC6408A0C9C4DCB43DA09DAC1E62DB99F20EB,
+	ImageCropper_Rotate270Clockwise_mFB5EADAB267842EE94B41A528C0124AAA240C3CF,
+	ImageCropper_RotateClockwise_mADB728DF260AB2EBA668BF85AB8B429B09DA4577,
+	ImageCropper_FlipHorizontal_mE82FF65603EE9F895C62BA96C461BEF26DB1AF3C,
+	ImageCropper_FlipVertical_m986687D13277B2AFDB92B154B5E380FD55DA4A76,
+	ImageCropper_SetOrientation_m4AE862D8BC4C59C00457F640D468B45273FD6EEB,
+	ImageCropper_StartAutoZoom_mD2DA1F4851822D5A7D635A7485278FB706542971,
+	ImageCropper_AutoZoom_m1E15C105151E36C0FD2A47815CC180FDE436AF22,
+	ImageCropper_StopAutoZoom_m83614FBD595053EDFCADC679407A4184EBEE76CB,
+	ImageCropper_CanModifySelectionWith_m849C3291BCCFE5FC82DBADB9AC491C58DE73805D,
+	ImageCropper_StopModifySelectionWith_mC48D8422A1768DD62D31062865628352E0A80EAF,
+	ImageCropper_MakePixelPerfectSelection_mAD54D05F1B90EF39861478B1BC2E2DFB0BDA00BA,
+	ImageCropper_UpdateSelection_m029DF565AC7BB2D873C7310B03622395CBC6E943,
+	ImageCropper_UpdateSelection_m1AB88B93DC6948B2F045FDD2B43F00CE464B432F,
+	ImageCropper_RestrictImageToViewport_mF1AB8CD9C02E9FC6853F8FB6D8D3163210FC20B0,
+	ImageCropper_ScrollImage_mD210D83BC94A503918341CD3902FE441777F0496,
+	ImageCropper_GetTouchPosition_mA2276D3CDB7730839FCF54A09142B895C45969F7,
+	ImageCropper__ctor_m8A157ABA0E5F2B6665F9D5F692F1E188887D9603,
+	Settings__ctor_m75E3F038BEE35F0BC924BB73718DB89FED60B6DF,
+	CropResult__ctor_m73027D83B97458F16268DFF5BB87B9ED7A0480B9,
+	CropResult_Invoke_mAE2B7E0A2A52A7E221E695001C760FF018F36970,
+	CropResult_BeginInvoke_mEA9669FF2C4C9EA063A749E9742EDB2BBAAE4424,
+	CropResult_EndInvoke_mE9558E07741760FCE5B477D0A71AD507656BA192,
+	ImageResizePolicy__ctor_mE27648850070826641FBAA6A3ED67AFAC8782FF0,
+	ImageResizePolicy_Invoke_m341ACAE059981DEA0DC94A356814501C496D386E,
+	ImageResizePolicy_BeginInvoke_m639EE287781C6314C7583DE2EDDCB826E152A201,
+	ImageResizePolicy_EndInvoke_m18D0A0A1EFB7FDBA041260FEDF6B7070E70B79CB,
+	U3CAutoZoomU3Ed__121__ctor_mA710C978E765D54A68830663C0C120F496E34C07,
+	U3CAutoZoomU3Ed__121_System_IDisposable_Dispose_m6AC1552224B3079AD46BB3C1887F9181935DE42C,
+	U3CAutoZoomU3Ed__121_MoveNext_m943EF50743E47BA205D936FE123A8CFBC8C22A0A,
+	U3CAutoZoomU3Ed__121_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42CCC8C6039BB615BE2855E5F1ABC0FDA97C6EFD,
+	U3CAutoZoomU3Ed__121_System_Collections_IEnumerator_Reset_m38B6245CC76775CDF821BEBD6BBA86B6C53B922D,
+	U3CAutoZoomU3Ed__121_System_Collections_IEnumerator_get_Current_m980519348BA1148EA851F29FB4661CC88FADDFB7,
+	ImageCropperDemo_Crop_m6A949CB3FE964DA2AC42A13805989CDBEDACA17C,
+	ImageCropperDemo_TakeScreenshotAndCrop_mF9E85B66735266A8A0DB960BCAAE24B8EC85CCCB,
+	ImageCropperDemo__ctor_mE8325D56CF0FB87A905337EC5B9D65EA6B7A01BE,
+	U3CU3Ec__DisplayClass7_0__ctor_mD3DCCFABEF1900718E6F0A44780E84AAB77036D6,
+	U3CU3Ec__DisplayClass7_0_U3CTakeScreenshotAndCropU3Eb__0_m6E9B2DD59936ACF19FE21BFD8823317EEA138305,
+	U3CU3Ec__cctor_mBC6FC64D825A4EF12BA917CDECD39AC349621265,
+	U3CU3Ec__ctor_mD56F2B763F554561FDE0F5F25C548F308A0A559D,
+	U3CU3Ec_U3CTakeScreenshotAndCropU3Eb__7_1_m362548C3B6299A14FAB8C606EEF5E77F50A90432,
+	U3CTakeScreenshotAndCropU3Ed__7__ctor_mEE76CB290C3FD78229E8C505CF9B922B542B2DEB,
+	U3CTakeScreenshotAndCropU3Ed__7_System_IDisposable_Dispose_m15644B654DF958B53FDEE74CF2C428F1E29F7556,
+	U3CTakeScreenshotAndCropU3Ed__7_MoveNext_m983800AEB8497311745771D6AC5550E47C99697C,
+	U3CTakeScreenshotAndCropU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6ED2ECE68364C28CA20804EC45031D78D52D7829,
+	U3CTakeScreenshotAndCropU3Ed__7_System_Collections_IEnumerator_Reset_m8B36DF463622C280E0D9307B265E68EF125A2942,
+	U3CTakeScreenshotAndCropU3Ed__7_System_Collections_IEnumerator_get_Current_m1E7F1FA6FE377323F5F7AA3B78082CE5CAB22F24,
+	CircleGraphic_get_mainTexture_m83EB278D653B25EE74AAEE10489EE5A67CACDA9C,
+	CircleGraphic_Awake_m979C001A134411780901253D7C077F959DC48E89,
+	CircleGraphic_OnPopulateMesh_mEBCBD0D0F72681B2455A229C16D616FD65FEB0A1,
+	CircleGraphic_Cull_mEE9FDCEA22302346E38EADF5F4E3F274A8A0979D,
+	CircleGraphic_FillInside_m413B411752B09EBDD0D5499AA20DFE7BCB87741F,
+	CircleGraphic_FillOutside_mF0B3E71C71AF14E4C0C603679380B169F0B654BE,
+	CircleGraphic_GenerateEdges_m8FCC956137D053959CA1EE206C50F6226BB6C4B7,
+	CircleGraphic__ctor_mAD0A7B2FD0C060BB139E26B27DDF7FE2FCC66BD9,
+	EventSystemHandler_OnEnable_m1F2ECF78C20E6C9C014CED88C2F8351D764A436C,
+	EventSystemHandler_OnDisable_m782B90D9E46B8770AF79A0E30E48F44E5B61ACEE,
+	EventSystemHandler_OnSceneLoaded_mEAE56912B7FAF15CDADD5C249D3195D674026D71,
+	EventSystemHandler_OnSceneUnloaded_m903A043E7EBE3A1512016A052634A307DD6EA9CE,
+	EventSystemHandler_ActivateEventSystemIfNeeded_mCEC2BD012763853C07243106E32DC20DCF7CF581,
+	EventSystemHandler_DeactivateEventSystem_mBF43D9AEA6B35225E4D9D5398547F133DBB54834,
+	EventSystemHandler__ctor_mD866C69D6862E6EA4A7C81AFF81ECDD9679F982D,
+	FadeOverlayGraphic_get_mainTexture_mAE09407F17B211DB1758BA05987D96443662B8D5,
+	FadeOverlayGraphic_Awake_m088EA833C3B26BDEA7F2D3A105B7AE38D9EAE097,
+	FadeOverlayGraphic_OnPopulateMesh_m8054E68D23A438C64861E24D646FD4F4C516ADC3,
+	FadeOverlayGraphic_GenerateMesh_mB86477CD653EB337DAD4B9EABC6CD438DE0D68AD,
+	FadeOverlayGraphic__ctor_m15CF93D6289D9A9531FECC5D0FE955442372D1F3,
+	FontSizeSynchronizer_Awake_m6254319F756EE5B0E9578DE158EAE5A8AE249E3D,
+	FontSizeSynchronizer_Synchronize_m17B19EF73FBA278E588718323C6940A102454C1C,
+	FontSizeSynchronizer__ctor_mEE07C5C44E49B12679FFE3A61BA7E444753F8FB2,
+	ImageCropperUtils_RoundToInt_m19D6FA6CBFBF006299F8B4AF5BA05D8661EF4B1F,
+	ImageCropperUtils_CeilToInt_m232ABCB677D6AD78501B51C830D69E8FF6CEBE60,
+	ImageCropperUtils_FloorToInt_mE34706BBE2CE287460EE3A3E4D6102CEC11FC66B,
+	ImageCropperUtils_ClampBetween_m2C62C6E17BA7EDABF01DE29DC8252975D332380C,
+	ImageCropperUtils_LerpTo_m5A583C50074B45EE14AD162244C38F6093A8D8E3,
+	ImageCropperUtils_ScaleWith_mBE8BCAA5749C2DFC7844283E20579C5AC7402387,
+	ImageCropperUtils_GetExifFixOrientation_m9499BD28F13BE6AD1492D686DDBC41A5EDF256E7,
+	NULL,
+	NULL,
+	NotchCompensator_Awake_m22F244A529EA6098FF3B77AEDC7B6855FC222360,
+	NotchCompensator_OnRectTransformDimensionsChange_m15413FA4E96DFE80AFEAD8042ED71CBD6921D2DE,
+	NotchCompensator_LateUpdate_mC9D8C971D1DB41F76169C80F07D7A1C717E7C092,
+	NotchCompensator_CheckScreenCutout_m2E2E49CBA751DF86B8B6C80F48E447AC246A4D24,
+	NotchCompensator__ctor_m51F319CFBBC43C952991814B596AE3BAF9B77AB7,
+	SelectionCornersFitter_OnEnable_m5317B096F086E28AE85A1FA7F7B0188416E9C026,
+	SelectionCornersFitter_OnRectTransformDimensionsChange_mD6A621D7E346250D7F65F508C48A7273421CA76A,
+	SelectionCornersFitter__ctor_m5443ABD6F27ADD4DAA84C91727562A875F1B9B42,
+	SelectionGraphicsSynchronizer_Awake_m111BF484EB14A04B99932BC6705491019BF624C8,
+	SelectionGraphicsSynchronizer_Start_mF23B340A289881B49BCFA44EB7218BE5510C31FF,
+	SelectionGraphicsSynchronizer_Synchronize_mF678C5C810F0541DD021369CF80100374CA73325,
+	SelectionGraphicsSynchronizer_Synchronize_m5D2510D370CA2B6627C0FA8277C2C33A8197011F,
+	SelectionGraphicsSynchronizer__ctor_mAD4CF28563FB473D9F58A01E18426025155D6D74,
+	SelectionMovementHandler_Awake_mB85FDE387B5F18DE57CA22A82D2874A33D3607CA,
+	SelectionMovementHandler_OnDisable_m845F8CBDDD9764527345A09CCC75CD7B6AF29122,
+	SelectionMovementHandler_OnBeginDrag_mFB9F269D126A1462900943332A9D2D222E26F1D6,
+	SelectionMovementHandler_OnDrag_m692DA53719A160ACB88341F1F08C00CB2D000D85,
+	SelectionMovementHandler_OnEndDrag_mE48618840C6FA464DBE0613D435679B14D7EBC47,
+	SelectionMovementHandler_OnUpdate_mD36FC8140445411AD2EEFB39188E112E9A55676E,
+	SelectionMovementHandler_Stop_m8F46797885EB1CBFE743301A9ABB9824023F984C,
+	SelectionMovementHandler__ctor_mB8154B6A9AEFEEE67B9FE29FCC57A3825FBAF269,
+	SelectionResizeHandler_Awake_mBB3A727E0D6AD542D2845EB1F55E9852B6E9C798,
+	SelectionResizeHandler_OnDisable_m59C9AF38F0C94BC481A1E938576089299B165471,
+	SelectionResizeHandler_OnBeginDrag_m9BFE63B78EBA6803887ADC404EEDC7969E8204C1,
+	SelectionResizeHandler_OnDrag_m8F1A672764B6EA162D049B67BB673F76C5421A98,
+	SelectionResizeHandler_OnEndDrag_m1F04A3B436C22EAB620E9D9F93911C821260322B,
+	SelectionResizeHandler_OnUpdate_m5981B3AA0994AE94A7480A13E09B900943EB32C3,
+	SelectionResizeHandler_Stop_m09EE94C37AFD95EC4643A9CECA2C507D2C4BD3E3,
+	SelectionResizeHandler__ctor_m77B9B9A1F3ED9BBFF3EFD36A3423E5328E9B4DF8,
+	SizeChangeListener_Awake_m3376ED99B7A0B0E8CF08470FAB3B997D316D50F0,
+	SizeChangeListener_Start_m7DAD5A16161F2FA4C7E5AEA9386693C24FC8DD3C,
+	SizeChangeListener_OnRectTransformDimensionsChange_mF1716EFABC2B0EFD3151685A03FEAF06023D3210,
+	SizeChangeListener__ctor_m545A5E1E06DD40F0C57AC3F1C481A6E483AF2138,
+};
+static const int32_t s_InvokerIndices[150] = 
+{
+	9810,
+	6239,
+	6192,
+	6192,
+	6192,
+	6192,
+	6192,
+	6109,
+	6192,
+	6109,
+	4897,
+	6109,
+	4897,
+	6109,
+	4897,
+	6161,
+	4955,
+	6109,
+	4897,
+	6112,
+	4900,
+	6305,
+	6305,
+	6305,
+	6305,
+	6316,
+	6316,
+	6316,
+	5080,
+	2712,
+	1065,
+	6316,
+	4897,
+	6316,
+	6316,
+	6192,
+	2123,
+	6316,
+	6316,
+	6316,
+	4955,
+	6316,
+	6316,
+	4955,
+	4897,
+	2143,
+	6316,
+	3531,
+	4981,
+	6316,
+	5080,
+	1096,
+	2194,
+	2191,
+	2192,
+	6316,
+	6316,
+	2710,
+	1383,
+	449,
+	4981,
+	2710,
+	2215,
+	866,
+	1367,
+	4955,
+	6316,
+	6109,
+	6192,
+	6316,
+	6192,
+	6316,
+	6192,
+	6316,
+	6316,
+	1383,
+	9841,
+	6316,
+	2215,
+	4955,
+	6316,
+	6109,
+	6192,
+	6316,
+	6192,
+	6192,
+	6316,
+	4981,
+	2748,
+	4981,
+	566,
+	4981,
+	6316,
+	6316,
+	6316,
+	2753,
+	5019,
+	6316,
+	6316,
+	6316,
+	6192,
+	6316,
+	4981,
+	302,
+	6316,
+	6316,
+	6316,
+	6316,
+	9601,
+	9601,
+	9601,
+	7889,
+	7888,
+	8696,
+	9232,
+	0,
+	0,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	2790,
+	6316,
+	6316,
+	6316,
+	4981,
+	4981,
+	4981,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	4981,
+	4981,
+	4981,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+	6316,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_ImageCropper_Runtime_CodeGenModule;
+const Il2CppCodeGenModule g_ImageCropper_Runtime_CodeGenModule = 
+{
+	"ImageCropper.Runtime.dll",
+	150,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

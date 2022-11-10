@@ -16,8 +16,14 @@ public class ImageUploader : MonoBehaviour
     {
         // If we are on editor grab texture from vuforia ImageAccess script. On android, open the native camera app for better picture quality.
 #if UNITY_EDITOR
-        _textureToUpload = imageAccess.texture;
-        TryUploadTexture();
+        // Copy the texture
+        var tex = new Texture2D(imageAccess.texture.width, imageAccess.texture.height);
+        var pixels = imageAccess.texture.GetPixels();
+        tex.SetPixels(pixels);
+        tex.Apply();
+
+        CropAndUpload(tex);
+       
 #elif UNITY_ANDROID
         NativeCamera.Permission permission = NativeCamera.TakePicture((path) =>
         {
@@ -25,13 +31,34 @@ public class ImageUploader : MonoBehaviour
             if (path != null)
             {
                 // Create a Texture2D from the captured image
-                _textureToUpload = NativeCamera.LoadImageAtPath(path, maxSize: 1000, markTextureNonReadable: false);
-                TryUploadTexture();
+                var tex = NativeCamera.LoadImageAtPath(path, maxSize: 1000, markTextureNonReadable: false);
+                CropAndUpload(tex);
             }
         });
 #endif
     }
 
+    // Crop the image and upload it
+    private void CropAndUpload(Texture2D tex)
+    {
+        ImageCropper.Settings settings = new()
+        {
+            markTextureNonReadable = false
+        };
+        ImageCropper.Instance.Show(tex, OnCrop, settings);
+    }
+
+    // If we cropped successfully, upload the texture to vuforia
+    private void OnCrop(bool result, Texture originalImage, Texture2D croppedImage)
+    {
+        if (result)
+        {
+            _textureToUpload = croppedImage;
+            TryUploadTexture();
+        }
+    }
+
+    // Try to upload the texture to vuforia. If successful show option to upload it to firebase or delete it permanently
     private void TryUploadTexture()
     {
         if (_textureToUpload != null)

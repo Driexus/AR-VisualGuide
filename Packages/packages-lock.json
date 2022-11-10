@@ -226,6 +226,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.yasirkula.imagecropper": {
+      "version": "https://github.com/yasirkula/UnityImageCropper.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bf5a60e9d9f1e745c8cd4ce890483279edd9b728"
+    },
     "com.yasirkula.nativecamera": {
       "version": "https://github.com/yasirkula/UnityNativeCamera.git",
       "depth": 0,

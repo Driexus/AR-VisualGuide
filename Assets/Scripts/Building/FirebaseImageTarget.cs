@@ -9,6 +9,7 @@ public class FirebaseImageTarget : ImageTarget, IWorldObject
     public float x;
     public float y;
     public float z;
+    public string image_target_id;
 
     public Vector3 Position { get { return new Vector3(x, z, y); } }
 
