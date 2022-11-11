@@ -5,6 +5,7 @@ using Firebase.Database;
 using Firebase.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public class FirebaseRepository : MonoBehaviour
 {
@@ -57,12 +58,16 @@ public class FirebaseRepository : MonoBehaviour
 
     public IEnumerator UploadImageTarget(string buildingId, KeyValuePair<String, ImageTarget> imageTarget)
     {
+        Debug.LogWarning("TODO: use continue with and fire event");
+
         string targetId = imageTarget.Key;
         string json = JsonUtility.ToJson(imageTarget.Value);
 
         var task = db.Child("buildings").Child(buildingId).Child("image_targets").Child(targetId).SetRawJsonValueAsync(json);
         while (task.IsCompleted)
             yield return null;
+
+        Debug.Log("Upload completed");
         
         yield return null;
     }

@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class ImageUploader : MonoBehaviour
+public class ImageUploader : SingletonMonoBehaviour<ImageUploader>
 {
     public FirebaseRepository firebaseRepo;
     public CameraImageAccess imageAccess;
@@ -12,7 +13,9 @@ public class ImageUploader : MonoBehaviour
 
     private Texture2D _textureToUpload = null;
 
-    public void CaptureAndUploadImage()
+    public UnityEvent<VuforiaTargetResult> onRatingFetched = new();
+
+    public void CaptureAndCropImage()
     {
         // If we are on editor grab texture from vuforia ImageAccess script. On android, open the native camera app for better picture quality.
 #if UNITY_EDITOR
@@ -31,7 +34,7 @@ public class ImageUploader : MonoBehaviour
             if (path != null)
             {
                 // Create a Texture2D from the captured image
-                var tex = NativeCamera.LoadImageAtPath(path, maxSize: 1000, markTextureNonReadable: false);
+                var tex = NativeCamera.LoadImageAtPath(path, maxSize: 2048, markTextureNonReadable: false);
                 CropAndUpload(tex);
             }
         });
@@ -69,12 +72,19 @@ public class ImageUploader : MonoBehaviour
                 {
                     var cor2 = TryGetRating(target.Key, (int rating) =>
                     {
-                        Debug.Log(rating);
+                        var result = new VuforiaTargetResult
+                        {
+                            target = target,
+                            rating = rating,
+                            texture = _textureToUpload
+                        };
+                        onRatingFetched?.Invoke(result);
+                        /*Debug.Log(rating);
                         if (rating >= 3)
                         {
                             var cor3 = firebaseRepo.UploadImageTarget("home", target);
                             StartCoroutine(cor3);
-                        }
+                        }*/
                             
                     });
                     StartCoroutine(cor2);
@@ -104,5 +114,18 @@ public class ImageUploader : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
         }
         callback(imageRating);
+    }
+
+    public void UploadImageTarget(KeyValuePair<String, ImageTarget> target)
+    {
+        var cor3 = firebaseRepo.UploadImageTarget("home", target);
+        StartCoroutine(cor3);
+    }
+
+    public struct VuforiaTargetResult
+    {
+        public KeyValuePair<String, ImageTarget> target;
+        public int rating;
+        public Texture2D texture;
     }
 }
