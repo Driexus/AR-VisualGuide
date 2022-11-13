@@ -29,7 +29,7 @@ public static class VuforiaRepository
         var auth = GetVWSAuth(http_verb, content, contentType, date, requestPath);
 
         var contentBytes = Encoding.UTF8.GetBytes(content);
-        
+
         using (UnityWebRequest webRequest = UnityWebRequest.Put(host + requestPath, contentBytes))
         {
             // This line promts a warning but it is the only way i have found to calculate the auth key,
@@ -41,11 +41,16 @@ public static class VuforiaRepository
             webRequest.SetRequestHeader("Content-Type", "application/json");
 
             yield return webRequest.SendWebRequest();
+            Debug.Log(webRequest.downloadHandler.text);
 
-            if (webRequest.responseCode == 200)
-                callback(true);
-            else
-                callback(false);
+            // Trigger callback
+            if (callback != null)
+            { 
+                if (webRequest.responseCode == 200)
+                    callback(true);
+                else
+                    callback(false);
+            }
         }
     }
 
@@ -66,11 +71,16 @@ public static class VuforiaRepository
             webRequest.SetRequestHeader("Authorization", auth);
 
             yield return webRequest.SendWebRequest();
+            Debug.Log("Delete request response code: " + webRequest.responseCode);
 
-            if (webRequest.responseCode == 200)
-                callback(true);
-            else
-                callback(false);
+            // Trigger callback
+            if (callback != null)
+            {
+                if (webRequest.responseCode == 200)
+                    callback(true);
+                else
+                    callback(false);
+            }            
         }
     }
 
@@ -92,16 +102,20 @@ public static class VuforiaRepository
             webRequest.SetRequestHeader("Authorization", auth);
 
             yield return webRequest.SendWebRequest();
-
             Debug.Log(webRequest.downloadHandler.text);
-            if (webRequest.responseCode == 200)
+
+            // Trigger callback
+            if (callback != null)
             {
-                var json = JObject.Parse(webRequest.downloadHandler.text);
-                var trackingRating = json["target_record"]["tracking_rating"].ToObject<int>();
-                callback(trackingRating);
+                if (webRequest.responseCode == 200)
+                {
+                    var json = JObject.Parse(webRequest.downloadHandler.text);
+                    var trackingRating = json["target_record"]["tracking_rating"].ToObject<int>();
+                    callback(trackingRating);
+                }
+                else
+                    callback(-2);
             }
-            else
-                callback(-2);
         }
     }
 
@@ -148,20 +162,24 @@ public static class VuforiaRepository
             webRequest.SetRequestHeader("Content-Type", "application/json");
 
             yield return webRequest.SendWebRequest();
-
             Debug.Log(webRequest.downloadHandler.text);
-            if (webRequest.responseCode == 201)
-            {
-                var json = JObject.Parse(webRequest.downloadHandler.text);
-                var targetId = json["target_id"];
 
-                if (targetId.Type is JTokenType.String)
-                    callback(new KeyValuePair<String, ImageTarget>(targetId.ToObject<string>(), target));
+            // Trigger callback
+            if (callback != null)
+            {
+                if (webRequest.responseCode == 201)
+                {
+                    var json = JObject.Parse(webRequest.downloadHandler.text);
+                    var targetId = json["target_id"];
+
+                    if (targetId.Type is JTokenType.String)
+                        callback(new KeyValuePair<String, ImageTarget>(targetId.ToObject<string>(), target));
+                    else
+                        callback(new KeyValuePair<String, ImageTarget>());
+                }
                 else
                     callback(new KeyValuePair<String, ImageTarget>());
             }
-            else
-                callback(new KeyValuePair<String, ImageTarget>());
         }
     }
 

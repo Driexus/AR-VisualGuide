@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
-using System.Globalization;
 using System.Collections.Generic;
 
 public class UploadPanelHandler : MonoBehaviour
@@ -12,6 +11,9 @@ public class UploadPanelHandler : MonoBehaviour
     public TMP_InputField widthInputField;
     public Button uploadButton;
     public Button discardButton;
+
+    public int imageMaxWidth;
+    public int imageMaxHeight;
 
     private KeyValuePair<String, ImageTarget> _targetToUpload = new();
 
@@ -35,15 +37,35 @@ public class UploadPanelHandler : MonoBehaviour
 
         // Add listeners
         widthInputField.onValueChanged.AddListener(OnWidthChanged);
-        discardButton.onClick.AddListener(() => gameObject.SetActive(false));
-        uploadButton.onClick.AddListener(() => gameObject.SetActive(false));
-        uploadButton.onClick.AddListener(() => TryUploadTarget());
+        discardButton.onClick.AddListener(OnDiscardClicked);
+        uploadButton.onClick.AddListener(OnUploadClicked);
     }
     private void OnEnable()
     {
         uploadButton.interactable = false;
+        widthInputField.text = "";
     }
 
+    // Change the captured image, the rating text, and temporarily store the target that might get uploaded
+    public void SetRatingAndTexture(ImageUploader.VuforiaTargetResult result)
+    {
+        ratingText.text = "Rating:" + result.rating;
+        _targetToUpload = result.target;
+
+        // Change the captured image and scale it appropriately
+        var texWidth = result.texture.width;
+        var texHeight = result.texture.height;
+
+        float scaleFactor = 1;
+        scaleFactor = Math.Min(scaleFactor, (float) imageMaxWidth / (float) texWidth);
+        scaleFactor = Math.Min(scaleFactor, (float) imageMaxHeight / (float) texHeight);
+
+        image.rectTransform.sizeDelta = new Vector2(texWidth * scaleFactor, texHeight * scaleFactor);
+        image.texture = result.texture;
+
+    }
+
+    // Enable/Disable the upload button depending on if the width value is a positive float
     private void OnWidthChanged(string widthString)
     {
         float width;
@@ -56,16 +78,21 @@ public class UploadPanelHandler : MonoBehaviour
             uploadButton.interactable = false;
     }
 
-    public void SetRatingAndTexture(ImageUploader.VuforiaTargetResult result)
-    {
-        ratingText.text = "Rating:" + result.rating;
-        image.texture = result.texture;
-        _targetToUpload = result.target;
-    }
-
-    private void TryUploadTarget()
+    // Try to upload the image target and disable the gameobject
+    private void OnUploadClicked()
     {
         if (!_targetToUpload.Equals(default(KeyValuePair<String, ImageTarget>)))
             ImageUploader.instance.UploadImageTarget(_targetToUpload);
+
+        gameObject.SetActive(false);
+    }
+
+    // Try to discard the image target and disable the gameobject
+    private void OnDiscardClicked()
+    {
+        if (!_targetToUpload.Equals(default(KeyValuePair<String, ImageTarget>)))
+            ImageUploader.instance.DiscardImageTarget(_targetToUpload);
+
+        gameObject.SetActive(false);
     }
 }

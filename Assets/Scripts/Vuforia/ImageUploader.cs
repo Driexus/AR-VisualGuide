@@ -78,14 +78,7 @@ public class ImageUploader : SingletonMonoBehaviour<ImageUploader>
                             rating = rating,
                             texture = _textureToUpload
                         };
-                        onRatingFetched?.Invoke(result);
-                        /*Debug.Log(rating);
-                        if (rating >= 3)
-                        {
-                            var cor3 = firebaseRepo.UploadImageTarget("home", target);
-                            StartCoroutine(cor3);
-                        }*/
-                            
+                        onRatingFetched?.Invoke(result);                            
                     });
                     StartCoroutine(cor2);
                 }
@@ -116,10 +109,45 @@ public class ImageUploader : SingletonMonoBehaviour<ImageUploader>
         callback(imageRating);
     }
 
+    // Upload the image target on Firebase and update its width on vufoira database
     public void UploadImageTarget(KeyValuePair<String, ImageTarget> target)
     {
-        var cor3 = firebaseRepo.UploadImageTarget("home", target);
-        StartCoroutine(cor3);
+        var cor = firebaseRepo.UploadImageTarget("home", target);
+        StartCoroutine(cor);
+
+        var cor2 = UpdateWidth(target, 20);
+        StartCoroutine(cor2);
+    }
+
+    // Delete the target from the vuforia database
+    public void DiscardImageTarget(KeyValuePair<String, ImageTarget> target)
+    {
+        var cor = DeleteTarget(target, 20);
+        StartCoroutine(cor);
+    }
+
+    private IEnumerator UpdateWidth(KeyValuePair<String, ImageTarget> target, int maxAttempts)
+    {
+        bool isCompleted = false;
+        int attempts = 0;
+        while (!isCompleted && attempts < maxAttempts)
+        {
+            yield return VuforiaRepository.UpdateImageTargetDimensions(target.Key, target.Value.width, (bool success) => isCompleted = success);
+            yield return new WaitForSeconds(5);
+            attempts++;
+        }            
+    }
+
+    private IEnumerator DeleteTarget(KeyValuePair<String, ImageTarget> target, int maxAttempts)
+    {
+        bool isCompleted = false;
+        int attempts = 0;
+        while (!isCompleted && attempts < maxAttempts)
+        {
+            yield return VuforiaRepository.DeleteImageTarget(target.Key, (bool success) => isCompleted = success);
+            yield return new WaitForSeconds(5);
+            attempts++;
+        }
     }
 
     public struct VuforiaTargetResult

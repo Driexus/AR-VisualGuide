@@ -231,157 +231,181 @@ extern void SimpleRotation_Start_m7CEF57B5B11FA76ABA825E3285E3F835D22165B7 (void
 extern void SimpleRotation_Update_m19D0864DD93581F50F330F5CFB1CF29F6F5A6C82 (void);
 // 0x00000074 System.Void SimpleRotation::.ctor()
 extern void SimpleRotation__ctor_m742A37EB3C099BBD220D910AE26951756863E906 (void);
-// 0x00000075 System.Void TestScript::Start()
-extern void TestScript_Start_m20D2A28F879FF600835555F46DBCBA69371D5B52 (void);
-// 0x00000076 System.Void TestScript::Update()
-extern void TestScript_Update_m2C71EA169AE2E24BFBF2B756FFA6646F13C760FF (void);
-// 0x00000077 System.Collections.IEnumerator TestScript::RetrieveTextureFromWeb(System.String)
-extern void TestScript_RetrieveTextureFromWeb_m7EC6D5F8E025D0E6FABC5147991C1F1E2FF18D7A (void);
-// 0x00000078 System.Void TestScript::CreateImageTargetFromTexture(UnityEngine.Texture2D)
-extern void TestScript_CreateImageTargetFromTexture_mC4374FD8C340CC2BFCA912047AE477D1F644F707 (void);
-// 0x00000079 System.Void TestScript::.ctor()
-extern void TestScript__ctor_mE9AF09F78DA4B15E4FFB15B70546E46CD955CDDA (void);
-// 0x0000007A System.Void TestScript/<RetrieveTextureFromWeb>d__6::.ctor(System.Int32)
-extern void U3CRetrieveTextureFromWebU3Ed__6__ctor_mFF7CDE36384581D13DB03FDF07719CCA8BCA09C8 (void);
-// 0x0000007B System.Void TestScript/<RetrieveTextureFromWeb>d__6::System.IDisposable.Dispose()
-extern void U3CRetrieveTextureFromWebU3Ed__6_System_IDisposable_Dispose_m35EB38CA24C5B3A9C922F0ECB62F2EEC98086A52 (void);
-// 0x0000007C System.Boolean TestScript/<RetrieveTextureFromWeb>d__6::MoveNext()
-extern void U3CRetrieveTextureFromWebU3Ed__6_MoveNext_mD35D11521DA37203DFFE7D7DCA9180DD6C7D417D (void);
-// 0x0000007D System.Void TestScript/<RetrieveTextureFromWeb>d__6::<>m__Finally1()
-extern void U3CRetrieveTextureFromWebU3Ed__6_U3CU3Em__Finally1_mD82E12F44D32370AF15B47C39098149F30E31DBB (void);
-// 0x0000007E System.Object TestScript/<RetrieveTextureFromWeb>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CRetrieveTextureFromWebU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m92E859D9554D188F7AC3E4EE5A719C9C947CAF47 (void);
-// 0x0000007F System.Void TestScript/<RetrieveTextureFromWeb>d__6::System.Collections.IEnumerator.Reset()
-extern void U3CRetrieveTextureFromWebU3Ed__6_System_Collections_IEnumerator_Reset_m386295269EEDEEDC79F8EAEC2CA639C194E76859 (void);
-// 0x00000080 System.Object TestScript/<RetrieveTextureFromWeb>d__6::System.Collections.IEnumerator.get_Current()
-extern void U3CRetrieveTextureFromWebU3Ed__6_System_Collections_IEnumerator_get_Current_mF524123ED5EFF8218BBA153C7F320B981F858527 (void);
-// 0x00000081 System.Void CameraImageAccess::Start()
+// 0x00000075 T SingletonMonoBehaviour`1::get_instance()
+// 0x00000076 System.Void SingletonMonoBehaviour`1::set_instance(T)
+// 0x00000077 System.Void SingletonMonoBehaviour`1::Awake()
+// 0x00000078 System.Void SingletonMonoBehaviour`1::.ctor()
+// 0x00000079 System.Void TestInstantTargetResolution::Start()
+extern void TestInstantTargetResolution_Start_m87995F924D019726B7176BF3A0FFBAC651B8A189 (void);
+// 0x0000007A System.Collections.IEnumerator TestInstantTargetResolution::RetrieveTextureFromWeb()
+extern void TestInstantTargetResolution_RetrieveTextureFromWeb_m495694823870812DCB3664E597790F8C3306D4FE (void);
+// 0x0000007B System.Void TestInstantTargetResolution::CreateImageTargetFromTexture(UnityEngine.Texture2D)
+extern void TestInstantTargetResolution_CreateImageTargetFromTexture_mC950E31DEE668B8667A2F6C2C05F98D67050CB5B (void);
+// 0x0000007C System.Void TestInstantTargetResolution::.ctor()
+extern void TestInstantTargetResolution__ctor_m89B5B3EF3BAA97219A60D8361F601FBB7C9F2DA0 (void);
+// 0x0000007D System.Void TestInstantTargetResolution::<Start>b__4_0()
+extern void TestInstantTargetResolution_U3CStartU3Eb__4_0_m405C3458D204C63E0CBE566FE2085B680ABE1C4A (void);
+// 0x0000007E System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::.ctor(System.Int32)
+extern void U3CRetrieveTextureFromWebU3Ed__5__ctor_m46B2E1F31C2C217BB904712D3D4842AD7328671D (void);
+// 0x0000007F System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.IDisposable.Dispose()
+extern void U3CRetrieveTextureFromWebU3Ed__5_System_IDisposable_Dispose_m9EE14DC2D711802D5AB3A9B81D225B3FC0C72A01 (void);
+// 0x00000080 System.Boolean TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::MoveNext()
+extern void U3CRetrieveTextureFromWebU3Ed__5_MoveNext_mE9920F76604C8D0D5349528FBEA7002B2135D757 (void);
+// 0x00000081 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::<>m__Finally1()
+extern void U3CRetrieveTextureFromWebU3Ed__5_U3CU3Em__Finally1_m396AD601665750AB4B66183B5B2BD399F75749C1 (void);
+// 0x00000082 System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m12DAD4D1B5676E8EA3E154299BA39CF77CF2EC74 (void);
+// 0x00000083 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.Reset()
+extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_Reset_mB4B0FCE9B9334C82B92FD923B8CEB60F5F5EFB1C (void);
+// 0x00000084 System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.get_Current()
+extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_get_Current_m66ACD0A7AA896E19F104624FFF5F6683BB622611 (void);
+// 0x00000085 System.Void UploadPanelHandler::Awake()
+extern void UploadPanelHandler_Awake_m96B775BD6238AED17A66F8C701CF4FEC672D276F (void);
+// 0x00000086 System.Void UploadPanelHandler::OnEnable()
+extern void UploadPanelHandler_OnEnable_mD8666BB26AC2BB03F520DC9B2745FC81CC1F5BD9 (void);
+// 0x00000087 System.Void UploadPanelHandler::OnWidthChanged(System.String)
+extern void UploadPanelHandler_OnWidthChanged_mC3D3DF070F866259C8A721B5104751DD2F361AEC (void);
+// 0x00000088 System.Void UploadPanelHandler::SetRatingAndTexture(ImageUploader/VuforiaTargetResult)
+extern void UploadPanelHandler_SetRatingAndTexture_mB2E46171F7C9ED2108D23B499E6D2CE576AB3AA0 (void);
+// 0x00000089 System.Void UploadPanelHandler::TryUploadTarget()
+extern void UploadPanelHandler_TryUploadTarget_m3B3D4D5B806D8B66AA2610F58AD6B074C94FB558 (void);
+// 0x0000008A System.Void UploadPanelHandler::.ctor()
+extern void UploadPanelHandler__ctor_m872D0163A8BF04B83C8541D85FD31A2D41276987 (void);
+// 0x0000008B System.Void UploadPanelHandler::<Awake>b__6_0()
+extern void UploadPanelHandler_U3CAwakeU3Eb__6_0_mBACDCB7755DCEBDDB16E4130F9AE5AFD9DA47E06 (void);
+// 0x0000008C System.Void UploadPanelHandler::<Awake>b__6_1()
+extern void UploadPanelHandler_U3CAwakeU3Eb__6_1_mC12AB19B9B4FF4256E6F4D51AFD08DFF8CA96F1F (void);
+// 0x0000008D System.Void UploadPanelHandler::<Awake>b__6_2()
+extern void UploadPanelHandler_U3CAwakeU3Eb__6_2_m63D99A3A3FC83D8A74A1E267507190BDE0FB181A (void);
+// 0x0000008E System.Void CameraImageAccess::Start()
 extern void CameraImageAccess_Start_m85A9776809D8905CEC1FC47897B236C4ECECC2CA (void);
-// 0x00000082 System.Void CameraImageAccess::OnDestroy()
+// 0x0000008F System.Void CameraImageAccess::OnDestroy()
 extern void CameraImageAccess_OnDestroy_mF27542ACC01F51815AA88A7F38A3EBE6D799D571 (void);
-// 0x00000083 System.Void CameraImageAccess::OnVuforiaUpdated()
+// 0x00000090 System.Void CameraImageAccess::OnVuforiaUpdated()
 extern void CameraImageAccess_OnVuforiaUpdated_m3D00BEB24FDFFF2833101AFDC17C2897D33E5EA6 (void);
-// 0x00000084 System.Void CameraImageAccess::OnPause(System.Boolean)
+// 0x00000091 System.Void CameraImageAccess::OnPause(System.Boolean)
 extern void CameraImageAccess_OnPause_mCF59395AD642374085F0FACAF112D119B8757342 (void);
-// 0x00000085 System.Void CameraImageAccess::RegisterFormat()
+// 0x00000092 System.Void CameraImageAccess::RegisterFormat()
 extern void CameraImageAccess_RegisterFormat_m2CCE0BE3E7CB9CA726D8827114C18C06274A2226 (void);
-// 0x00000086 System.Void CameraImageAccess::UnregisterFormat()
+// 0x00000093 System.Void CameraImageAccess::UnregisterFormat()
 extern void CameraImageAccess_UnregisterFormat_m9DE847283139BE3292766142E29F081D764F4957 (void);
-// 0x00000087 System.Void CameraImageAccess::.ctor()
+// 0x00000094 System.Void CameraImageAccess::.ctor()
 extern void CameraImageAccess__ctor_m58ECB56BFF4EE3173F711A889083A406419EFDB2 (void);
-// 0x00000088 System.Void ImageTarget::.ctor()
+// 0x00000095 System.Void ImageTarget::.ctor()
 extern void ImageTarget__ctor_m33BD0D6EA7CD4146FD8D8A9E47987C03CACBDF5D (void);
-// 0x00000089 System.Void ImageUploader::CaptureAndUploadImage()
-extern void ImageUploader_CaptureAndUploadImage_m74C68648C4351F680832298C5C825D60D26894A8 (void);
-// 0x0000008A System.Void ImageUploader::CropAndUpload(UnityEngine.Texture2D)
+// 0x00000096 System.Void ImageUploader::CaptureAndCropImage()
+extern void ImageUploader_CaptureAndCropImage_mFC7AC00D3F3744EC45C5A2C2C2CE754AB918587F (void);
+// 0x00000097 System.Void ImageUploader::CropAndUpload(UnityEngine.Texture2D)
 extern void ImageUploader_CropAndUpload_m58747F5623446B3FC7446FF964A8B4763D89403B (void);
-// 0x0000008B System.Void ImageUploader::OnCrop(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
+// 0x00000098 System.Void ImageUploader::OnCrop(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
 extern void ImageUploader_OnCrop_m4E331770F6E1E7682C9899CBF96BCAC0F5C4AAAF (void);
-// 0x0000008C System.Void ImageUploader::TryUploadTexture()
+// 0x00000099 System.Void ImageUploader::TryUploadTexture()
 extern void ImageUploader_TryUploadTexture_m49882DF77EB8F124D3DDCE56EF3863E22C5CBBCA (void);
-// 0x0000008D System.Collections.IEnumerator ImageUploader::TryGetRating(System.String,System.Action`1<System.Int32>)
+// 0x0000009A System.Collections.IEnumerator ImageUploader::TryGetRating(System.String,System.Action`1<System.Int32>)
 extern void ImageUploader_TryGetRating_m0375D17DD9317E94770C7E628FBF462E35A84CF7 (void);
-// 0x0000008E System.Void ImageUploader::.ctor()
+// 0x0000009B System.Void ImageUploader::UploadImageTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+extern void ImageUploader_UploadImageTarget_m7548534CD242A3D46E75F54AD15253081943EADB (void);
+// 0x0000009C System.Void ImageUploader::.ctor()
 extern void ImageUploader__ctor_m52F2F86D91B4CCFC3EF9ADAE97F1DA7202A306FC (void);
-// 0x0000008F System.Void ImageUploader::<CaptureAndUploadImage>b__5_0(System.String)
-extern void ImageUploader_U3CCaptureAndUploadImageU3Eb__5_0_m1BA49A9DAA1484C3D0DBBF663BC46E94F517D0AA (void);
-// 0x00000090 System.Void ImageUploader::<TryUploadTexture>b__8_0(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
-extern void ImageUploader_U3CTryUploadTextureU3Eb__8_0_m0D9017174DF8557B544A2C92B0990ACC68AD436F (void);
-// 0x00000091 System.Void ImageUploader/<>c__DisplayClass8_0::.ctor()
-extern void U3CU3Ec__DisplayClass8_0__ctor_m9CA922870037282F1C61D0899CBF800F784CCD63 (void);
-// 0x00000092 System.Void ImageUploader/<>c__DisplayClass8_0::<TryUploadTexture>b__1(System.Int32)
-extern void U3CU3Ec__DisplayClass8_0_U3CTryUploadTextureU3Eb__1_m011960FB350034D4F9A4E14B43AE78D9E9D60688 (void);
-// 0x00000093 System.Void ImageUploader/<>c__DisplayClass9_0::.ctor()
+// 0x0000009D System.Void ImageUploader::<CaptureAndCropImage>b__6_0(System.String)
+extern void ImageUploader_U3CCaptureAndCropImageU3Eb__6_0_mD4DF87F4D01CF83FBF135B9410E699125B624A7C (void);
+// 0x0000009E System.Void ImageUploader::<TryUploadTexture>b__9_0(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+extern void ImageUploader_U3CTryUploadTextureU3Eb__9_0_m0E40DEB57D77903C9955CD0D56547EAE1265C450 (void);
+// 0x0000009F System.Void ImageUploader/<>c__DisplayClass9_0::.ctor()
 extern void U3CU3Ec__DisplayClass9_0__ctor_m1E18A2F0EF47B371CE4ABCE9187383194CE3B124 (void);
-// 0x00000094 System.Void ImageUploader/<>c__DisplayClass9_0::<TryGetRating>b__0(System.Int32)
-extern void U3CU3Ec__DisplayClass9_0_U3CTryGetRatingU3Eb__0_mB2356008B527C7AB7B31C05035D06E3D30D1B06B (void);
-// 0x00000095 System.Void ImageUploader/<TryGetRating>d__9::.ctor(System.Int32)
-extern void U3CTryGetRatingU3Ed__9__ctor_m7E0FB4604BA46ED7092D5FBD33CA20ADFCAED0A3 (void);
-// 0x00000096 System.Void ImageUploader/<TryGetRating>d__9::System.IDisposable.Dispose()
-extern void U3CTryGetRatingU3Ed__9_System_IDisposable_Dispose_mDB9B8CB8208FD4079E722AD409293DC96EE84785 (void);
-// 0x00000097 System.Boolean ImageUploader/<TryGetRating>d__9::MoveNext()
-extern void U3CTryGetRatingU3Ed__9_MoveNext_m2DE054A35A434B20E6AB75147CFDEF631E5304ED (void);
-// 0x00000098 System.Object ImageUploader/<TryGetRating>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CTryGetRatingU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC889EE49A0AF13F04DD6CF9A607978FD317C8384 (void);
-// 0x00000099 System.Void ImageUploader/<TryGetRating>d__9::System.Collections.IEnumerator.Reset()
-extern void U3CTryGetRatingU3Ed__9_System_Collections_IEnumerator_Reset_m9B896AF28999F73AD01BA032F682C3B1A116A344 (void);
-// 0x0000009A System.Object ImageUploader/<TryGetRating>d__9::System.Collections.IEnumerator.get_Current()
-extern void U3CTryGetRatingU3Ed__9_System_Collections_IEnumerator_get_Current_mBC969874526E432F6481ABB3E2BFC7B13C60995B (void);
-// 0x0000009B System.Void PatchImageTarget::.ctor()
+// 0x000000A0 System.Void ImageUploader/<>c__DisplayClass9_0::<TryUploadTexture>b__1(System.Int32)
+extern void U3CU3Ec__DisplayClass9_0_U3CTryUploadTextureU3Eb__1_mEFDF0D611DF97113651DF533D27C6E23B2B193AF (void);
+// 0x000000A1 System.Void ImageUploader/<>c__DisplayClass10_0::.ctor()
+extern void U3CU3Ec__DisplayClass10_0__ctor_m5D549DCECF50E569A017FA8DB05D28D1EC394617 (void);
+// 0x000000A2 System.Void ImageUploader/<>c__DisplayClass10_0::<TryGetRating>b__0(System.Int32)
+extern void U3CU3Ec__DisplayClass10_0_U3CTryGetRatingU3Eb__0_m36EB4A7F8F16764EE90C72C85491B78E01228184 (void);
+// 0x000000A3 System.Void ImageUploader/<TryGetRating>d__10::.ctor(System.Int32)
+extern void U3CTryGetRatingU3Ed__10__ctor_m2784651D895147395A671BA619F183715916B7FC (void);
+// 0x000000A4 System.Void ImageUploader/<TryGetRating>d__10::System.IDisposable.Dispose()
+extern void U3CTryGetRatingU3Ed__10_System_IDisposable_Dispose_m6D450D0AB9376DBCFC8EE9574D7FCCCF554B890A (void);
+// 0x000000A5 System.Boolean ImageUploader/<TryGetRating>d__10::MoveNext()
+extern void U3CTryGetRatingU3Ed__10_MoveNext_mB2FAF628D21E45D5CD630E4BA97382D18A391314 (void);
+// 0x000000A6 System.Object ImageUploader/<TryGetRating>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTryGetRatingU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m020127EF08AD6FEB987E457B0028329083DF3437 (void);
+// 0x000000A7 System.Void ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_Reset_mCBA0C11D03EB12DF41B10AC0EE0E61BC470E67BE (void);
+// 0x000000A8 System.Object ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_get_Current_mEF405697651813557C604B72953C526724D1A953 (void);
+// 0x000000A9 System.Void PatchImageTarget::.ctor()
 extern void PatchImageTarget__ctor_m418833AAAF50EB493ADD102BF77166FB2E35A902 (void);
-// 0x0000009C System.Collections.IEnumerator VuforiaRepository::UpdateImageTargetDimensions(System.String,System.Single,System.Action`1<System.Boolean>)
+// 0x000000AA System.Collections.IEnumerator VuforiaRepository::UpdateImageTargetDimensions(System.String,System.Single,System.Action`1<System.Boolean>)
 extern void VuforiaRepository_UpdateImageTargetDimensions_m84C11EDE1DE470BF70C9BB70FF148FE77543C053 (void);
-// 0x0000009D System.Collections.IEnumerator VuforiaRepository::DeleteImageTarget(System.String,System.Action`1<System.Boolean>)
+// 0x000000AB System.Collections.IEnumerator VuforiaRepository::DeleteImageTarget(System.String,System.Action`1<System.Boolean>)
 extern void VuforiaRepository_DeleteImageTarget_m51577AC2CDDCD7AA32FAA22A1AACBEB957EFBDEE (void);
-// 0x0000009E System.Collections.IEnumerator VuforiaRepository::GetImageTargetRating(System.String,System.Action`1<System.Int32>)
+// 0x000000AC System.Collections.IEnumerator VuforiaRepository::GetImageTargetRating(System.String,System.Action`1<System.Int32>)
 extern void VuforiaRepository_GetImageTargetRating_mB6966EE6E80C33DE38C892D6CF818C348032291C (void);
-// 0x0000009F System.Collections.IEnumerator VuforiaRepository::CreateImageTarget(UnityEngine.Texture2D,System.Action`1<System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>>)
+// 0x000000AD System.Collections.IEnumerator VuforiaRepository::CreateImageTarget(UnityEngine.Texture2D,System.Action`1<System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>>)
 extern void VuforiaRepository_CreateImageTarget_mC77E3809FBD901BE7CC97F33836C47FFEA902E71 (void);
-// 0x000000A0 System.String VuforiaRepository::GetRandomString(System.Int32)
+// 0x000000AE System.String VuforiaRepository::GetRandomString(System.Int32)
 extern void VuforiaRepository_GetRandomString_m6EE6A917D2FDE3BE6C31979D5763D03D1E55DFFA (void);
-// 0x000000A1 System.String VuforiaRepository::GetDateNow()
+// 0x000000AF System.String VuforiaRepository::GetDateNow()
 extern void VuforiaRepository_GetDateNow_m9909DB641278DE815A6552352106FBF2A519FEDD (void);
-// 0x000000A2 System.String VuforiaRepository::GetVWSAuth(System.String,System.String,System.String,System.String,System.String)
+// 0x000000B0 System.String VuforiaRepository::GetVWSAuth(System.String,System.String,System.String,System.String,System.String)
 extern void VuforiaRepository_GetVWSAuth_mE596C73ED6191272068D9C03B768B78EB5A69E23 (void);
-// 0x000000A3 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::.ctor(System.Int32)
+// 0x000000B1 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::.ctor(System.Int32)
 extern void U3CUpdateImageTargetDimensionsU3Ed__3__ctor_mBAFC75AC667418EF68AEFB34D93720EE360F222F (void);
-// 0x000000A4 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.IDisposable.Dispose()
+// 0x000000B2 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.IDisposable.Dispose()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_IDisposable_Dispose_m0F3A7DC70E7B5768213508C9CA9CED26FC3DF613 (void);
-// 0x000000A5 System.Boolean VuforiaRepository/<UpdateImageTargetDimensions>d__3::MoveNext()
+// 0x000000B3 System.Boolean VuforiaRepository/<UpdateImageTargetDimensions>d__3::MoveNext()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_MoveNext_m247C01D0A30E481495258018D8C1EAE79DCAD9D2 (void);
-// 0x000000A6 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::<>m__Finally1()
+// 0x000000B4 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::<>m__Finally1()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_U3CU3Em__Finally1_m129B034C1DCDF05B14ED0E810BAC6522263A2BAD (void);
-// 0x000000A7 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000B5 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED232DA94D60AA96E55DBA58165054E8EFD6EA6E (void);
-// 0x000000A8 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.Reset()
+// 0x000000B6 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_Reset_mB636A6A7ABC67D334D032B72F1559DEE14B42D25 (void);
-// 0x000000A9 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.get_Current()
+// 0x000000B7 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_get_Current_m51EE512BE3DD26858DAD2EF215A9D148539E080E (void);
-// 0x000000AA System.Void VuforiaRepository/<DeleteImageTarget>d__4::.ctor(System.Int32)
+// 0x000000B8 System.Void VuforiaRepository/<DeleteImageTarget>d__4::.ctor(System.Int32)
 extern void U3CDeleteImageTargetU3Ed__4__ctor_mCA6233372207329675DC1D824D61D3F0F99772DC (void);
-// 0x000000AB System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.IDisposable.Dispose()
+// 0x000000B9 System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.IDisposable.Dispose()
 extern void U3CDeleteImageTargetU3Ed__4_System_IDisposable_Dispose_mFAE0D2C63BCDACC6947BEFE994D6338F2777443E (void);
-// 0x000000AC System.Boolean VuforiaRepository/<DeleteImageTarget>d__4::MoveNext()
+// 0x000000BA System.Boolean VuforiaRepository/<DeleteImageTarget>d__4::MoveNext()
 extern void U3CDeleteImageTargetU3Ed__4_MoveNext_m7664C57BD6FBB57B1712C312FBACF18B6FC6DD1E (void);
-// 0x000000AD System.Void VuforiaRepository/<DeleteImageTarget>d__4::<>m__Finally1()
+// 0x000000BB System.Void VuforiaRepository/<DeleteImageTarget>d__4::<>m__Finally1()
 extern void U3CDeleteImageTargetU3Ed__4_U3CU3Em__Finally1_m1943F53017E2E3EFE3E617C8AC776C74021E831D (void);
-// 0x000000AE System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000BC System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDeleteImageTargetU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7E793BAD9E7EC1675FB5815F9CECED19526FAC9C (void);
-// 0x000000AF System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.Reset()
+// 0x000000BD System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.Reset()
 extern void U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_Reset_mA142D8E341E5E61047965CB45226A0860D19DC81 (void);
-// 0x000000B0 System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.get_Current()
+// 0x000000BE System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.get_Current()
 extern void U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_get_Current_m821F0D61B05F2C8387E869CA5D37E5820D545C83 (void);
-// 0x000000B1 System.Void VuforiaRepository/<GetImageTargetRating>d__5::.ctor(System.Int32)
+// 0x000000BF System.Void VuforiaRepository/<GetImageTargetRating>d__5::.ctor(System.Int32)
 extern void U3CGetImageTargetRatingU3Ed__5__ctor_mD2591FDB293D68B0F410A33260AF88FC86B2A15F (void);
-// 0x000000B2 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.IDisposable.Dispose()
+// 0x000000C0 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.IDisposable.Dispose()
 extern void U3CGetImageTargetRatingU3Ed__5_System_IDisposable_Dispose_m9BD281E3897480E001BC94ACBB4D8979B5470989 (void);
-// 0x000000B3 System.Boolean VuforiaRepository/<GetImageTargetRating>d__5::MoveNext()
+// 0x000000C1 System.Boolean VuforiaRepository/<GetImageTargetRating>d__5::MoveNext()
 extern void U3CGetImageTargetRatingU3Ed__5_MoveNext_m63D3344A6DC29512EDAF2470AD4B0ECF4DBC5CE3 (void);
-// 0x000000B4 System.Void VuforiaRepository/<GetImageTargetRating>d__5::<>m__Finally1()
+// 0x000000C2 System.Void VuforiaRepository/<GetImageTargetRating>d__5::<>m__Finally1()
 extern void U3CGetImageTargetRatingU3Ed__5_U3CU3Em__Finally1_mBC583F8BDF59C5087BC015970BFEE3F8BAD033B5 (void);
-// 0x000000B5 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000C3 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED98E22CDF6BF5B7DBB4EA9956882CC6347AEE8D (void);
-// 0x000000B6 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.Reset()
+// 0x000000C4 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_Reset_m50C824923AE46C7833FF648230431B6347E59D5E (void);
-// 0x000000B7 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.get_Current()
+// 0x000000C5 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_get_Current_m9C86D5920791DAF475EA2B7019BFAF797AB343A5 (void);
-// 0x000000B8 System.Void VuforiaRepository/<CreateImageTarget>d__6::.ctor(System.Int32)
+// 0x000000C6 System.Void VuforiaRepository/<CreateImageTarget>d__6::.ctor(System.Int32)
 extern void U3CCreateImageTargetU3Ed__6__ctor_m358174F15127A54C36D3EB9B8C61BB3650684AFC (void);
-// 0x000000B9 System.Void VuforiaRepository/<CreateImageTarget>d__6::System.IDisposable.Dispose()
+// 0x000000C7 System.Void VuforiaRepository/<CreateImageTarget>d__6::System.IDisposable.Dispose()
 extern void U3CCreateImageTargetU3Ed__6_System_IDisposable_Dispose_m3F72879825F6C3836336A624EF174B8EA3E5261A (void);
-// 0x000000BA System.Boolean VuforiaRepository/<CreateImageTarget>d__6::MoveNext()
+// 0x000000C8 System.Boolean VuforiaRepository/<CreateImageTarget>d__6::MoveNext()
 extern void U3CCreateImageTargetU3Ed__6_MoveNext_m75E8844F29D927532A054EF3F380AAD4EF43E95F (void);
-// 0x000000BB System.Void VuforiaRepository/<CreateImageTarget>d__6::<>m__Finally1()
+// 0x000000C9 System.Void VuforiaRepository/<CreateImageTarget>d__6::<>m__Finally1()
 extern void U3CCreateImageTargetU3Ed__6_U3CU3Em__Finally1_mECD0D11DFEA98BA68BC45E71F7E4A4388BCE7C5F (void);
-// 0x000000BC System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000CA System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCreateImageTargetU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m07700DF1DCC909AFCC7891938558D9663E789C2B (void);
-// 0x000000BD System.Void VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.Reset()
+// 0x000000CB System.Void VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.Reset()
 extern void U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_Reset_mB9F44F8F95A7629022BD67578566F0DB1B352523 (void);
-// 0x000000BE System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.get_Current()
+// 0x000000CC System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.get_Current()
 extern void U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_get_Current_m3DDE8450CAC7506EDE7E0B11338BA58C90663281 (void);
-// 0x000000BF System.Void ExtensionMethods.TransormExtensions::SetPositionAndRotation(UnityEngine.Transform,IWorldObject)
+// 0x000000CD System.Void ExtensionMethods.TransormExtensions::SetPositionAndRotation(UnityEngine.Transform,IWorldObject)
 extern void TransormExtensions_SetPositionAndRotation_mA01C31412B17250D9C8D7116D8C1CF8888BC5FE5 (void);
-static Il2CppMethodPointer s_methodPointers[191] = 
+static Il2CppMethodPointer s_methodPointers[205] = 
 {
 	Building__ctor_mFA4E6FF1B808B600BA046726206734FA40C5EE14,
 	BuildingCreator_add_WallsUpdated_m9C85A5AEF04E1BEE7423FE20DE92AA837DC5BE32,
@@ -499,18 +523,31 @@ static Il2CppMethodPointer s_methodPointers[191] =
 	SimpleRotation_Start_m7CEF57B5B11FA76ABA825E3285E3F835D22165B7,
 	SimpleRotation_Update_m19D0864DD93581F50F330F5CFB1CF29F6F5A6C82,
 	SimpleRotation__ctor_m742A37EB3C099BBD220D910AE26951756863E906,
-	TestScript_Start_m20D2A28F879FF600835555F46DBCBA69371D5B52,
-	TestScript_Update_m2C71EA169AE2E24BFBF2B756FFA6646F13C760FF,
-	TestScript_RetrieveTextureFromWeb_m7EC6D5F8E025D0E6FABC5147991C1F1E2FF18D7A,
-	TestScript_CreateImageTargetFromTexture_mC4374FD8C340CC2BFCA912047AE477D1F644F707,
-	TestScript__ctor_mE9AF09F78DA4B15E4FFB15B70546E46CD955CDDA,
-	U3CRetrieveTextureFromWebU3Ed__6__ctor_mFF7CDE36384581D13DB03FDF07719CCA8BCA09C8,
-	U3CRetrieveTextureFromWebU3Ed__6_System_IDisposable_Dispose_m35EB38CA24C5B3A9C922F0ECB62F2EEC98086A52,
-	U3CRetrieveTextureFromWebU3Ed__6_MoveNext_mD35D11521DA37203DFFE7D7DCA9180DD6C7D417D,
-	U3CRetrieveTextureFromWebU3Ed__6_U3CU3Em__Finally1_mD82E12F44D32370AF15B47C39098149F30E31DBB,
-	U3CRetrieveTextureFromWebU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m92E859D9554D188F7AC3E4EE5A719C9C947CAF47,
-	U3CRetrieveTextureFromWebU3Ed__6_System_Collections_IEnumerator_Reset_m386295269EEDEEDC79F8EAEC2CA639C194E76859,
-	U3CRetrieveTextureFromWebU3Ed__6_System_Collections_IEnumerator_get_Current_mF524123ED5EFF8218BBA153C7F320B981F858527,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	TestInstantTargetResolution_Start_m87995F924D019726B7176BF3A0FFBAC651B8A189,
+	TestInstantTargetResolution_RetrieveTextureFromWeb_m495694823870812DCB3664E597790F8C3306D4FE,
+	TestInstantTargetResolution_CreateImageTargetFromTexture_mC950E31DEE668B8667A2F6C2C05F98D67050CB5B,
+	TestInstantTargetResolution__ctor_m89B5B3EF3BAA97219A60D8361F601FBB7C9F2DA0,
+	TestInstantTargetResolution_U3CStartU3Eb__4_0_m405C3458D204C63E0CBE566FE2085B680ABE1C4A,
+	U3CRetrieveTextureFromWebU3Ed__5__ctor_m46B2E1F31C2C217BB904712D3D4842AD7328671D,
+	U3CRetrieveTextureFromWebU3Ed__5_System_IDisposable_Dispose_m9EE14DC2D711802D5AB3A9B81D225B3FC0C72A01,
+	U3CRetrieveTextureFromWebU3Ed__5_MoveNext_mE9920F76604C8D0D5349528FBEA7002B2135D757,
+	U3CRetrieveTextureFromWebU3Ed__5_U3CU3Em__Finally1_m396AD601665750AB4B66183B5B2BD399F75749C1,
+	U3CRetrieveTextureFromWebU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m12DAD4D1B5676E8EA3E154299BA39CF77CF2EC74,
+	U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_Reset_mB4B0FCE9B9334C82B92FD923B8CEB60F5F5EFB1C,
+	U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_get_Current_m66ACD0A7AA896E19F104624FFF5F6683BB622611,
+	UploadPanelHandler_Awake_m96B775BD6238AED17A66F8C701CF4FEC672D276F,
+	UploadPanelHandler_OnEnable_mD8666BB26AC2BB03F520DC9B2745FC81CC1F5BD9,
+	UploadPanelHandler_OnWidthChanged_mC3D3DF070F866259C8A721B5104751DD2F361AEC,
+	UploadPanelHandler_SetRatingAndTexture_mB2E46171F7C9ED2108D23B499E6D2CE576AB3AA0,
+	UploadPanelHandler_TryUploadTarget_m3B3D4D5B806D8B66AA2610F58AD6B074C94FB558,
+	UploadPanelHandler__ctor_m872D0163A8BF04B83C8541D85FD31A2D41276987,
+	UploadPanelHandler_U3CAwakeU3Eb__6_0_mBACDCB7755DCEBDDB16E4130F9AE5AFD9DA47E06,
+	UploadPanelHandler_U3CAwakeU3Eb__6_1_mC12AB19B9B4FF4256E6F4D51AFD08DFF8CA96F1F,
+	UploadPanelHandler_U3CAwakeU3Eb__6_2_m63D99A3A3FC83D8A74A1E267507190BDE0FB181A,
 	CameraImageAccess_Start_m85A9776809D8905CEC1FC47897B236C4ECECC2CA,
 	CameraImageAccess_OnDestroy_mF27542ACC01F51815AA88A7F38A3EBE6D799D571,
 	CameraImageAccess_OnVuforiaUpdated_m3D00BEB24FDFFF2833101AFDC17C2897D33E5EA6,
@@ -519,24 +556,25 @@ static Il2CppMethodPointer s_methodPointers[191] =
 	CameraImageAccess_UnregisterFormat_m9DE847283139BE3292766142E29F081D764F4957,
 	CameraImageAccess__ctor_m58ECB56BFF4EE3173F711A889083A406419EFDB2,
 	ImageTarget__ctor_m33BD0D6EA7CD4146FD8D8A9E47987C03CACBDF5D,
-	ImageUploader_CaptureAndUploadImage_m74C68648C4351F680832298C5C825D60D26894A8,
+	ImageUploader_CaptureAndCropImage_mFC7AC00D3F3744EC45C5A2C2C2CE754AB918587F,
 	ImageUploader_CropAndUpload_m58747F5623446B3FC7446FF964A8B4763D89403B,
 	ImageUploader_OnCrop_m4E331770F6E1E7682C9899CBF96BCAC0F5C4AAAF,
 	ImageUploader_TryUploadTexture_m49882DF77EB8F124D3DDCE56EF3863E22C5CBBCA,
 	ImageUploader_TryGetRating_m0375D17DD9317E94770C7E628FBF462E35A84CF7,
+	ImageUploader_UploadImageTarget_m7548534CD242A3D46E75F54AD15253081943EADB,
 	ImageUploader__ctor_m52F2F86D91B4CCFC3EF9ADAE97F1DA7202A306FC,
-	ImageUploader_U3CCaptureAndUploadImageU3Eb__5_0_m1BA49A9DAA1484C3D0DBBF663BC46E94F517D0AA,
-	ImageUploader_U3CTryUploadTextureU3Eb__8_0_m0D9017174DF8557B544A2C92B0990ACC68AD436F,
-	U3CU3Ec__DisplayClass8_0__ctor_m9CA922870037282F1C61D0899CBF800F784CCD63,
-	U3CU3Ec__DisplayClass8_0_U3CTryUploadTextureU3Eb__1_m011960FB350034D4F9A4E14B43AE78D9E9D60688,
+	ImageUploader_U3CCaptureAndCropImageU3Eb__6_0_mD4DF87F4D01CF83FBF135B9410E699125B624A7C,
+	ImageUploader_U3CTryUploadTextureU3Eb__9_0_m0E40DEB57D77903C9955CD0D56547EAE1265C450,
 	U3CU3Ec__DisplayClass9_0__ctor_m1E18A2F0EF47B371CE4ABCE9187383194CE3B124,
-	U3CU3Ec__DisplayClass9_0_U3CTryGetRatingU3Eb__0_mB2356008B527C7AB7B31C05035D06E3D30D1B06B,
-	U3CTryGetRatingU3Ed__9__ctor_m7E0FB4604BA46ED7092D5FBD33CA20ADFCAED0A3,
-	U3CTryGetRatingU3Ed__9_System_IDisposable_Dispose_mDB9B8CB8208FD4079E722AD409293DC96EE84785,
-	U3CTryGetRatingU3Ed__9_MoveNext_m2DE054A35A434B20E6AB75147CFDEF631E5304ED,
-	U3CTryGetRatingU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC889EE49A0AF13F04DD6CF9A607978FD317C8384,
-	U3CTryGetRatingU3Ed__9_System_Collections_IEnumerator_Reset_m9B896AF28999F73AD01BA032F682C3B1A116A344,
-	U3CTryGetRatingU3Ed__9_System_Collections_IEnumerator_get_Current_mBC969874526E432F6481ABB3E2BFC7B13C60995B,
+	U3CU3Ec__DisplayClass9_0_U3CTryUploadTextureU3Eb__1_mEFDF0D611DF97113651DF533D27C6E23B2B193AF,
+	U3CU3Ec__DisplayClass10_0__ctor_m5D549DCECF50E569A017FA8DB05D28D1EC394617,
+	U3CU3Ec__DisplayClass10_0_U3CTryGetRatingU3Eb__0_m36EB4A7F8F16764EE90C72C85491B78E01228184,
+	U3CTryGetRatingU3Ed__10__ctor_m2784651D895147395A671BA619F183715916B7FC,
+	U3CTryGetRatingU3Ed__10_System_IDisposable_Dispose_m6D450D0AB9376DBCFC8EE9574D7FCCCF554B890A,
+	U3CTryGetRatingU3Ed__10_MoveNext_mB2FAF628D21E45D5CD630E4BA97382D18A391314,
+	U3CTryGetRatingU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m020127EF08AD6FEB987E457B0028329083DF3437,
+	U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_Reset_mCBA0C11D03EB12DF41B10AC0EE0E61BC470E67BE,
+	U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_get_Current_mEF405697651813557C604B72953C526724D1A953,
 	PatchImageTarget__ctor_m418833AAAF50EB493ADD102BF77166FB2E35A902,
 	VuforiaRepository_UpdateImageTargetDimensions_m84C11EDE1DE470BF70C9BB70FF148FE77543C053,
 	VuforiaRepository_DeleteImageTarget_m51577AC2CDDCD7AA32FAA22A1AACBEB957EFBDEE,
@@ -582,202 +620,217 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] =
 	{ 0x06000028, Item_get_Position_mCDB77F22D214AA79575FA7407EB97E90FEA3D9EC_AdjustorThunk },
 	{ 0x06000029, Item_get_Rotation_m189F56622D76679932945D4199BD63B543FC7B09_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[191] = 
+static const int32_t s_InvokerIndices[205] = 
 {
 	4981,
 	4981,
 	4981,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
 	4394,
 	1318,
 	1318,
-	6316,
+	6317,
 	2712,
 	2710,
 	4981,
 	1293,
 	4981,
-	6316,
+	6317,
 	4955,
-	6192,
-	6316,
+	6193,
+	6317,
 	2712,
-	6192,
+	6193,
 	4981,
 	4981,
 	4981,
-	6316,
-	6316,
-	6316,
+	6317,
+	6317,
+	6317,
 	2712,
-	6316,
-	6316,
+	6317,
+	6317,
 	0,
 	0,
-	6316,
-	6307,
-	6307,
-	6316,
-	6307,
-	6307,
-	6316,
-	6192,
+	6317,
+	6308,
+	6308,
+	6317,
+	6308,
+	6308,
+	6317,
+	6193,
 	4955,
-	6316,
+	6317,
 	2712,
 	0,
 	0,
-	6239,
-	6307,
-	6307,
-	6316,
-	6192,
+	6240,
+	6308,
+	6308,
+	6317,
+	6193,
 	4981,
 	4981,
 	4981,
-	6192,
-	6316,
-	6316,
-	6316,
-	6192,
+	6193,
+	6317,
+	6317,
+	6317,
+	6193,
 	2131,
-	6316,
-	6316,
+	6317,
+	6317,
 	4981,
-	9841,
-	6316,
+	9842,
+	6317,
 	4981,
 	4955,
-	6316,
-	6109,
-	6192,
-	6316,
-	6192,
+	6317,
+	6110,
+	6193,
+	6317,
+	6193,
 	4955,
-	6316,
-	6109,
-	6192,
-	6316,
-	6192,
+	6317,
+	6110,
+	6193,
+	6317,
+	6193,
 	0,
 	0,
 	0,
 	0,
 	2710,
-	6316,
+	6317,
 	2140,
 	4981,
 	0,
 	0,
 	0,
 	0,
-	9381,
+	9382,
 	0,
 	1496,
-	6316,
-	6316,
-	6316,
-	6192,
+	6317,
+	6317,
+	6317,
+	6193,
 	4981,
-	6316,
+	6317,
 	4981,
-	6192,
-	6316,
+	6193,
+	6317,
 	4955,
-	6316,
-	6109,
-	6192,
-	6316,
-	6192,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
-	4394,
+	6317,
+	6110,
+	6193,
+	6317,
+	6193,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	0,
+	0,
+	0,
+	0,
+	6317,
+	6193,
 	4981,
-	6316,
+	6317,
+	6317,
 	4955,
-	6316,
-	6109,
-	6316,
-	6192,
-	6316,
-	6192,
-	6316,
-	6316,
-	6316,
+	6317,
+	6110,
+	6317,
+	6193,
+	6317,
+	6193,
+	6317,
+	6317,
+	4981,
+	5176,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
 	4897,
-	6316,
-	6316,
-	6316,
-	6316,
-	6316,
+	6317,
+	6317,
+	6317,
+	6317,
+	6317,
 	4981,
 	1383,
-	6316,
+	6317,
 	2140,
-	6316,
+	4683,
+	6317,
 	4981,
 	4683,
-	6316,
+	6317,
 	4955,
-	6316,
+	6317,
 	4955,
 	4955,
-	6316,
-	6109,
-	6192,
-	6316,
-	6192,
-	6316,
-	7821,
-	8552,
-	8552,
-	8552,
-	9378,
-	9810,
-	6910,
+	6317,
+	6110,
+	6193,
+	6317,
+	6193,
+	6317,
+	7822,
+	8553,
+	8553,
+	8553,
+	9379,
+	9811,
+	6911,
 	4955,
-	6316,
-	6109,
-	6316,
-	6192,
-	6316,
-	6192,
+	6317,
+	6110,
+	6317,
+	6193,
+	6317,
+	6193,
 	4955,
-	6316,
-	6109,
-	6316,
-	6192,
-	6316,
-	6192,
+	6317,
+	6110,
+	6317,
+	6193,
+	6317,
+	6193,
 	4955,
-	6316,
-	6109,
-	6316,
-	6192,
-	6316,
-	6192,
+	6317,
+	6110,
+	6317,
+	6193,
+	6317,
+	6193,
 	4955,
-	6316,
-	6109,
-	6316,
-	6192,
-	6316,
-	6192,
-	8863,
+	6317,
+	6110,
+	6317,
+	6193,
+	6317,
+	6193,
+	8864,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[4] = 
+static const Il2CppTokenRangePair s_rgctxIndices[5] = 
 {
+	{ 0x0200001C, { 6, 4 } },
 	{ 0x06000059, { 0, 1 } },
 	{ 0x0600005A, { 1, 1 } },
 	{ 0x0600005B, { 2, 2 } },
@@ -789,7 +842,11 @@ extern const uint32_t g_rgctx_Wrapper_1_tE0980551CF525BABD2FC056EFDA23CB59C1734C
 extern const uint32_t g_rgctx_Wrapper_1__ctor_mED6ACFCEA9BB91B3F1EE57C6C212260B0AF246B5;
 extern const uint32_t g_rgctx_Wrapper_1_tFAA64495AE26DB7469A6D13BD05186C977AD2B2C;
 extern const uint32_t g_rgctx_Wrapper_1__ctor_mE5F83B51DEF05EC6CA275A0DF831BC92FD46DE27;
-static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
+extern const uint32_t g_rgctx_SingletonMonoBehaviour_1_tA8F980F1A4D2DA2F48E858FFFDA5F4D13A0D4063;
+extern const uint32_t g_rgctx_SingletonMonoBehaviour_1_get_instance_mEB23C4FE4E78D11D36A1F618579CD3B7A41C8D14;
+extern const uint32_t g_rgctx_T_t8F6FCAC7D8192731C50D798732A4E7C76CE7936E;
+extern const uint32_t g_rgctx_SingletonMonoBehaviour_1_set_instance_mEB0DC3842FFB3661D1826A4C7FC4424D5231E478;
+static const Il2CppRGCTXDefinition s_rgctxValues[10] = 
 {
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_JsonUtility_FromJson_TisWrapper_1_tDC117376FB7DFC921910190F97BFA3A9911239A3_m5A1CE94FD4DC9F8C8F850F9923DC32F99095B0A2 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_JsonHelper_FromJson_TisT_t762A3CED041034C67BE1E48EA1017236AC2D7B53_mF639454A3F043760F9F8DB448ACA231147CC550F },
@@ -797,21 +854,25 @@ static const Il2CppRGCTXDefinition s_rgctxValues[6] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Wrapper_1__ctor_mED6ACFCEA9BB91B3F1EE57C6C212260B0AF246B5 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Wrapper_1_tFAA64495AE26DB7469A6D13BD05186C977AD2B2C },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Wrapper_1__ctor_mE5F83B51DEF05EC6CA275A0DF831BC92FD46DE27 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_SingletonMonoBehaviour_1_tA8F980F1A4D2DA2F48E858FFFDA5F4D13A0D4063 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SingletonMonoBehaviour_1_get_instance_mEB23C4FE4E78D11D36A1F618579CD3B7A41C8D14 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t8F6FCAC7D8192731C50D798732A4E7C76CE7936E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SingletonMonoBehaviour_1_set_instance_mEB0DC3842FFB3661D1826A4C7FC4424D5231E478 },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	191,
+	205,
 	s_methodPointers,
 	2,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,
-	4,
+	5,
 	s_rgctxIndices,
-	6,
+	10,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,
