@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class FirebaseImageTarget : ImageTarget, IWorldObject
+public class FirebaseImageTarget : IWorldObject
 {
     public float euler_x;
     public float euler_y;
@@ -10,6 +10,7 @@ public class FirebaseImageTarget : ImageTarget, IWorldObject
     public float y;
     public float z;
     public string image_target_id;
+    public string name;
 
     public Vector3 Position { get { return new Vector3(x, z, y); } }
 

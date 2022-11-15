@@ -112,7 +112,8 @@ public class ImageUploader : SingletonMonoBehaviour<ImageUploader>
     // Upload the image target on Firebase and update its width on vufoira database
     public void UploadImageTarget(KeyValuePair<String, ImageTarget> target)
     {
-        var cor = firebaseRepo.UploadImageTarget("home", target);
+        var currentBuildingId = BuildingViewModel.instance.CurrentBuilding.Id;
+        var cor = firebaseRepo.UploadImageTarget(currentBuildingId, target);
         StartCoroutine(cor);
 
         var cor2 = UpdateWidth(target, 20);

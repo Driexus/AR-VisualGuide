@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class BuildingViewModel : MonoBehaviour
+public class BuildingViewModel : SingletonMonoBehaviour<BuildingViewModel>
 {
     public FirebaseRepository repository;
 

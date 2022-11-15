@@ -4,8 +4,6 @@ using static System.Math;
 using System;
 using Vuforia;
 using System.Collections.Generic;
-using System.Collections;
-using UnityEngine.Networking;
 
 public class BuildingCreator : MonoBehaviour
 {
@@ -24,6 +22,7 @@ public class BuildingCreator : MonoBehaviour
     private GameObject wallObjectPool;
     private GameObject floor;
     private GameObject wallCollection;
+    private GameObject imageTargetCollection;
 
     private void Awake()
     {
@@ -39,6 +38,11 @@ public class BuildingCreator : MonoBehaviour
         wallCollection = new GameObject();
         wallCollection.gameObject.name = "Walls";
         wallCollection.transform.parent = transform;
+
+        // Create image target collection
+        imageTargetCollection = new GameObject();
+        imageTargetCollection.gameObject.name = "Image Targets";
+        imageTargetCollection.transform.parent = transform;
 
         // Change the walls when the current building changes
         buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => LoadNewBuilding());
@@ -56,14 +60,30 @@ public class BuildingCreator : MonoBehaviour
 
     private void LoadImageTargets()
     {
-        foreach (ImageTarget target in _imageTargets.Values)
+        // Destroy the previous image targets
+        foreach (Transform child in imageTargetCollection.transform)
+            GameObject.Destroy(child.gameObject);
+
+        // For each non null target id, try to get the image target details in order to create a vuforia image target.
+        foreach (FirebaseImageTarget firebaseTarget in buildingVM.CurrentBuilding.targets)
         {
-            var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
-            var bytes = Convert.FromBase64String(target.image);
-            ImageConversion.LoadImage(texture, bytes);
-            
-            var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, target.name);
-            vuTarget.gameObject.AddComponent<DefaultObserverEventHandler>();
+            var targetId = firebaseTarget.image_target_id;
+            if (targetId != null)
+            {
+                var target = _imageTargets[targetId];
+                if (target != null)
+                {
+                    var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
+                    var bytes = Convert.FromBase64String(target.image);
+                    ImageConversion.LoadImage(texture, bytes);
+
+                    var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, firebaseTarget.name);
+                    vuTarget.gameObject.AddComponent<DefaultObserverEventHandler>();
+
+                    vuTarget.transform.SetPositionAndRotation(firebaseTarget);
+                    vuTarget.transform.parent = imageTargetCollection.transform;
+                }       
+            }
         }
     }
 
