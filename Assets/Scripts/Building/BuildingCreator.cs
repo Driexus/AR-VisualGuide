@@ -4,9 +4,12 @@ using static System.Math;
 using System;
 using Vuforia;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 
 public class BuildingCreator : MonoBehaviour
 {
+    [Tooltip("The nav mesh surface where the geometry will be loaded.")]
+    public NavMeshSurface navMesh;
     public BuildingViewModel buildingVM;
 
     public delegate void WallsUpdatedEventHandler(Wall[] walls);
@@ -31,13 +34,13 @@ public class BuildingCreator : MonoBehaviour
         // Create floor
         floor = GameObject.CreatePrimitive(PrimitiveType.Plane);
         floor.gameObject.name = "Floor";
-        floor.transform.parent = transform;
+        floor.transform.parent = navMesh.transform;
         floor.layer = LayerMask.NameToLayer("Geometry");
 
         // Create walls collection
         wallCollection = new GameObject();
         wallCollection.gameObject.name = "Walls";
-        wallCollection.transform.parent = transform;
+        wallCollection.transform.parent = navMesh.transform;
 
         // Create image target collection
         imageTargetCollection = new GameObject();

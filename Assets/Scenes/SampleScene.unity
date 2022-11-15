@@ -2646,7 +2646,6 @@ GameObject:
   - component: {fileID: 1023879288}
   - component: {fileID: 1023879287}
   - component: {fileID: 1023879286}
-  - component: {fileID: 1023879291}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -2738,7 +2737,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023879285}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2746,21 +2745,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1023879291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023879285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1adfb90c415c114498636e84fae16c86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 911825110}
-  pathLine: {fileID: 1925728906}
-  refreshTime: 0.5
 --- !u!1 &1040303557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4057,6 +4041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingVM: {fileID: 1734727933}
+  navMesh: {fileID: 175518658}
   wallWidth: 0.01
   wallHeight: 2
   initialWallCount: 1000
@@ -5519,6 +5504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925728907}
   - component: {fileID: 1925728906}
+  - component: {fileID: 1925728908}
   m_Layer: 0
   m_Name: Path Line
   m_TagString: Untagged
@@ -5640,6 +5626,21 @@ Transform:
   m_Father: {fileID: 1423239491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925728908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925728905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1adfb90c415c114498636e84fae16c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1023879290}
+  target: {fileID: 911825110}
+  refreshTime: 0.5
 --- !u!1 &1928082259
 GameObject:
   m_ObjectHideFlags: 0

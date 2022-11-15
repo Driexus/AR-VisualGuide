@@ -1,18 +1,21 @@
 using UnityEngine.AI;
 using UnityEngine;
 
+[RequireComponent(typeof(LineRenderer))]
 public class NavPath : MonoBehaviour
 {
+    public Transform player;
     public Transform target;
-    public LineRenderer pathLine;
-    private NavMeshPath path;
+    private LineRenderer _pathLine;
+    private NavMeshPath _path;
 
     public float refreshTime = 1f;
-    private float elapsed = 0.0f;
+    private float elapsed = 0f;
     void Start()
     {
-        path = new NavMeshPath();
-        elapsed = 0.0f;
+        _pathLine = GetComponent<LineRenderer>();
+        _path = new NavMeshPath();
+        elapsed = 0f;
     }
 
     void Update()
@@ -22,11 +25,11 @@ public class NavPath : MonoBehaviour
         if (elapsed > refreshTime)
         {
             elapsed -= refreshTime;
-            NavMesh.CalculatePath(transform.position, target.position, NavMesh.AllAreas, path);
+            NavMesh.CalculatePath(player.transform.position, target.position, NavMesh.AllAreas, _path);
 
             // Update the path line positions
-            pathLine.positionCount = path.corners.Length;
-            pathLine.SetPositions(path.corners);
+            _pathLine.positionCount = _path.corners.Length;
+            _pathLine.SetPositions(_path.corners);
         }
     }
 }
