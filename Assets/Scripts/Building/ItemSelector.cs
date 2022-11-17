@@ -9,7 +9,8 @@ public class ItemSelector : DropdownWrapper
 
     private void Start()
     {
-        buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => UpdateDropdownOptions());
+        triggerItemSelectedOnRefresh = true;
+        buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => RefreshDropdownOptions());
     }
     protected override string[] GetDropdownNames()
     {

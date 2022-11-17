@@ -36311,6 +36311,8 @@ struct DropdownWrapper_t2B8B735C169F927DE94408005160FB905E00CBB1  : public MonoB
 {
 	// TMPro.TMP_Dropdown DropdownWrapper::dropdown
 	TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* ___dropdown_4;
+	// System.Boolean DropdownWrapper::triggerItemSelectedOnRefresh
+	bool ___triggerItemSelectedOnRefresh_5;
 };
 
 // ImageCropperNamespace.EventSystemHandler
@@ -36636,10 +36638,10 @@ struct NavPath_tFEE0E9DAF3B58D1309422507CB92F35E2289B412  : public MonoBehaviour
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___player_4;
 	// UnityEngine.Transform NavPath::target
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target_5;
-	// UnityEngine.LineRenderer NavPath::pathLine
-	LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* ___pathLine_6;
-	// UnityEngine.AI.NavMeshPath NavPath::path
-	NavMeshPath_tC77ABF4A25FC0F0A94E8A70E304E114FE690A3A7* ___path_7;
+	// UnityEngine.LineRenderer NavPath::_pathLine
+	LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* ____pathLine_6;
+	// UnityEngine.AI.NavMeshPath NavPath::_path
+	NavMeshPath_tC77ABF4A25FC0F0A94E8A70E304E114FE690A3A7* ____path_7;
 	// System.Single NavPath::refreshTime
 	float ___refreshTime_8;
 	// System.Single NavPath::elapsed
@@ -36961,9 +36963,9 @@ struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832  : public UIBehav
 struct BuildingSelector_t1AC2812062DAB3D4B6763834547CF7517EC1EC88  : public DropdownWrapper_t2B8B735C169F927DE94408005160FB905E00CBB1
 {
 	// FirebaseRepository BuildingSelector::repository
-	FirebaseRepository_tF7B568A98C9D20CE97AAC8B8AE5D64B0A6DA3C70* ___repository_5;
+	FirebaseRepository_tF7B568A98C9D20CE97AAC8B8AE5D64B0A6DA3C70* ___repository_6;
 	// BuildingViewModel BuildingSelector::buildingVM
-	BuildingViewModel_tC169A29C2A3BE6EF2AF7F15703A54EC5D4D86436* ___buildingVM_6;
+	BuildingViewModel_tC169A29C2A3BE6EF2AF7F15703A54EC5D4D86436* ___buildingVM_7;
 };
 
 // BuildingViewModel
@@ -37156,9 +37158,9 @@ struct ImageUploader_t92ADBF928933F6CB136583C50FEF3029A2AAE9B8  : public Singlet
 struct ItemSelector_tFBB12E0A90940295A23AFFD179539EB1C0C1925E  : public DropdownWrapper_t2B8B735C169F927DE94408005160FB905E00CBB1
 {
 	// BuildingViewModel ItemSelector::buildingVM
-	BuildingViewModel_tC169A29C2A3BE6EF2AF7F15703A54EC5D4D86436* ___buildingVM_5;
+	BuildingViewModel_tC169A29C2A3BE6EF2AF7F15703A54EC5D4D86436* ___buildingVM_6;
 	// UnityEngine.Transform ItemSelector::itemTarget
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___itemTarget_6;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___itemTarget_7;
 };
 
 // UnityEngine.UI.LayoutElement

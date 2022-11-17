@@ -15,14 +15,13 @@ public class NavPath : MonoBehaviour
     {
         _pathLine = GetComponent<LineRenderer>();
         _path = new NavMeshPath();
-        elapsed = 0f;
     }
 
     void Update()
     {
         // Update the way to the goal every refresh interval
         elapsed += Time.deltaTime;
-        if (elapsed > refreshTime)
+        if (elapsed >= refreshTime)
         {
             elapsed -= refreshTime;
             NavMesh.CalculatePath(player.transform.position, target.position, NavMesh.AllAreas, _path);
@@ -31,5 +30,11 @@ public class NavPath : MonoBehaviour
             _pathLine.positionCount = _path.corners.Length;
             _pathLine.SetPositions(_path.corners);
         }
+    }
+
+    // Instantly refresh the path
+    private void OnEnable()
+    {
+        elapsed = refreshTime;
     }
 }

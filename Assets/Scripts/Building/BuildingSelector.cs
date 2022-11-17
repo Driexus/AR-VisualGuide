@@ -7,7 +7,7 @@ public class BuildingSelector : DropdownWrapper
 
     private void Start()
     {
-        repository.BuildingsUpdated += new EventHandler((object sender, EventArgs args) => UpdateDropdownOptions());
+        repository.BuildingsUpdated += new EventHandler((object sender, EventArgs args) => RefreshDropdownOptions());
     }
 
     protected override void OnItemSelected(int optionIndex)
