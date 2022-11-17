@@ -73,8 +73,7 @@ public class BuildingCreator : MonoBehaviour
             var targetId = firebaseTarget.image_target_id;
             if (targetId != null)
             {
-                var target = _imageTargets[targetId];
-                if (target != null)
+                if (_imageTargets.TryGetValue(targetId, out ImageTarget target))
                 {
                     var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
                     var bytes = Convert.FromBase64String(target.image);
