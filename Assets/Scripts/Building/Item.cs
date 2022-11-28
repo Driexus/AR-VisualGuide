@@ -1,14 +1,22 @@
 using UnityEngine;
 
 [System.Serializable]
-public struct Item : IWorldObject
+public class Item : ItemCharacteristics, IWorldObject
 {
-    public string name;
-    public float x;
-    public float y;
-    public float z;
+    private Vector3 _position;
+    private Vector3 _rotation;
 
-    public Vector3 Position => new(x, z, y);
-
-    public Vector3 Rotation => new(0, 0, 0);
+    public Vector3 Position => _position;
+    public Vector3 Rotation => _rotation;
+    
+    public Item(ItemCharacteristics itemCharacteristics, IWorldObject itemCoords)
+    {
+        description = itemCharacteristics.description;
+        exhibition = itemCharacteristics.exhibition;
+        showcases = itemCharacteristics.showcases;
+        title = itemCharacteristics.title;
+        
+        _position = itemCoords.Position;
+        _rotation = itemCoords.Rotation;
+    }
 }

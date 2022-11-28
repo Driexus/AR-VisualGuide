@@ -1,5 +1,5 @@
 using System;
-using UnityEngine;
+using System.Collections.Generic;
 
 public class BuildingViewModel : SingletonMonoBehaviour<BuildingViewModel>
 {
@@ -12,11 +12,15 @@ public class BuildingViewModel : SingletonMonoBehaviour<BuildingViewModel>
         set 
         { 
             _currentBuilding = value;
+            RepopulateItems();
             CurrentBuildingChanged?.Invoke(this, null);
         }
     }
 
     public event EventHandler CurrentBuildingChanged;
+
+    private List<Item> _items = new();
+    public List<Item> Items => _items;
 
     private void Start()
     {
@@ -28,5 +32,22 @@ public class BuildingViewModel : SingletonMonoBehaviour<BuildingViewModel>
             repository.BuildingsUpdated -= handler;
         });
         repository.BuildingsUpdated += handler;
+    }
+
+    // Clears the _items list and populates it only with the items for which both the coordinates and the characteristics can be found
+    private void RepopulateItems()
+    {
+        _items.Clear();
+        var itemsCharacteristics = _currentBuilding.itemsCharacteristics;
+        foreach (ItemCoords itemCoords in _currentBuilding.items_coords)
+        {
+            // Check if the corresponding itemCharacteristics object exists for the specific itemId
+            var itemId = itemCoords.item_id;
+            if (itemId != null && itemsCharacteristics.TryGetValue(itemId, out ItemCharacteristics itemCharacteristics))
+            {
+                var item = new Item(itemCharacteristics, itemCoords);
+                _items.Add(item);
+            }
+        }
     }
 }

@@ -1308,6 +1308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514851247}
   - component: {fileID: 514851250}
+  - component: {fileID: 514851251}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -1346,6 +1347,22 @@ MonoBehaviour:
   targetName: test target
   imageURL: https://images.wallpapersden.com/image/download/blue-digital-art-squares_a21mZmiUmZqaraWkpJRnZWltrWdlaW0.jpg
   gloabalTexture: {fileID: 0}
+--- !u!114 &514851251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514851245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95ed6886e9caaf46b7a7946e937e5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rot: {x: 0, y: 0, z: -10}
+  baseRot: {x: 90, y: 0, z: 0}
+  quatRot: {x: 0, y: 0, z: 0, w: 0}
+  endRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &650447061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4238,7 @@ MonoBehaviour:
   wallWidth: 0.01
   wallHeight: 2
   initialWallCount: 1000
+  initialItemCount: 100
 --- !u!1 &1453089949
 GameObject:
   m_ObjectHideFlags: 0

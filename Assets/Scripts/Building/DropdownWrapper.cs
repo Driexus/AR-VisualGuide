@@ -1,10 +1,12 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(TMP_Dropdown))]
 public abstract class DropdownWrapper : MonoBehaviour
 {
     private TMP_Dropdown dropdown;
+    public List<TMP_Dropdown.OptionData> options => dropdown.options;
 
     private void Awake()
     {

@@ -1,11 +1,14 @@
 using UnityEngine;
 using System;
 using ExtensionMethods;
+using System.Collections.Generic;
 
 public class ItemSelector : DropdownWrapper
 {
     public BuildingViewModel buildingVM;
     public Transform itemTarget;
+
+    private List<ItemCoords> _optionItemsCoords = new();
 
     private void Start()
     {
@@ -14,18 +17,18 @@ public class ItemSelector : DropdownWrapper
     }
     protected override string[] GetDropdownNames()
     {
-        Item[] items = buildingVM.CurrentBuilding.items;
-        string[] names = new string[items.Length];
+        var items = buildingVM.Items;
+        string[] names = new string[items.Count];
 
-        for (int i = 0; i < items.Length; i++)
-            names[i] = items[i].name;
+        for (int i = 0; i < items.Count; i++)
+            names[i] = items[i].title;
 
         return names;
     }
 
     protected override void OnItemSelected(int optionIndex)
     {
-        Item selectedItem = buildingVM.CurrentBuilding.items[optionIndex];
-        itemTarget.SetPositionAndRotation(selectedItem);
+        ItemCoords selectedItemCoords = _optionItemsCoords[optionIndex];
+        itemTarget.SetPositionAndRotation(selectedItemCoords);
     }
 }

@@ -18,18 +18,23 @@ public class BuildingCreator : MonoBehaviour
     public float wallWidth;
     public float wallHeight;
     public uint initialWallCount;
+    public uint initialItemCount;
 
     private Wall[] _walls;
     private Dictionary<string, ImageTarget> _imageTargets;
+    private List<Item> _items;
 
     private GameObject wallObjectPool;
     private GameObject floor;
     private GameObject wallCollection;
     private GameObject imageTargetCollection;
+    private GameObject itemsObjectPool;
+    private GameObject itemsCollection;
 
     private void Awake()
     {
         InstantiateWallObjectPool();
+        InstantiateItemsObjectPool();
 
         // Create floor
         floor = GameObject.CreatePrimitive(PrimitiveType.Plane);
@@ -47,7 +52,12 @@ public class BuildingCreator : MonoBehaviour
         imageTargetCollection.gameObject.name = "Image Targets";
         imageTargetCollection.transform.parent = transform;
 
-        // Change the walls when the current building changes
+        // Create image target collection
+        itemsCollection = new GameObject();
+        itemsCollection.gameObject.name = "Items";
+        itemsCollection.transform.parent = transform;
+
+        // Subscribe listener to load new data when the current building changes
         buildingVM.CurrentBuildingChanged += new EventHandler((object sender, EventArgs args) => LoadNewBuilding());
     }
 
@@ -55,9 +65,11 @@ public class BuildingCreator : MonoBehaviour
     {
         _walls = buildingVM.CurrentBuilding.walls;
         _imageTargets = buildingVM.CurrentBuilding.image_targets;
+        _items = buildingVM.Items;
         LoadWalls();
         LoadFloor();
         LoadImageTargets();
+        LoadItems();
         WallsUpdated(_walls);
     }
 
@@ -71,21 +83,40 @@ public class BuildingCreator : MonoBehaviour
         foreach (FirebaseImageTarget firebaseTarget in buildingVM.CurrentBuilding.targets)
         {
             var targetId = firebaseTarget.image_target_id;
-            if (targetId != null)
+            if (targetId != null && _imageTargets.TryGetValue(targetId, out ImageTarget target))
             {
-                if (_imageTargets.TryGetValue(targetId, out ImageTarget target))
-                {
-                    var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
-                    var bytes = Convert.FromBase64String(target.image);
-                    ImageConversion.LoadImage(texture, bytes);
+                var texture = new Texture2D(new int(), new int(), TextureFormat.RGB24, false);
+                var bytes = Convert.FromBase64String(target.image);
+                ImageConversion.LoadImage(texture, bytes);
 
-                    var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, firebaseTarget.name);
-                    vuTarget.gameObject.AddComponent<DefaultObserverEventHandler>();
+                var vuTarget = VuforiaBehaviour.Instance.ObserverFactory.CreateImageTarget(texture, target.width, firebaseTarget.image_target_id);
+                vuTarget.gameObject.AddComponent<DefaultObserverEventHandler>();
 
-                    vuTarget.transform.SetPositionAndRotation(firebaseTarget);
-                    vuTarget.transform.parent = imageTargetCollection.transform;
-                }       
+                vuTarget.transform.SetPositionAndRotation(firebaseTarget);
+                vuTarget.transform.parent = imageTargetCollection.transform;
             }
+        }
+    }
+
+    // Create a pool for unused items and add some items to use later
+    private void InstantiateItemsObjectPool()
+    {
+        Debug.LogWarning("Item object pool is not being used");
+        itemsObjectPool = new GameObject("Items Object Pool");
+        itemsObjectPool.transform.parent = transform;
+        itemsObjectPool.SetActive(false);
+
+        /*for (int i = 0; i < initialItemCount; i++)
+        {
+            CreateItemObject(itemsObjectPool.transform, "");
+        }*/
+    }
+
+    private void LoadItems()
+    {
+        foreach (Item item in _items)
+        {
+            CreateItemObject(item, itemsCollection.transform);
         }
     }
 
@@ -191,6 +222,18 @@ public class BuildingCreator : MonoBehaviour
         wallCounter++;
 
         return wall.transform;
+    }
+
+    // Create new item and set its parent
+    private Transform CreateItemObject(Item item, Transform parent)
+    {
+        GameObject itemGO = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        itemGO.transform.parent = parent;
+        itemGO.name = item.title;
+        itemGO.gameObject.layer = LayerMask.NameToLayer("Default");
+        itemGO.transform.SetPositionAndRotation(item);
+
+        return itemGO.transform;
     }
 
     private float MaxOfThree(float a, float b, float c)

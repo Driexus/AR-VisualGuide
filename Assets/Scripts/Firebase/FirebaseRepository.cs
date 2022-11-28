@@ -89,7 +89,7 @@ public class FirebaseRepository : MonoBehaviour
                 foreach (DataSnapshot buildingSnapshot in snapshot.Children)
                 {
                     string buildingId = buildingSnapshot.Key;
-                    Building building = new Building(buildingId);
+                    Building building = new(buildingId);
 
                     string json = buildingSnapshot.GetRawJsonValue();
                     JsonUtility.FromJsonOverwrite(json, building);
@@ -105,6 +105,19 @@ public class FirebaseRepository : MonoBehaviour
                         imageTargets.Add(imageTargetSnapshot.Key, imageTarget);
                     }
                     building.image_targets = imageTargets;
+
+                    // Convert json item collection to dictionary
+                    Dictionary<string, ItemCharacteristics> itemsCharacteristics = new();
+                    foreach (DataSnapshot itemSnapshot in buildingSnapshot.Child("items").Children)
+                    {
+                        string targetJson = itemSnapshot.GetRawJsonValue();
+                        ItemCharacteristics itemCharacteristics = new();
+                        JsonUtility.FromJsonOverwrite(targetJson, itemCharacteristics);
+
+                        itemsCharacteristics.Add(itemSnapshot.Key, itemCharacteristics);
+                    }
+                    building.itemsCharacteristics = itemsCharacteristics;
+                    Debug.Log(itemsCharacteristics.Count);
 
                     _buildings[i] = building;
                     i++;

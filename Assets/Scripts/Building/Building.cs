@@ -4,7 +4,8 @@ using System.Collections.Generic;
 public class Building: DatabaseObject
 {
     public Wall[] walls;
-    public Item[] items;
+    public Dictionary<string, ItemCharacteristics> itemsCharacteristics;
+    public ItemCoords[] items_coords;
     public FirebaseImageTarget[] targets;
     public Dictionary<string, ImageTarget> image_targets;
     public string name;
