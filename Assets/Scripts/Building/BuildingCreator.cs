@@ -96,11 +96,26 @@ public class BuildingCreator : MonoBehaviour
 
                 vuTarget.transform.SetPositionAndRotation(firebaseTarget);
                 vuTarget.transform.parent = imageTargetCollection.transform;
+
+#if UNITY_EDITOR
+                // Show quad images for debugging purposes
+                
+                var quadImage = GameObject.CreatePrimitive(PrimitiveType.Quad).transform;
+                quadImage.gameObject.name = "Debug " + targetId;
+                quadImage.GetComponent<MeshRenderer>().material.mainTexture = texture;
+                quadImage.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+                quadImage.parent = imageTargetCollection.transform;
+                quadImage.position = vuTarget.transform.position;
+                quadImage.localRotation = vuTarget.transform.rotation * Quaternion.Euler(90, 0, 0);
+                var width = target.width;
+                var height = target.width * (float) texture.height / (float) texture.width;
+                quadImage.localScale = new(width, height, 1);
+#endif
             }
         }
     }
 
-    // Create a pool for unused items and add some items to use later
+    // Create a pool for unused items and add some items to use lter
     private void InstantiateItemsObjectPool()
     {
         Debug.LogWarning("Item object pool is not being used");
