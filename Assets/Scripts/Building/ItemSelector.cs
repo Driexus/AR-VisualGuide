@@ -8,7 +8,7 @@ public class ItemSelector : DropdownWrapper
     public BuildingViewModel buildingVM;
     public Transform itemTarget;
 
-    private List<ItemCoords> _optionItemsCoords = new();
+    private Item[] _items;
 
     private void Start()
     {
@@ -17,18 +17,18 @@ public class ItemSelector : DropdownWrapper
     }
     protected override string[] GetDropdownNames()
     {
-        var items = buildingVM.Items;
-        string[] names = new string[items.Count];
+        _items = buildingVM.Items.ToArray();
+        string[] names = new string[_items.Length];
 
-        for (int i = 0; i < items.Count; i++)
-            names[i] = items[i].title;
+        for (int i = 0; i < _items.Length; i++)
+            names[i] = _items[i].title;
 
         return names;
     }
 
     protected override void OnItemSelected(int optionIndex)
     {
-        ItemCoords selectedItemCoords = _optionItemsCoords[optionIndex];
-        itemTarget.SetPositionAndRotation(selectedItemCoords);
+        var selectedItem = _items[optionIndex];
+        itemTarget.SetPositionAndRotation(selectedItem);
     }
 }

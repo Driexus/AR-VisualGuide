@@ -82,7 +82,7 @@ public class UploadPanelHandler : MonoBehaviour
     private void OnUploadClicked()
     {
         if (!_targetToUpload.Equals(default(KeyValuePair<String, ImageTarget>)))
-            ImageUploader.instance.UploadImageTarget(_targetToUpload);
+            ImageUploader.Instance.UploadImageTarget(_targetToUpload);
 
         gameObject.SetActive(false);
     }
@@ -91,7 +91,7 @@ public class UploadPanelHandler : MonoBehaviour
     private void OnDiscardClicked()
     {
         if (!_targetToUpload.Equals(default(KeyValuePair<String, ImageTarget>)))
-            ImageUploader.instance.DiscardImageTarget(_targetToUpload);
+            ImageUploader.Instance.DiscardImageTarget(_targetToUpload);
 
         gameObject.SetActive(false);
     }

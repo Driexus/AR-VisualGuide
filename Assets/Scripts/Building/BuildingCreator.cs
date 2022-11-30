@@ -20,6 +20,8 @@ public class BuildingCreator : MonoBehaviour
     public uint initialWallCount;
     public uint initialItemCount;
 
+    public GameObject itemPrefab;
+
     private Wall[] _walls;
     private Dictionary<string, ImageTarget> _imageTargets;
     private List<Item> _items;
@@ -227,11 +229,12 @@ public class BuildingCreator : MonoBehaviour
     // Create new item and set its parent
     private Transform CreateItemObject(Item item, Transform parent)
     {
-        GameObject itemGO = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        itemGO.transform.parent = parent;
+        GameObject itemGO = Instantiate(itemPrefab, parent);
         itemGO.name = item.title;
         itemGO.gameObject.layer = LayerMask.NameToLayer("Default");
         itemGO.transform.SetPositionAndRotation(item);
+
+        itemGO.GetComponent<ItemBehaviour>().SetItem(item);
 
         return itemGO.transform;
     }
