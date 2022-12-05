@@ -115,25 +115,57 @@ public class BuildingCreator : MonoBehaviour
         }
     }
 
-    // Create a pool for unused items and add some items to use lter
+    // Create a pool for unused items and add some items to use later
     private void InstantiateItemsObjectPool()
     {
-        Debug.LogWarning("Item object pool is not being used");
         itemsObjectPool = new GameObject("Items Object Pool");
         itemsObjectPool.transform.parent = transform;
         itemsObjectPool.SetActive(false);
 
-        /*for (int i = 0; i < initialItemCount; i++)
+        for (int i = 0; i < initialItemCount; i++)
         {
-            CreateItemObject(itemsObjectPool.transform, "");
-        }*/
+            CreateItemObject(itemsObjectPool.transform);
+        }
     }
 
     private void LoadItems()
     {
-        foreach (Item item in _items)
+        int activeItemCount = itemsCollection.transform.childCount;
+
+        // If we have more active items than needed move the extra to the object pool
+        if (activeItemCount > _items.Count)
         {
-            CreateItemObject(item, itemsCollection.transform);
+            for (int i = 0; i < activeItemCount - _items.Count; i++)
+                itemsCollection.transform.GetChild(0).parent = itemsObjectPool.transform;
+        }
+
+        for (int i = 0; i < _items.Count; i++)
+        {
+            /* Get a new item transform to set its characteristics later. The order is:
+             * 1) From currently active items
+             * 2) From object pool
+             * 3) Create new gameobject
+            */
+            Transform itemTransform;
+            if (i < activeItemCount)
+            {
+                itemTransform = itemsCollection.transform.GetChild(i);
+            }                
+            else if (wallObjectPool.transform.childCount > 0)
+            {
+                itemTransform = itemsObjectPool.transform.GetChild(0);
+                itemTransform.parent = itemsCollection.transform;
+            }
+            else
+            {
+                itemTransform = CreateWall(itemsCollection.transform);
+            }
+
+            // Set the characteristics of the item
+            var item = _items[i];
+            itemTransform.name = item.title;
+            itemTransform.GetComponent<ItemBehaviour>().SetItem(item);
+            itemTransform.SetPositionAndRotation(item);
         }
     }
 
@@ -242,14 +274,11 @@ public class BuildingCreator : MonoBehaviour
     }
 
     // Create new item and set its parent
-    private Transform CreateItemObject(Item item, Transform parent)
+    private Transform CreateItemObject(Transform parent)
     {
         GameObject itemGO = Instantiate(itemPrefab, parent);
-        itemGO.name = item.title;
+        itemGO.name = "Item";
         itemGO.gameObject.layer = LayerMask.NameToLayer("Default");
-        itemGO.transform.SetPositionAndRotation(item);
-
-        itemGO.GetComponent<ItemBehaviour>().SetItem(item);
 
         return itemGO.transform;
     }

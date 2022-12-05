@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd864285c112aae4e83ddd53428cec92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standard: {fileID: 0}
-  highlight: {fileID: 0}
+  standard: {fileID: 6611654979939603106}
+  highlight: {fileID: 6611654980436784875}
 --- !u!1 &6611654980436784875
 GameObject:
   m_ObjectHideFlags: 0

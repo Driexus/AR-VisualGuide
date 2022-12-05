@@ -117,7 +117,6 @@ public class FirebaseRepository : MonoBehaviour
                         itemsCharacteristics.Add(itemSnapshot.Key, itemCharacteristics);
                     }
                     building.itemsCharacteristics = itemsCharacteristics;
-                    Debug.Log(itemsCharacteristics.Count);
 
                     _buildings[i] = building;
                     i++;
