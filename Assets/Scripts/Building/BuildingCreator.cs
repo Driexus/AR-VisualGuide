@@ -82,7 +82,7 @@ public class BuildingCreator : MonoBehaviour
             GameObject.Destroy(child.gameObject);
 
         // For each non null target id, try to get the image target details in order to create a vuforia image target.
-        foreach (FirebaseImageTarget firebaseTarget in buildingVM.CurrentBuilding.targets)
+        foreach (ImageTargetCoords firebaseTarget in buildingVM.CurrentBuilding.targets_coords)
         {
             var targetId = firebaseTarget.image_target_id;
             if (targetId != null && _imageTargets.TryGetValue(targetId, out ImageTarget target))

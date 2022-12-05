@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class FirebaseImageTarget : IWorldObject
+public class ImageTargetCoords : IWorldObject
 {
     public float euler_x;
     public float euler_y;

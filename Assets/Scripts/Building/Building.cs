@@ -6,7 +6,7 @@ public class Building: DatabaseObject
     public Wall[] walls;
     public Dictionary<string, ItemCharacteristics> itemsCharacteristics;
     public ItemCoords[] items_coords;
-    public FirebaseImageTarget[] targets;
+    public ImageTargetCoords[] image_targets_coords;
     public Dictionary<string, ImageTarget> image_targets;
     public string name;
 

@@ -108,7 +108,7 @@ public class FirebaseRepository : MonoBehaviour
 
                     // Convert json item collection to dictionary
                     Dictionary<string, ItemCharacteristics> itemsCharacteristics = new();
-                    foreach (DataSnapshot itemSnapshot in buildingSnapshot.Child("items").Children)
+                    foreach (DataSnapshot itemSnapshot in buildingSnapshot.Child("items_characteristics").Children)
                     {
                         string targetJson = itemSnapshot.GetRawJsonValue();
                         ItemCharacteristics itemCharacteristics = new();

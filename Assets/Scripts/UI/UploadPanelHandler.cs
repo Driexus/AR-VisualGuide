@@ -68,10 +68,10 @@ public class UploadPanelHandler : MonoBehaviour
     // Enable/Disable the upload button depending on if the width value is a positive float
     private void OnWidthChanged(string widthString)
     {
-        float width;
-        if (float.TryParse(widthString, out width))
+        if (int.TryParse(widthString, out int width))
         {
-            _targetToUpload.Value.width = width;
+            // Convert width from cm to m
+            _targetToUpload.Value.width = (float) width / 100;
             uploadButton.interactable = (width > 0);
         }
         else
