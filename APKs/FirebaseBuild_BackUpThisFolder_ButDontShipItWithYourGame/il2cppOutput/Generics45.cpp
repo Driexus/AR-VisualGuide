@@ -460,7 +460,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlySpan_1_GetHashCode_mDC71816B8A88A16
 IL2CPP_EXTERN_C const RuntimeMethod* Set_1_Resize_m412FA20937FDCB14C2E2B845F49F08B867C44BF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Set_1_Resize_mE05E14DAF4F3293B4FFF6AB25FA043E28986C483_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Set_1_Resize_mF91026011328E50BA436D94348DE02AF46D42EFD_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* SingletonMonoBehaviour_1_Awake_m51612BA15CCE7EC68EFEC6D6F5D3BA3112DE5553_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* SingletonMonoBehaviour_1__ctor_mBCEAA2A192A8799AD08EBCE8208DD241204F0A50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_Equals_m7F08055851C835FE3E76471A6015683E6CCBD980_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_GetHashCode_mAB5C55282F13372D4B32AFA20E3E2618CE417F61_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Char_t521A6F19B456D956AF452D926C32709DC03D6B17_0_0_0_var;
@@ -3069,8 +3069,8 @@ struct SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8  : pub
 
 struct SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields
 {
-	// T SingletonMonoBehaviour`1::<instance>k__BackingField
-	RuntimeObject* ___U3CinstanceU3Ek__BackingField_4;
+	// T SingletonMonoBehaviour`1::<Instance>k__BackingField
+	RuntimeObject* ___U3CInstanceU3Ek__BackingField_4;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -4833,12 +4833,12 @@ inline bool NativeArray_1_get_IsCreated_mD9622F7595F5F0E1CEEA6699AA249F1FB0FD5C5
 {
 	return ((  bool (*) (NativeArray_1_t0783F5E3C7AF6C600A6A20DA7A32D82CA836528D*, const RuntimeMethod*))NativeArray_1_get_IsCreated_mD9622F7595F5F0E1CEEA6699AA249F1FB0FD5C5D_gshared)(__this, method);
 }
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
 // System.Void System.Exception::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F (Exception_t* __this, String_t* ___message0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // T[] System.Span`1<System.Object>::ToArray()
 inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Span_1_ToArray_m048501CDA9FB43335CC9A0E27F7C13968F5AA999_inline (Span_1_t3F436092261253E8F2AF9867CA253C3B370766C2* __this, const RuntimeMethod* method)
 {
@@ -25058,28 +25058,28 @@ IL_0068:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// T SingletonMonoBehaviour`1<System.Object>::get_instance()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SingletonMonoBehaviour_1_get_instance_mBC1FC44B02172B1AD768D5A2465F47CAE52D25C0_gshared (const RuntimeMethod* method) 
+// T SingletonMonoBehaviour`1<System.Object>::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SingletonMonoBehaviour_1_get_Instance_m530A97D0EBAAFA61E7F11912E671094078B6D879_gshared (const RuntimeMethod* method) 
 {
 	{
-		// public static T instance { get; protected set; }
-		RuntimeObject* L_0 = ((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_4;
+		// public static T Instance { get; protected set; }
+		RuntimeObject* L_0 = ((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CInstanceU3Ek__BackingField_4;
 		return L_0;
 	}
 }
-// System.Void SingletonMonoBehaviour`1<System.Object>::set_instance(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_set_instance_mA4FAA341B486230F778950F2C3E0B38F37C9AAC8_gshared (RuntimeObject* ___value0, const RuntimeMethod* method) 
+// System.Void SingletonMonoBehaviour`1<System.Object>::set_Instance(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_set_Instance_mE01688542820120CC450196CF58F9E71618BB095_gshared (RuntimeObject* ___value0, const RuntimeMethod* method) 
 {
 	{
-		// public static T instance { get; protected set; }
+		// public static T Instance { get; protected set; }
 		RuntimeObject* L_0 = ___value0;
-		((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_4), (void*)L_0);
+		((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CInstanceU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CInstanceU3Ek__BackingField_4), (void*)L_0);
 		return;
 	}
 }
-// System.Void SingletonMonoBehaviour`1<System.Object>::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_Awake_m51612BA15CCE7EC68EFEC6D6F5D3BA3112DE5553_gshared (SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8* __this, const RuntimeMethod* method) 
+// System.Void SingletonMonoBehaviour`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1__ctor_mBCEAA2A192A8799AD08EBCE8208DD241204F0A50_gshared (SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -25090,7 +25090,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_Awake_m51612BA1
 	bool V_0 = false;
 	int32_t G_B3_0 = 0;
 	{
-		// if (instance != null && instance != this)
+		// public SingletonMonoBehaviour()
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E((MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)__this, NULL);
+		// if (Instance != null && Instance != this)
 		RuntimeObject* L_0;
 		L_0 = ((  RuntimeObject* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -25098,7 +25100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_Awake_m51612BA1
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_0025;
+			goto IL_002c;
 		}
 	}
 	{
@@ -25108,21 +25110,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1_Awake_m51612BA1
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)__this, NULL);
 		G_B3_0 = ((int32_t)(L_3));
-		goto IL_0026;
+		goto IL_002d;
 	}
 
-IL_0025:
+IL_002c:
 	{
 		G_B3_0 = 0;
 	}
 
-IL_0026:
+IL_002d:
 	{
 		V_0 = (bool)G_B3_0;
 		bool L_4 = V_0;
 		if (!L_4)
 		{
-			goto IL_003d;
+			goto IL_0044;
 		}
 	}
 	{
@@ -25133,22 +25135,14 @@ IL_0026:
 		Exception_t* L_5 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
 		NullCheck(L_5);
 		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral4CFC414BA34994A36FBBDA4C0B3CF5D16E69A46F)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SingletonMonoBehaviour_1_Awake_m51612BA15CCE7EC68EFEC6D6F5D3BA3112DE5553_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SingletonMonoBehaviour_1__ctor_mBCEAA2A192A8799AD08EBCE8208DD241204F0A50_RuntimeMethod_var)));
 	}
 
-IL_003d:
+IL_0044:
 	{
-		// instance = (T)this;
+		// Instance = (T)this;
 		((  void (*) (RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(((RuntimeObject*)Castclass((RuntimeObject*)__this, il2cpp_rgctx_data(method->klass->rgctx_data, 2))), il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		// }
-		return;
-	}
-}
-// System.Void SingletonMonoBehaviour`1<System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SingletonMonoBehaviour_1__ctor_mBCEAA2A192A8799AD08EBCE8208DD241204F0A50_gshared (SingletonMonoBehaviour_1_tD79D2A2418F975A1D96B6611940D7E0B8FECFAC8* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E((MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)__this, NULL);
 		return;
 	}
 }

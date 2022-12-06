@@ -12,7 +12,7 @@ public class Item : ItemCharacteristics, IWorldObject
     public Item(ItemCharacteristics itemCharacteristics, IWorldObject itemCoords)
     {
         description = itemCharacteristics.description;
-        exhibition = itemCharacteristics.exhibition;
+        section = itemCharacteristics.section;
         showcases = itemCharacteristics.showcases;
         title = itemCharacteristics.title;
         
