@@ -12,7 +12,7 @@ public class BuildingCreator : MonoBehaviour
     public NavMeshSurface navMesh;
     public BuildingViewModel buildingVM;
 
-    public delegate void WallsUpdatedEventHandler(Wall[] walls);
+    public delegate void WallsUpdatedEventHandler(Wall[] walls, Bounds floor);
     public event WallsUpdatedEventHandler WallsUpdated;    
 
     public float wallWidth;
@@ -72,7 +72,10 @@ public class BuildingCreator : MonoBehaviour
         LoadFloor();
         LoadImageTargets();
         LoadItems();
-        WallsUpdated(_walls);
+
+        // Floor is a plane so we need to multiply by 10 to get the actual dimensions
+        var bounds = new Bounds(floor.transform.position, floor.transform.localScale * 10);
+        WallsUpdated(_walls, bounds);
     }
 
     private void LoadImageTargets()

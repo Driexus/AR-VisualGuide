@@ -18,13 +18,13 @@ public class NavBaker : MonoBehaviour
         buildingCreator.WallsUpdated += new BuildingCreator.WallsUpdatedEventHandler(UpdateNavMesh);
     }
 
-    public void UpdateNavMesh(Wall[] walls)
+    public void UpdateNavMesh(Wall[] walls, Bounds bounds)
     {
-        var cor = BuildNavMeshCor();
+        var cor = BuildNavMeshCor(bounds);
         StartCoroutine(cor);
     }
 
-    private IEnumerator BuildNavMeshCor()
+    private IEnumerator BuildNavMeshCor(Bounds bounds)
     {
         // Get build settings
         NavMeshBuildSettings buildSettings = surface.GetBuildSettings();
@@ -33,10 +33,6 @@ public class NavBaker : MonoBehaviour
         var buildSources = new List<NavMeshBuildSource>();
         var markups = new List<NavMeshBuildMarkup>();
         NavMeshBuilder.CollectSources(surface.transform, surface.layerMask, surface.useGeometry, surface.defaultArea, markups, buildSources);
-
-        // Find bounds
-        var bounds = new Bounds(transform.position, new Vector3(1000, 1000, 1000));
-        Debug.LogWarning("TODO: find bounds");
         
         // Get nav data async
         NavMeshData data = new();

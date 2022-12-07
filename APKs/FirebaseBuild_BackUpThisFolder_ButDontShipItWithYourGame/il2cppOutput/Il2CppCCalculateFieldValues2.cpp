@@ -22755,20 +22755,20 @@ struct U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3  : pu
 	int32_t ___U3CU3E1__state_0;
 	// System.Object NavBaker/<BuildNavMeshCor>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
+	// UnityEngine.Bounds NavBaker/<BuildNavMeshCor>d__8::bounds
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___bounds_2;
 	// NavBaker NavBaker/<BuildNavMeshCor>d__8::<>4__this
-	NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2* ___U3CU3E4__this_2;
+	NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2* ___U3CU3E4__this_3;
 	// UnityEngine.AI.NavMeshBuildSettings NavBaker/<BuildNavMeshCor>d__8::<buildSettings>5__1
-	NavMeshBuildSettings_t7836365E01BEB1D2FF32BF62AE46A465DD84B77D ___U3CbuildSettingsU3E5__1_3;
+	NavMeshBuildSettings_t7836365E01BEB1D2FF32BF62AE46A465DD84B77D ___U3CbuildSettingsU3E5__1_4;
 	// System.Collections.Generic.List`1<UnityEngine.AI.NavMeshBuildSource> NavBaker/<BuildNavMeshCor>d__8::<buildSources>5__2
-	List_1_tA1B43D38C15DE02C34B9D22B1D6610931673C1C3* ___U3CbuildSourcesU3E5__2_4;
+	List_1_tA1B43D38C15DE02C34B9D22B1D6610931673C1C3* ___U3CbuildSourcesU3E5__2_5;
 	// System.Collections.Generic.List`1<UnityEngine.AI.NavMeshBuildMarkup> NavBaker/<BuildNavMeshCor>d__8::<markups>5__3
-	List_1_t8B9DB0A01D774511439B01CEE9DFFF358640164F* ___U3CmarkupsU3E5__3_5;
-	// UnityEngine.Bounds NavBaker/<BuildNavMeshCor>d__8::<bounds>5__4
-	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___U3CboundsU3E5__4_6;
-	// UnityEngine.AI.NavMeshData NavBaker/<BuildNavMeshCor>d__8::<data>5__5
-	NavMeshData_t8BA8655BA9F2090EAD42953E956E8FDB98AA5284* ___U3CdataU3E5__5_7;
-	// UnityEngine.AsyncOperation NavBaker/<BuildNavMeshCor>d__8::<operation>5__6
-	AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___U3CoperationU3E5__6_8;
+	List_1_t8B9DB0A01D774511439B01CEE9DFFF358640164F* ___U3CmarkupsU3E5__3_6;
+	// UnityEngine.AI.NavMeshData NavBaker/<BuildNavMeshCor>d__8::<data>5__4
+	NavMeshData_t8BA8655BA9F2090EAD42953E956E8FDB98AA5284* ___U3CdataU3E5__4_7;
+	// UnityEngine.AsyncOperation NavBaker/<BuildNavMeshCor>d__8::<operation>5__5
+	AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___U3CoperationU3E5__5_8;
 };
 
 // TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/SpriteDataObject
@@ -31949,7 +31949,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8145[1] =
 	static_cast<int32_t>(offsetof(MobileLogger_t68F043E3DC35D9604F34ADF1B5CE3F633F61A008, ___tmp_text_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8146[9] = 
 {
-	static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CbuildSettingsU3E5__1_3)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CbuildSourcesU3E5__2_4)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CmarkupsU3E5__3_5)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CboundsU3E5__4_6)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CdataU3E5__5_7)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CoperationU3E5__6_8)),};
+	static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___bounds_2)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CU3E4__this_3)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CbuildSettingsU3E5__1_4)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CbuildSourcesU3E5__2_5)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CmarkupsU3E5__3_6)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CdataU3E5__4_7)),static_cast<int32_t>(offsetof(U3CBuildNavMeshCorU3Ed__8_tC5DEB18DDE4FCCBFC98E5CBA89DE16DC7FECCCB3, ___U3CoperationU3E5__5_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8147[3] = 
 {
 	static_cast<int32_t>(offsetof(NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2, ___surface_4)),static_cast<int32_t>(offsetof(NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2, ___buildingCreator_5)),static_cast<int32_t>(offsetof(NavBaker_t487B1FB48CC02C1A360908C8B156D0C46B643AE2, ___U3CNavMeshComponentsU3Ek__BackingField_6)),};

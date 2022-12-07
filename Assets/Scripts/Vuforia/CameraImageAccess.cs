@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Vuforia;
 
+// This class is only relevant in the unity editor as a way to provide native images from the vuforia camera
 public class CameraImageAccess : MonoBehaviour
 {
     public RawImage rawImage;
@@ -16,6 +17,7 @@ public class CameraImageAccess : MonoBehaviour
     private int height;
     #endregion // PRIVATE_MEMBERS
 
+#if UNITY_EDITOR
     #region MONOBEHAVIOUR_METHODS
     void Start()
     {
@@ -103,4 +105,5 @@ public class CameraImageAccess : MonoBehaviour
         mFormatRegistered = false;
     }
     #endregion //PRIVATE_METHODS
+#endif
 }
