@@ -35,3 +35,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Firebase config passwords
+google-services.json
+google-services.json.meta
+UnityConfig.json
+UnityConfig.json.meta
