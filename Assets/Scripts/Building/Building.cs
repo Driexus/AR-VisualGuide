@@ -9,6 +9,8 @@ public class Building: DatabaseObject
     public ImageTargetCoords[] image_targets_coords;
     public Dictionary<string, ImageTarget> image_targets;
     public string name;
+    public string vuforia_access_key;
+    public string vuforia_secret_key;
 
     public Building(string id) : base(id) { }
 }

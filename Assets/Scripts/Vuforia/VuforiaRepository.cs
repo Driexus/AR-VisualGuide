@@ -10,8 +10,6 @@ using Random = UnityEngine.Random;
 
 public static class VuforiaRepository
 {
-    private const string serverAccessKey = "b0a8d1d27636853b119960f0166c852772d22800";
-    private const string serverSecretKey = "b7ebd46f82514942244bda0b89e7879d4318b78a";
     private const string host = "https://vws.vuforia.com";
 
     public static IEnumerator UpdateImageTargetDimensions(string targetId, float width, Action<bool> callback)
@@ -204,6 +202,13 @@ public static class VuforiaRepository
     // Final signature (without the access key) is: Signature = Base64(HMAC-SHA1(server_secret_key, StringToSign));
     private static string GetVWSAuth(string http_verb, string content, string content_type, string date, string requestPath)
     {
+        // Get vuforia keys
+        string serverAccessKey = BuildingViewModel.Instance.CurrentBuilding.vuforia_access_key;
+        string serverSecretKey = BuildingViewModel.Instance.CurrentBuilding.vuforia_secret_key;
+
+        if (serverAccessKey == null || serverSecretKey == null)
+            throw new Exception("Could not find vuforia keys.");
+
         var enc = Encoding.UTF8;
 
         // Calculate the MD5 hash of the content string. If null then replace with the empty md5 hash.

@@ -118,399 +118,381 @@ extern void Wall__ctor_m04126D2E920BD90F76660E756CDC65BCFEF2711B (void);
 extern void DatabaseObject_get_Id_mCD74C96D4CEF612EAA577D38F9EF9833F211AA66 (void);
 // 0x00000036 System.Void DatabaseObject::.ctor(System.String)
 extern void DatabaseObject__ctor_m3956E795269A15C7240827FDF65BEE351B08E37A (void);
-// 0x00000037 System.Void FirebaseRepository::add_BuildingsUpdated(System.EventHandler)
+// 0x00000037 System.Void FirebaseConfig::.ctor()
+extern void FirebaseConfig__ctor_m3975E5E2CF515CC6835393CB6629FC209F720C9B (void);
+// 0x00000038 System.Void FirebaseRepository::add_BuildingsUpdated(System.EventHandler)
 extern void FirebaseRepository_add_BuildingsUpdated_m4928A3317EAD405D5D7076DAD6E9E3CC6B6C7949 (void);
-// 0x00000038 System.Void FirebaseRepository::remove_BuildingsUpdated(System.EventHandler)
+// 0x00000039 System.Void FirebaseRepository::remove_BuildingsUpdated(System.EventHandler)
 extern void FirebaseRepository_remove_BuildingsUpdated_mD930E7082D8875DAF82384BF6D90B2F6B0644049 (void);
-// 0x00000039 Building[] FirebaseRepository::get_Buildings()
+// 0x0000003A Building[] FirebaseRepository::get_Buildings()
 extern void FirebaseRepository_get_Buildings_m327A472EEEB930B104751BBE9BFCE14C0289A63D (void);
-// 0x0000003A System.Void FirebaseRepository::Awake()
+// 0x0000003B System.Void FirebaseRepository::Awake()
 extern void FirebaseRepository_Awake_m3CE912382FF4E047925AA0E856CC761D8D2F7A8E (void);
-// 0x0000003B System.Void FirebaseRepository::Start()
-extern void FirebaseRepository_Start_mA5BA8294898F4639FCE8FF2D7ABBA7742CC18326 (void);
 // 0x0000003C System.Void FirebaseRepository::Update()
 extern void FirebaseRepository_Update_mA0F89171AAEE7AFB967BC48D75577D9B1B8BD8BC (void);
-// 0x0000003D System.Collections.IEnumerator FirebaseRepository::SignInUser()
-extern void FirebaseRepository_SignInUser_m5F453F58D71A7B4A543957109E95A2366D70EA00 (void);
-// 0x0000003E System.Collections.IEnumerator FirebaseRepository::UploadImageTarget(System.String,System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+// 0x0000003D System.Collections.IEnumerator FirebaseRepository::UploadImageTarget(System.String,System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
 extern void FirebaseRepository_UploadImageTarget_m22DF19AC205C17BCB7F12B4B7ECDBCDA714D3E83 (void);
-// 0x0000003F System.Void FirebaseRepository::FetchBuildingCollection()
+// 0x0000003E System.Void FirebaseRepository::FetchBuildingCollection()
 extern void FirebaseRepository_FetchBuildingCollection_m370EA8C6E300DE7E30F923BA9B887A6593B361AE (void);
-// 0x00000040 System.Void FirebaseRepository::.ctor()
+// 0x0000003F System.Void FirebaseRepository::.ctor()
 extern void FirebaseRepository__ctor_mB81927B633BE6448ADC17BB835A8748731DDAE42 (void);
-// 0x00000041 System.Void FirebaseRepository::<FetchBuildingCollection>b__14_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
-extern void FirebaseRepository_U3CFetchBuildingCollectionU3Eb__14_0_m616B4F6DC8C80105CC55D0206AB3324A3B9DDD6B (void);
-// 0x00000042 System.Void FirebaseRepository/<>c::.cctor()
-extern void U3CU3Ec__cctor_m6416270513A14F0BB3F888E61C12B7A082773B04 (void);
-// 0x00000043 System.Void FirebaseRepository/<>c::.ctor()
-extern void U3CU3Ec__ctor_m011807B3ABD0050C2B029223103F0311F5BED357 (void);
-// 0x00000044 System.Void FirebaseRepository/<>c::<SignInUser>b__12_0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>)
-extern void U3CU3Ec_U3CSignInUserU3Eb__12_0_mACD4E6AB5456A521E727EACB38A9A96923A74B1F (void);
-// 0x00000045 System.Void FirebaseRepository/<SignInUser>d__12::.ctor(System.Int32)
-extern void U3CSignInUserU3Ed__12__ctor_m4A32BBCA3EFFCA9965FBFC82187A4771EFB8FAF2 (void);
-// 0x00000046 System.Void FirebaseRepository/<SignInUser>d__12::System.IDisposable.Dispose()
-extern void U3CSignInUserU3Ed__12_System_IDisposable_Dispose_m6FD319B17C5C786826C729ACE8CF802D92BF1F13 (void);
-// 0x00000047 System.Boolean FirebaseRepository/<SignInUser>d__12::MoveNext()
-extern void U3CSignInUserU3Ed__12_MoveNext_m518B4869D5A8A68E8AEE5278A48500306EFC84B0 (void);
-// 0x00000048 System.Object FirebaseRepository/<SignInUser>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CSignInUserU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFC6F7BA2F99C4834A86DADC037474F0153B718F4 (void);
-// 0x00000049 System.Void FirebaseRepository/<SignInUser>d__12::System.Collections.IEnumerator.Reset()
-extern void U3CSignInUserU3Ed__12_System_Collections_IEnumerator_Reset_m486410A6DE6BCC081F603693D21E67C2943EA12B (void);
-// 0x0000004A System.Object FirebaseRepository/<SignInUser>d__12::System.Collections.IEnumerator.get_Current()
-extern void U3CSignInUserU3Ed__12_System_Collections_IEnumerator_get_Current_m04B77D01C43FF96CD7E60AFEB6E9321E7A3AB827 (void);
-// 0x0000004B System.Void FirebaseRepository/<UploadImageTarget>d__13::.ctor(System.Int32)
-extern void U3CUploadImageTargetU3Ed__13__ctor_m8083448B1958DE74FFCDCF04C30A89DD10E90286 (void);
-// 0x0000004C System.Void FirebaseRepository/<UploadImageTarget>d__13::System.IDisposable.Dispose()
-extern void U3CUploadImageTargetU3Ed__13_System_IDisposable_Dispose_m1AAEB59D0A8AFD97FC2EB7A5CCC275C62E30005B (void);
-// 0x0000004D System.Boolean FirebaseRepository/<UploadImageTarget>d__13::MoveNext()
-extern void U3CUploadImageTargetU3Ed__13_MoveNext_m0F386D6FC4FF69DA0FBEA7D866AD977433C58533 (void);
-// 0x0000004E System.Object FirebaseRepository/<UploadImageTarget>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CUploadImageTargetU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50787CBB307951F78C4CA4A8E775496A7F25E04B (void);
-// 0x0000004F System.Void FirebaseRepository/<UploadImageTarget>d__13::System.Collections.IEnumerator.Reset()
-extern void U3CUploadImageTargetU3Ed__13_System_Collections_IEnumerator_Reset_m88141D1DD49BD3D85666FB50AEBADA7A18DC2837 (void);
-// 0x00000050 System.Object FirebaseRepository/<UploadImageTarget>d__13::System.Collections.IEnumerator.get_Current()
-extern void U3CUploadImageTargetU3Ed__13_System_Collections_IEnumerator_get_Current_m8051560F3C7E163B66AD356EEFE701FD8BDE71A9 (void);
-// 0x00000051 UnityEngine.Vector3 ImageTargetCoords::get_Position()
+// 0x00000040 System.Void FirebaseRepository::<Awake>b__10_0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>)
+extern void FirebaseRepository_U3CAwakeU3Eb__10_0_m64B3A52274DB282C694090FA07CD9A41B1F3AD15 (void);
+// 0x00000041 System.Void FirebaseRepository::<FetchBuildingCollection>b__13_0(System.Threading.Tasks.Task`1<Firebase.Database.DataSnapshot>)
+extern void FirebaseRepository_U3CFetchBuildingCollectionU3Eb__13_0_mA97A2E88E7EB63DFDD63C1A02D19151E64517165 (void);
+// 0x00000042 System.Void FirebaseRepository/<UploadImageTarget>d__12::.ctor(System.Int32)
+extern void U3CUploadImageTargetU3Ed__12__ctor_m115443B11D162629EBFF368020E2D77225D22A51 (void);
+// 0x00000043 System.Void FirebaseRepository/<UploadImageTarget>d__12::System.IDisposable.Dispose()
+extern void U3CUploadImageTargetU3Ed__12_System_IDisposable_Dispose_m1F34BFFA6D22497530B46EAEEE55333CB45BA8D9 (void);
+// 0x00000044 System.Boolean FirebaseRepository/<UploadImageTarget>d__12::MoveNext()
+extern void U3CUploadImageTargetU3Ed__12_MoveNext_m7FADC10988470445A17819AE29A51230E1C64DC1 (void);
+// 0x00000045 System.Object FirebaseRepository/<UploadImageTarget>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CUploadImageTargetU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDE10F4F5DB9FE3CE6EEB85E2400FF0CAB4E425A1 (void);
+// 0x00000046 System.Void FirebaseRepository/<UploadImageTarget>d__12::System.Collections.IEnumerator.Reset()
+extern void U3CUploadImageTargetU3Ed__12_System_Collections_IEnumerator_Reset_m93E3A5662AA175B43F8D31E9F6D4EFFB50EC68CE (void);
+// 0x00000047 System.Object FirebaseRepository/<UploadImageTarget>d__12::System.Collections.IEnumerator.get_Current()
+extern void U3CUploadImageTargetU3Ed__12_System_Collections_IEnumerator_get_Current_m31C84E4A4F290613AB6F181285460013CA192E76 (void);
+// 0x00000048 UnityEngine.Vector3 ImageTargetCoords::get_Position()
 extern void ImageTargetCoords_get_Position_m50EF9C70F6B8FEFDE5B964FC04DAB359058A1A7C (void);
-// 0x00000052 UnityEngine.Vector3 ImageTargetCoords::get_Rotation()
+// 0x00000049 UnityEngine.Vector3 ImageTargetCoords::get_Rotation()
 extern void ImageTargetCoords_get_Rotation_m95EE2C01B07C59F6AC9CFB0F6AE153B1A6E51E03 (void);
-// 0x00000053 System.Void ImageTargetCoords::.ctor()
+// 0x0000004A System.Void ImageTargetCoords::.ctor()
 extern void ImageTargetCoords__ctor_m14885A8BE99D879338682111B54B6284629AFF42 (void);
-// 0x00000054 System.Collections.Generic.Dictionary`2<System.String,Building> IRepository::get_Buildings()
-// 0x00000055 System.Void IRepository::add_BuildingsUpdated(IRepository/BuildingsUpdatedEventHandler)
-// 0x00000056 System.Void IRepository::remove_BuildingsUpdated(IRepository/BuildingsUpdatedEventHandler)
-// 0x00000057 System.Void IRepository::SignInWithEmailAndPassword(System.String,System.String)
-// 0x00000058 System.Void IRepository/BuildingsUpdatedEventHandler::.ctor(System.Object,System.IntPtr)
+// 0x0000004B System.Collections.Generic.Dictionary`2<System.String,Building> IRepository::get_Buildings()
+// 0x0000004C System.Void IRepository::add_BuildingsUpdated(IRepository/BuildingsUpdatedEventHandler)
+// 0x0000004D System.Void IRepository::remove_BuildingsUpdated(IRepository/BuildingsUpdatedEventHandler)
+// 0x0000004E System.Void IRepository::SignInWithEmailAndPassword(System.String,System.String)
+// 0x0000004F System.Void IRepository/BuildingsUpdatedEventHandler::.ctor(System.Object,System.IntPtr)
 extern void BuildingsUpdatedEventHandler__ctor_m32490C18AA3FFC178FF9E2A6DAB9755C387907EC (void);
-// 0x00000059 System.Void IRepository/BuildingsUpdatedEventHandler::Invoke()
+// 0x00000050 System.Void IRepository/BuildingsUpdatedEventHandler::Invoke()
 extern void BuildingsUpdatedEventHandler_Invoke_mD69A0AF58702707D5A6FC59B2AC7CCA1A044315E (void);
-// 0x0000005A System.IAsyncResult IRepository/BuildingsUpdatedEventHandler::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x00000051 System.IAsyncResult IRepository/BuildingsUpdatedEventHandler::BeginInvoke(System.AsyncCallback,System.Object)
 extern void BuildingsUpdatedEventHandler_BeginInvoke_m5BCA6F5206E9A2A1F0420B3819AADF7E1AAD1524 (void);
-// 0x0000005B System.Void IRepository/BuildingsUpdatedEventHandler::EndInvoke(System.IAsyncResult)
+// 0x00000052 System.Void IRepository/BuildingsUpdatedEventHandler::EndInvoke(System.IAsyncResult)
 extern void BuildingsUpdatedEventHandler_EndInvoke_m1ED1A1CFFDB0F04D1FB3CB64ABD6EE85F8FF1625 (void);
-// 0x0000005C T[] JsonHelper::FromJson(System.String)
-// 0x0000005D T[] JsonHelper::FromServerJson(System.String)
-// 0x0000005E System.String JsonHelper::ToJson(T[])
-// 0x0000005F System.String JsonHelper::ToJson(T[],System.Boolean)
-// 0x00000060 System.String JsonHelper::FixJson(System.String)
+// 0x00000053 T[] JsonHelper::FromJson(System.String)
+// 0x00000054 T[] JsonHelper::FromServerJson(System.String)
+// 0x00000055 System.String JsonHelper::ToJson(T[])
+// 0x00000056 System.String JsonHelper::ToJson(T[],System.Boolean)
+// 0x00000057 System.String JsonHelper::FixJson(System.String)
 extern void JsonHelper_FixJson_m7F0998CE00B016571B7D7CF43115FA2475DA7625 (void);
-// 0x00000061 System.Void JsonHelper/Wrapper`1::.ctor()
-// 0x00000062 System.Void MobileLogger::LogToText(System.String,System.String,UnityEngine.LogType)
+// 0x00000058 System.Void JsonHelper/Wrapper`1::.ctor()
+// 0x00000059 System.Void MobileLogger::LogToText(System.String,System.String,UnityEngine.LogType)
 extern void MobileLogger_LogToText_m7017BCF3D726137E83488EE131A166E9C81E9051 (void);
-// 0x00000063 System.Void MobileLogger::OnEnable()
+// 0x0000005A System.Void MobileLogger::OnEnable()
 extern void MobileLogger_OnEnable_m74D0229DD1A26994367A7F874FF99325CC0EE5E0 (void);
-// 0x00000064 System.Void MobileLogger::OnDisable()
+// 0x0000005B System.Void MobileLogger::OnDisable()
 extern void MobileLogger_OnDisable_m0EB4B55C5B1184ED3D21AFEE1D06BA5FB4F263A7 (void);
-// 0x00000065 System.Void MobileLogger::.ctor()
+// 0x0000005C System.Void MobileLogger::.ctor()
 extern void MobileLogger__ctor_m7EA1818A534BD30925326AC024CEE9F3B2C0E1DA (void);
-// 0x00000066 System.Object NavBaker::get_NavMeshComponents()
+// 0x0000005D System.Object NavBaker::get_NavMeshComponents()
 extern void NavBaker_get_NavMeshComponents_m4A3E8D7A19F1F1105D6FF90638F1587685DE1012 (void);
-// 0x00000067 System.Void NavBaker::set_NavMeshComponents(System.Object)
+// 0x0000005E System.Void NavBaker::set_NavMeshComponents(System.Object)
 extern void NavBaker_set_NavMeshComponents_mB4ADF8533ED1CA4B8495383659C534638339995B (void);
-// 0x00000068 System.Void NavBaker::Awake()
+// 0x0000005F System.Void NavBaker::Awake()
 extern void NavBaker_Awake_mE2826C46E50E5393DD66A6BBD2A2BAC116D812B8 (void);
-// 0x00000069 System.Void NavBaker::UpdateNavMesh(Wall[],UnityEngine.Bounds)
+// 0x00000060 System.Void NavBaker::UpdateNavMesh(Wall[],UnityEngine.Bounds)
 extern void NavBaker_UpdateNavMesh_m45E1D5BBED454805E163295234A0BADB34D29DCC (void);
-// 0x0000006A System.Collections.IEnumerator NavBaker::BuildNavMeshCor(UnityEngine.Bounds)
+// 0x00000061 System.Collections.IEnumerator NavBaker::BuildNavMeshCor(UnityEngine.Bounds)
 extern void NavBaker_BuildNavMeshCor_m3D5E58891109A87822D4D8B78EA031DD614C3EB4 (void);
-// 0x0000006B System.Void NavBaker::.ctor()
+// 0x00000062 System.Void NavBaker::.ctor()
 extern void NavBaker__ctor_m4DE73816E23B526BDCBB8F7E85EAA11D97242702 (void);
-// 0x0000006C System.Void NavBaker/<BuildNavMeshCor>d__8::.ctor(System.Int32)
+// 0x00000063 System.Void NavBaker/<BuildNavMeshCor>d__8::.ctor(System.Int32)
 extern void U3CBuildNavMeshCorU3Ed__8__ctor_m0A874B13FC8ED8A98EAA94D9C24644F36938551F (void);
-// 0x0000006D System.Void NavBaker/<BuildNavMeshCor>d__8::System.IDisposable.Dispose()
+// 0x00000064 System.Void NavBaker/<BuildNavMeshCor>d__8::System.IDisposable.Dispose()
 extern void U3CBuildNavMeshCorU3Ed__8_System_IDisposable_Dispose_mED21B157DAB200F543C0A3C603E04F8A4F293ACB (void);
-// 0x0000006E System.Boolean NavBaker/<BuildNavMeshCor>d__8::MoveNext()
+// 0x00000065 System.Boolean NavBaker/<BuildNavMeshCor>d__8::MoveNext()
 extern void U3CBuildNavMeshCorU3Ed__8_MoveNext_mA38C588972AD9176914F66FA1F49EF62013E068A (void);
-// 0x0000006F System.Object NavBaker/<BuildNavMeshCor>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000066 System.Object NavBaker/<BuildNavMeshCor>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CBuildNavMeshCorU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE838EAC2FAEB66A8033604D5D8DBC90A58071B68 (void);
-// 0x00000070 System.Void NavBaker/<BuildNavMeshCor>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000067 System.Void NavBaker/<BuildNavMeshCor>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CBuildNavMeshCorU3Ed__8_System_Collections_IEnumerator_Reset_m17E210F5B81AFEAA8D83BEFD37578D120A6970F2 (void);
-// 0x00000071 System.Object NavBaker/<BuildNavMeshCor>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000068 System.Object NavBaker/<BuildNavMeshCor>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CBuildNavMeshCorU3Ed__8_System_Collections_IEnumerator_get_Current_m225390E34D14D5F931DBE598C51F808612C45291 (void);
-// 0x00000072 System.Void NavPath::Start()
+// 0x00000069 System.Void NavPath::Start()
 extern void NavPath_Start_m7D3564A6670E6F1832F55D529F0DC9B9E8C4FE79 (void);
-// 0x00000073 System.Void NavPath::Update()
+// 0x0000006A System.Void NavPath::Update()
 extern void NavPath_Update_mF919A2D6BC9E9D7E24CAB4357969E5C4EED9CD4D (void);
-// 0x00000074 System.Void NavPath::OnEnable()
+// 0x0000006B System.Void NavPath::OnEnable()
 extern void NavPath_OnEnable_m1561923CB79A5BA8F2AE8BC3B4167D0F6BF599EF (void);
-// 0x00000075 System.Void NavPath::.ctor()
+// 0x0000006C System.Void NavPath::.ctor()
 extern void NavPath__ctor_m86933350FE6877603538DFD66FA4438F212EA1BF (void);
-// 0x00000076 System.Void NavText::Start()
+// 0x0000006D System.Void NavText::Start()
 extern void NavText_Start_m5135687F6DC214BD64C4039CFA4E8E177459540B (void);
-// 0x00000077 System.Void NavText::Update()
+// 0x0000006E System.Void NavText::Update()
 extern void NavText_Update_m4478ECF753BB004D065925D06A35904AF125968E (void);
-// 0x00000078 System.Void NavText::.ctor()
+// 0x0000006F System.Void NavText::.ctor()
 extern void NavText__ctor_mB95274F58FFB1C02B5E368CF08AE4CACFFE9B286 (void);
-// 0x00000079 System.Void SimpleRotation::Start()
+// 0x00000070 System.Void SimpleRotation::Start()
 extern void SimpleRotation_Start_m7CEF57B5B11FA76ABA825E3285E3F835D22165B7 (void);
-// 0x0000007A System.Void SimpleRotation::Update()
+// 0x00000071 System.Void SimpleRotation::Update()
 extern void SimpleRotation_Update_m19D0864DD93581F50F330F5CFB1CF29F6F5A6C82 (void);
-// 0x0000007B System.Void SimpleRotation::.ctor()
+// 0x00000072 System.Void SimpleRotation::.ctor()
 extern void SimpleRotation__ctor_m742A37EB3C099BBD220D910AE26951756863E906 (void);
-// 0x0000007C T SingletonMonoBehaviour`1::get_Instance()
-// 0x0000007D System.Void SingletonMonoBehaviour`1::set_Instance(T)
-// 0x0000007E System.Void SingletonMonoBehaviour`1::.ctor()
-// 0x0000007F System.Void test::Start()
+// 0x00000073 T SingletonMonoBehaviour`1::get_Instance()
+// 0x00000074 System.Void SingletonMonoBehaviour`1::set_Instance(T)
+// 0x00000075 System.Void SingletonMonoBehaviour`1::.ctor()
+// 0x00000076 System.Void test::Start()
 extern void test_Start_mEC610EE12F006B73DD8DBE742E8660D39BFF518F (void);
-// 0x00000080 System.Void test::Update()
+// 0x00000077 System.Void test::Update()
 extern void test_Update_m2812B4DBD8C297CA22608BEA1DB1C608261F6822 (void);
-// 0x00000081 System.Void test::.ctor()
+// 0x00000078 System.Void test::.ctor()
 extern void test__ctor_m679060463014204CFBD2EA912506DF1462D5CD32 (void);
-// 0x00000082 System.Void TestInstantTargetResolution::Start()
+// 0x00000079 System.Void TestInstantTargetResolution::Start()
 extern void TestInstantTargetResolution_Start_m87995F924D019726B7176BF3A0FFBAC651B8A189 (void);
-// 0x00000083 System.Collections.IEnumerator TestInstantTargetResolution::RetrieveTextureFromWeb()
+// 0x0000007A System.Collections.IEnumerator TestInstantTargetResolution::RetrieveTextureFromWeb()
 extern void TestInstantTargetResolution_RetrieveTextureFromWeb_m495694823870812DCB3664E597790F8C3306D4FE (void);
-// 0x00000084 System.Void TestInstantTargetResolution::CreateImageTargetFromTexture(UnityEngine.Texture2D)
+// 0x0000007B System.Void TestInstantTargetResolution::CreateImageTargetFromTexture(UnityEngine.Texture2D)
 extern void TestInstantTargetResolution_CreateImageTargetFromTexture_mC950E31DEE668B8667A2F6C2C05F98D67050CB5B (void);
-// 0x00000085 System.Void TestInstantTargetResolution::.ctor()
+// 0x0000007C System.Void TestInstantTargetResolution::.ctor()
 extern void TestInstantTargetResolution__ctor_m89B5B3EF3BAA97219A60D8361F601FBB7C9F2DA0 (void);
-// 0x00000086 System.Void TestInstantTargetResolution::<Start>b__4_0()
+// 0x0000007D System.Void TestInstantTargetResolution::<Start>b__4_0()
 extern void TestInstantTargetResolution_U3CStartU3Eb__4_0_m405C3458D204C63E0CBE566FE2085B680ABE1C4A (void);
-// 0x00000087 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::.ctor(System.Int32)
+// 0x0000007E System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::.ctor(System.Int32)
 extern void U3CRetrieveTextureFromWebU3Ed__5__ctor_m46B2E1F31C2C217BB904712D3D4842AD7328671D (void);
-// 0x00000088 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.IDisposable.Dispose()
+// 0x0000007F System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.IDisposable.Dispose()
 extern void U3CRetrieveTextureFromWebU3Ed__5_System_IDisposable_Dispose_m9EE14DC2D711802D5AB3A9B81D225B3FC0C72A01 (void);
-// 0x00000089 System.Boolean TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::MoveNext()
+// 0x00000080 System.Boolean TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::MoveNext()
 extern void U3CRetrieveTextureFromWebU3Ed__5_MoveNext_mE9920F76604C8D0D5349528FBEA7002B2135D757 (void);
-// 0x0000008A System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::<>m__Finally1()
+// 0x00000081 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::<>m__Finally1()
 extern void U3CRetrieveTextureFromWebU3Ed__5_U3CU3Em__Finally1_m396AD601665750AB4B66183B5B2BD399F75749C1 (void);
-// 0x0000008B System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000082 System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m12DAD4D1B5676E8EA3E154299BA39CF77CF2EC74 (void);
-// 0x0000008C System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.Reset()
+// 0x00000083 System.Void TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_Reset_mB4B0FCE9B9334C82B92FD923B8CEB60F5F5EFB1C (void);
-// 0x0000008D System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.get_Current()
+// 0x00000084 System.Object TestInstantTargetResolution/<RetrieveTextureFromWeb>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CRetrieveTextureFromWebU3Ed__5_System_Collections_IEnumerator_get_Current_m66ACD0A7AA896E19F104624FFF5F6683BB622611 (void);
-// 0x0000008E System.Void CameraMask::Awake()
+// 0x00000085 System.Void CameraMask::Awake()
 extern void CameraMask_Awake_m3EF1435E1C50C32690D917D25B8F683CEB1632D3 (void);
-// 0x0000008F System.Void CameraMask::OnEnable()
+// 0x00000086 System.Void CameraMask::OnEnable()
 extern void CameraMask_OnEnable_mC80B32FCEA89F33FE5B97EA332D955B56D1EA05D (void);
-// 0x00000090 System.Void CameraMask::OnDisable()
+// 0x00000087 System.Void CameraMask::OnDisable()
 extern void CameraMask_OnDisable_m472088DB44535F688C15F601E752F05572145E5C (void);
-// 0x00000091 System.Void CameraMask::.ctor()
+// 0x00000088 System.Void CameraMask::.ctor()
 extern void CameraMask__ctor_mC138C9162D8BF9BD5901E5B70B129450F6934D24 (void);
-// 0x00000092 System.Void DescriptionPanel::ShowItem(Item)
+// 0x00000089 System.Void DescriptionPanel::ShowItem(Item)
 extern void DescriptionPanel_ShowItem_m71CA80D329FDC494A0D30CB576B49119CEE473AB (void);
-// 0x00000093 System.Void DescriptionPanel::.ctor()
+// 0x0000008A System.Void DescriptionPanel::.ctor()
 extern void DescriptionPanel__ctor_m57978B13F0DE16B09FC8952F46E31CF084110544 (void);
-// 0x00000094 System.Void BuildingSelector::Start()
+// 0x0000008B System.Void BuildingSelector::Start()
 extern void BuildingSelector_Start_mC34D0BCF3467F270615EFF65C133978576218B63 (void);
-// 0x00000095 System.Void BuildingSelector::OnItemSelected(System.Int32)
+// 0x0000008C System.Void BuildingSelector::OnItemSelected(System.Int32)
 extern void BuildingSelector_OnItemSelected_m2C1A389BC774EED15F3DF265CFF841855886906E (void);
-// 0x00000096 System.String[] BuildingSelector::GetDropdownNames()
+// 0x0000008D System.String[] BuildingSelector::GetDropdownNames()
 extern void BuildingSelector_GetDropdownNames_m9AF1E5335C6735064E864F0E84F0EDB57BF8AEE3 (void);
-// 0x00000097 System.Void BuildingSelector::.ctor()
+// 0x0000008E System.Void BuildingSelector::.ctor()
 extern void BuildingSelector__ctor_m379EF3C874F539D8A0E4F613D5EC0B02519EA378 (void);
-// 0x00000098 System.Void BuildingSelector::<Start>b__2_0(System.Object,System.EventArgs)
+// 0x0000008F System.Void BuildingSelector::<Start>b__2_0(System.Object,System.EventArgs)
 extern void BuildingSelector_U3CStartU3Eb__2_0_mD6FEE73FAAA21D968302C455E134AAB2D570EA58 (void);
-// 0x00000099 System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData> DropdownWrapper::get_options()
+// 0x00000090 System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData> DropdownWrapper::get_options()
 extern void DropdownWrapper_get_options_m4CBCBA8AEE9BB907BA5306FDB4353CD4D5A83444 (void);
-// 0x0000009A System.Void DropdownWrapper::Awake()
+// 0x00000091 System.Void DropdownWrapper::Awake()
 extern void DropdownWrapper_Awake_mACDE931401601C84C0DFCC16E0E11245D536E864 (void);
-// 0x0000009B System.Void DropdownWrapper::RefreshDropdownOptions()
+// 0x00000092 System.Void DropdownWrapper::RefreshDropdownOptions()
 extern void DropdownWrapper_RefreshDropdownOptions_m1E1A06718EC1D966A051E9C38123318C41B6375A (void);
-// 0x0000009C System.Void DropdownWrapper::OnItemSelected(System.Int32)
-// 0x0000009D System.String[] DropdownWrapper::GetDropdownNames()
-// 0x0000009E System.Void DropdownWrapper::.ctor()
+// 0x00000093 System.Void DropdownWrapper::OnItemSelected(System.Int32)
+// 0x00000094 System.String[] DropdownWrapper::GetDropdownNames()
+// 0x00000095 System.Void DropdownWrapper::.ctor()
 extern void DropdownWrapper__ctor_mCA6963896980B7E70AFCB25DD25582A1A268FB9C (void);
-// 0x0000009F System.Void ItemSelector::Awake()
+// 0x00000096 System.Void ItemSelector::Awake()
 extern void ItemSelector_Awake_mA5F464B9B7513857DBE40D3FFF94D09E365FAEE9 (void);
-// 0x000000A0 System.String[] ItemSelector::GetDropdownNames()
+// 0x00000097 System.String[] ItemSelector::GetDropdownNames()
 extern void ItemSelector_GetDropdownNames_m82F3C2C4F91A3EEA9129C329FCA834BF616CAFB3 (void);
-// 0x000000A1 System.Void ItemSelector::OnItemSelected(System.Int32)
+// 0x00000098 System.Void ItemSelector::OnItemSelected(System.Int32)
 extern void ItemSelector_OnItemSelected_mDF91DFBBC8219289B24CA94F3B918E4151F30BB1 (void);
-// 0x000000A2 System.Void ItemSelector::.ctor()
+// 0x00000099 System.Void ItemSelector::.ctor()
 extern void ItemSelector__ctor_mD26CECC5B3D8B45C202A280B7D61A54569092DF2 (void);
-// 0x000000A3 System.Void ItemSelector::<Awake>b__3_0(System.Object,System.EventArgs)
+// 0x0000009A System.Void ItemSelector::<Awake>b__3_0(System.Object,System.EventArgs)
 extern void ItemSelector_U3CAwakeU3Eb__3_0_mC29A58699A9E2204D3629A29EFC2F4858E05A777 (void);
-// 0x000000A4 System.Void SectionSelector::Start()
+// 0x0000009B System.Void SectionSelector::Start()
 extern void SectionSelector_Start_m7D865A874495467013CE56031D82481A86E6DA58 (void);
-// 0x000000A5 System.String[] SectionSelector::GetDropdownNames()
+// 0x0000009C System.String[] SectionSelector::GetDropdownNames()
 extern void SectionSelector_GetDropdownNames_m9201D331F6960A89772EBDB48BF37A6A1BF03779 (void);
-// 0x000000A6 System.Void SectionSelector::OnItemSelected(System.Int32)
+// 0x0000009D System.Void SectionSelector::OnItemSelected(System.Int32)
 extern void SectionSelector_OnItemSelected_m6C2DD92783DED922DB6AFB69BEC5BC5592C11242 (void);
-// 0x000000A7 System.Void SectionSelector::.ctor()
+// 0x0000009E System.Void SectionSelector::.ctor()
 extern void SectionSelector__ctor_m2534D0C8C3FB65338285F64AAE40CC89DB2A788E (void);
-// 0x000000A8 System.Void SectionSelector::<Start>b__2_0(System.Object,System.EventArgs)
+// 0x0000009F System.Void SectionSelector::<Start>b__2_0(System.Object,System.EventArgs)
 extern void SectionSelector_U3CStartU3Eb__2_0_m61AF030ACBF7E953AB3F99FCBE7CE1E499A2620E (void);
-// 0x000000A9 Item ItemBehaviour::get_Item()
+// 0x000000A0 Item ItemBehaviour::get_Item()
 extern void ItemBehaviour_get_Item_mE891293DB2F74AA355D6F6F79036DE338E253F51 (void);
-// 0x000000AA System.Void ItemBehaviour::Start()
+// 0x000000A1 System.Void ItemBehaviour::Start()
 extern void ItemBehaviour_Start_m642820A53BE197444189DD53AB20C5C696925C91 (void);
-// 0x000000AB System.Void ItemBehaviour::OnMouseDown()
+// 0x000000A2 System.Void ItemBehaviour::OnMouseDown()
 extern void ItemBehaviour_OnMouseDown_m9E1D2F33402DF801065E38906121C0987354EE50 (void);
-// 0x000000AC System.Void ItemBehaviour::SetItem(Item)
+// 0x000000A3 System.Void ItemBehaviour::SetItem(Item)
 extern void ItemBehaviour_SetItem_mAD60E962F35773415B91CA5623B181ABF09A2FFA (void);
-// 0x000000AD System.Void ItemBehaviour::.ctor()
+// 0x000000A4 System.Void ItemBehaviour::.ctor()
 extern void ItemBehaviour__ctor_m93606863ED566DE676416FFEC8E55220BA475545 (void);
-// 0x000000AE System.Void UploadPanelHandler::Awake()
+// 0x000000A5 System.Void UploadPanelHandler::Awake()
 extern void UploadPanelHandler_Awake_m96B775BD6238AED17A66F8C701CF4FEC672D276F (void);
-// 0x000000AF System.Void UploadPanelHandler::OnEnable()
+// 0x000000A6 System.Void UploadPanelHandler::OnEnable()
 extern void UploadPanelHandler_OnEnable_mD8666BB26AC2BB03F520DC9B2745FC81CC1F5BD9 (void);
-// 0x000000B0 System.Void UploadPanelHandler::SetRatingAndTexture(ImageUploader/VuforiaTargetResult)
+// 0x000000A7 System.Void UploadPanelHandler::SetRatingAndTexture(ImageUploader/VuforiaTargetResult)
 extern void UploadPanelHandler_SetRatingAndTexture_mB2E46171F7C9ED2108D23B499E6D2CE576AB3AA0 (void);
-// 0x000000B1 System.Void UploadPanelHandler::OnWidthChanged(System.String)
+// 0x000000A8 System.Void UploadPanelHandler::OnWidthChanged(System.String)
 extern void UploadPanelHandler_OnWidthChanged_mC3D3DF070F866259C8A721B5104751DD2F361AEC (void);
-// 0x000000B2 System.Void UploadPanelHandler::OnUploadClicked()
+// 0x000000A9 System.Void UploadPanelHandler::OnUploadClicked()
 extern void UploadPanelHandler_OnUploadClicked_mD1D5F2467F4E26BA9202E71E4174309224D518CF (void);
-// 0x000000B3 System.Void UploadPanelHandler::OnDiscardClicked()
+// 0x000000AA System.Void UploadPanelHandler::OnDiscardClicked()
 extern void UploadPanelHandler_OnDiscardClicked_m522FC735477329BE0D77FEC3D27A3ECBD647A01A (void);
-// 0x000000B4 System.Void UploadPanelHandler::.ctor()
+// 0x000000AB System.Void UploadPanelHandler::.ctor()
 extern void UploadPanelHandler__ctor_m872D0163A8BF04B83C8541D85FD31A2D41276987 (void);
-// 0x000000B5 System.Void CameraImageAccess::.ctor()
+// 0x000000AC System.Void CameraImageAccess::.ctor()
 extern void CameraImageAccess__ctor_m58ECB56BFF4EE3173F711A889083A406419EFDB2 (void);
-// 0x000000B6 System.Void ImageTarget::.ctor()
+// 0x000000AD System.Void ImageTarget::.ctor()
 extern void ImageTarget__ctor_m33BD0D6EA7CD4146FD8D8A9E47987C03CACBDF5D (void);
-// 0x000000B7 System.Void ImageUploader::CaptureAndCropImage()
+// 0x000000AE System.Void ImageUploader::CaptureAndCropImage()
 extern void ImageUploader_CaptureAndCropImage_mFC7AC00D3F3744EC45C5A2C2C2CE754AB918587F (void);
-// 0x000000B8 System.Void ImageUploader::CropAndUpload(UnityEngine.Texture2D)
+// 0x000000AF System.Void ImageUploader::CropAndUpload(UnityEngine.Texture2D)
 extern void ImageUploader_CropAndUpload_m58747F5623446B3FC7446FF964A8B4763D89403B (void);
-// 0x000000B9 System.Void ImageUploader::OnCrop(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
+// 0x000000B0 System.Void ImageUploader::OnCrop(System.Boolean,UnityEngine.Texture,UnityEngine.Texture2D)
 extern void ImageUploader_OnCrop_m4E331770F6E1E7682C9899CBF96BCAC0F5C4AAAF (void);
-// 0x000000BA System.Void ImageUploader::TryUploadTexture()
+// 0x000000B1 System.Void ImageUploader::TryUploadTexture()
 extern void ImageUploader_TryUploadTexture_m49882DF77EB8F124D3DDCE56EF3863E22C5CBBCA (void);
-// 0x000000BB System.Collections.IEnumerator ImageUploader::TryGetRating(System.String,System.Action`1<System.Int32>)
+// 0x000000B2 System.Collections.IEnumerator ImageUploader::TryGetRating(System.String,System.Action`1<System.Int32>)
 extern void ImageUploader_TryGetRating_m0375D17DD9317E94770C7E628FBF462E35A84CF7 (void);
-// 0x000000BC System.Void ImageUploader::UploadImageTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+// 0x000000B3 System.Void ImageUploader::UploadImageTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
 extern void ImageUploader_UploadImageTarget_m7548534CD242A3D46E75F54AD15253081943EADB (void);
-// 0x000000BD System.Void ImageUploader::DiscardImageTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+// 0x000000B4 System.Void ImageUploader::DiscardImageTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
 extern void ImageUploader_DiscardImageTarget_mF7A14AB1925AE2AD9986736D5A90BEC433DED55C (void);
-// 0x000000BE System.Collections.IEnumerator ImageUploader::UpdateWidth(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>,System.Int32)
+// 0x000000B5 System.Collections.IEnumerator ImageUploader::UpdateWidth(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>,System.Int32)
 extern void ImageUploader_UpdateWidth_mE2E1E46A9DF2F950545D77A38217B57CD1510FC6 (void);
-// 0x000000BF System.Collections.IEnumerator ImageUploader::DeleteTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>,System.Int32)
+// 0x000000B6 System.Collections.IEnumerator ImageUploader::DeleteTarget(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>,System.Int32)
 extern void ImageUploader_DeleteTarget_m24635A9A23E3468030E443FDB72CA97A882FE482 (void);
-// 0x000000C0 System.Void ImageUploader::.ctor()
+// 0x000000B7 System.Void ImageUploader::.ctor()
 extern void ImageUploader__ctor_m52F2F86D91B4CCFC3EF9ADAE97F1DA7202A306FC (void);
-// 0x000000C1 System.Void ImageUploader::<CaptureAndCropImage>b__6_0(System.String)
+// 0x000000B8 System.Void ImageUploader::<CaptureAndCropImage>b__6_0(System.String)
 extern void ImageUploader_U3CCaptureAndCropImageU3Eb__6_0_mD4DF87F4D01CF83FBF135B9410E699125B624A7C (void);
-// 0x000000C2 System.Void ImageUploader::<TryUploadTexture>b__9_0(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
+// 0x000000B9 System.Void ImageUploader::<TryUploadTexture>b__9_0(System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>)
 extern void ImageUploader_U3CTryUploadTextureU3Eb__9_0_m0E40DEB57D77903C9955CD0D56547EAE1265C450 (void);
-// 0x000000C3 System.Void ImageUploader/<>c__DisplayClass9_0::.ctor()
+// 0x000000BA System.Void ImageUploader/<>c__DisplayClass9_0::.ctor()
 extern void U3CU3Ec__DisplayClass9_0__ctor_m1E18A2F0EF47B371CE4ABCE9187383194CE3B124 (void);
-// 0x000000C4 System.Void ImageUploader/<>c__DisplayClass9_0::<TryUploadTexture>b__1(System.Int32)
+// 0x000000BB System.Void ImageUploader/<>c__DisplayClass9_0::<TryUploadTexture>b__1(System.Int32)
 extern void U3CU3Ec__DisplayClass9_0_U3CTryUploadTextureU3Eb__1_mEFDF0D611DF97113651DF533D27C6E23B2B193AF (void);
-// 0x000000C5 System.Void ImageUploader/<>c__DisplayClass10_0::.ctor()
+// 0x000000BC System.Void ImageUploader/<>c__DisplayClass10_0::.ctor()
 extern void U3CU3Ec__DisplayClass10_0__ctor_m5D549DCECF50E569A017FA8DB05D28D1EC394617 (void);
-// 0x000000C6 System.Void ImageUploader/<>c__DisplayClass10_0::<TryGetRating>b__0(System.Int32)
+// 0x000000BD System.Void ImageUploader/<>c__DisplayClass10_0::<TryGetRating>b__0(System.Int32)
 extern void U3CU3Ec__DisplayClass10_0_U3CTryGetRatingU3Eb__0_m36EB4A7F8F16764EE90C72C85491B78E01228184 (void);
-// 0x000000C7 System.Void ImageUploader/<TryGetRating>d__10::.ctor(System.Int32)
+// 0x000000BE System.Void ImageUploader/<TryGetRating>d__10::.ctor(System.Int32)
 extern void U3CTryGetRatingU3Ed__10__ctor_m2784651D895147395A671BA619F183715916B7FC (void);
-// 0x000000C8 System.Void ImageUploader/<TryGetRating>d__10::System.IDisposable.Dispose()
+// 0x000000BF System.Void ImageUploader/<TryGetRating>d__10::System.IDisposable.Dispose()
 extern void U3CTryGetRatingU3Ed__10_System_IDisposable_Dispose_m6D450D0AB9376DBCFC8EE9574D7FCCCF554B890A (void);
-// 0x000000C9 System.Boolean ImageUploader/<TryGetRating>d__10::MoveNext()
+// 0x000000C0 System.Boolean ImageUploader/<TryGetRating>d__10::MoveNext()
 extern void U3CTryGetRatingU3Ed__10_MoveNext_mB2FAF628D21E45D5CD630E4BA97382D18A391314 (void);
-// 0x000000CA System.Object ImageUploader/<TryGetRating>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000C1 System.Object ImageUploader/<TryGetRating>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CTryGetRatingU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m020127EF08AD6FEB987E457B0028329083DF3437 (void);
-// 0x000000CB System.Void ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.Reset()
+// 0x000000C2 System.Void ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_Reset_mCBA0C11D03EB12DF41B10AC0EE0E61BC470E67BE (void);
-// 0x000000CC System.Object ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.get_Current()
+// 0x000000C3 System.Object ImageUploader/<TryGetRating>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CTryGetRatingU3Ed__10_System_Collections_IEnumerator_get_Current_mEF405697651813557C604B72953C526724D1A953 (void);
-// 0x000000CD System.Void ImageUploader/<>c__DisplayClass13_0::.ctor()
+// 0x000000C4 System.Void ImageUploader/<>c__DisplayClass13_0::.ctor()
 extern void U3CU3Ec__DisplayClass13_0__ctor_m21CFC0412B51324E1072833E84B0FC7CD6516EE9 (void);
-// 0x000000CE System.Void ImageUploader/<>c__DisplayClass13_0::<UpdateWidth>b__0(System.Boolean)
+// 0x000000C5 System.Void ImageUploader/<>c__DisplayClass13_0::<UpdateWidth>b__0(System.Boolean)
 extern void U3CU3Ec__DisplayClass13_0_U3CUpdateWidthU3Eb__0_m5AE2367E558F7D7F9A305EE48DC9669683F559A3 (void);
-// 0x000000CF System.Void ImageUploader/<UpdateWidth>d__13::.ctor(System.Int32)
+// 0x000000C6 System.Void ImageUploader/<UpdateWidth>d__13::.ctor(System.Int32)
 extern void U3CUpdateWidthU3Ed__13__ctor_m57DF3DF4B9881665C0B2E915D1132C7243CA1FD3 (void);
-// 0x000000D0 System.Void ImageUploader/<UpdateWidth>d__13::System.IDisposable.Dispose()
+// 0x000000C7 System.Void ImageUploader/<UpdateWidth>d__13::System.IDisposable.Dispose()
 extern void U3CUpdateWidthU3Ed__13_System_IDisposable_Dispose_m699DF9F4F11A5E3230D859CE40D72FF99665B4C0 (void);
-// 0x000000D1 System.Boolean ImageUploader/<UpdateWidth>d__13::MoveNext()
+// 0x000000C8 System.Boolean ImageUploader/<UpdateWidth>d__13::MoveNext()
 extern void U3CUpdateWidthU3Ed__13_MoveNext_m1229EAF9D9C2536E0A19C0C66E05CCA05B3358CA (void);
-// 0x000000D2 System.Object ImageUploader/<UpdateWidth>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000C9 System.Object ImageUploader/<UpdateWidth>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateWidthU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5AD900AEEAA9D4E7ECDE770C0F337D9AB1EA5BCF (void);
-// 0x000000D3 System.Void ImageUploader/<UpdateWidth>d__13::System.Collections.IEnumerator.Reset()
+// 0x000000CA System.Void ImageUploader/<UpdateWidth>d__13::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateWidthU3Ed__13_System_Collections_IEnumerator_Reset_m0060A34A30C95747B0E4D4F6604A1089113318D5 (void);
-// 0x000000D4 System.Object ImageUploader/<UpdateWidth>d__13::System.Collections.IEnumerator.get_Current()
+// 0x000000CB System.Object ImageUploader/<UpdateWidth>d__13::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateWidthU3Ed__13_System_Collections_IEnumerator_get_Current_mAC5AE0B003F95C9941682AA79C4939A72306425F (void);
-// 0x000000D5 System.Void ImageUploader/<>c__DisplayClass14_0::.ctor()
+// 0x000000CC System.Void ImageUploader/<>c__DisplayClass14_0::.ctor()
 extern void U3CU3Ec__DisplayClass14_0__ctor_mA62C2A54366E725045F28886849D1E513BEE26C9 (void);
-// 0x000000D6 System.Void ImageUploader/<>c__DisplayClass14_0::<DeleteTarget>b__0(System.Boolean)
+// 0x000000CD System.Void ImageUploader/<>c__DisplayClass14_0::<DeleteTarget>b__0(System.Boolean)
 extern void U3CU3Ec__DisplayClass14_0_U3CDeleteTargetU3Eb__0_mC29548EBE340CEA2695D7BEEC03DF62EDE11A2C0 (void);
-// 0x000000D7 System.Void ImageUploader/<DeleteTarget>d__14::.ctor(System.Int32)
+// 0x000000CE System.Void ImageUploader/<DeleteTarget>d__14::.ctor(System.Int32)
 extern void U3CDeleteTargetU3Ed__14__ctor_m6487E69A871B4A0F21C01C49554D661A8962FC9E (void);
-// 0x000000D8 System.Void ImageUploader/<DeleteTarget>d__14::System.IDisposable.Dispose()
+// 0x000000CF System.Void ImageUploader/<DeleteTarget>d__14::System.IDisposable.Dispose()
 extern void U3CDeleteTargetU3Ed__14_System_IDisposable_Dispose_mC7AE213674D40BA667565D241F8B961455168784 (void);
-// 0x000000D9 System.Boolean ImageUploader/<DeleteTarget>d__14::MoveNext()
+// 0x000000D0 System.Boolean ImageUploader/<DeleteTarget>d__14::MoveNext()
 extern void U3CDeleteTargetU3Ed__14_MoveNext_m38C5A6060C3F4860A9D519270B524F8C4BF9A787 (void);
-// 0x000000DA System.Object ImageUploader/<DeleteTarget>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000D1 System.Object ImageUploader/<DeleteTarget>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDeleteTargetU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m30A65177B6376105137E8E2E91496D48E87C8843 (void);
-// 0x000000DB System.Void ImageUploader/<DeleteTarget>d__14::System.Collections.IEnumerator.Reset()
+// 0x000000D2 System.Void ImageUploader/<DeleteTarget>d__14::System.Collections.IEnumerator.Reset()
 extern void U3CDeleteTargetU3Ed__14_System_Collections_IEnumerator_Reset_m151E5AB23C4717A368A71B758601ADCC2281B75D (void);
-// 0x000000DC System.Object ImageUploader/<DeleteTarget>d__14::System.Collections.IEnumerator.get_Current()
+// 0x000000D3 System.Object ImageUploader/<DeleteTarget>d__14::System.Collections.IEnumerator.get_Current()
 extern void U3CDeleteTargetU3Ed__14_System_Collections_IEnumerator_get_Current_m818DEF7DE4E910532666D10CCE209A98609BC217 (void);
-// 0x000000DD System.Void PatchImageTarget::.ctor()
+// 0x000000D4 System.Void PatchImageTarget::.ctor()
 extern void PatchImageTarget__ctor_m418833AAAF50EB493ADD102BF77166FB2E35A902 (void);
-// 0x000000DE System.Collections.IEnumerator VuforiaRepository::UpdateImageTargetDimensions(System.String,System.Single,System.Action`1<System.Boolean>)
+// 0x000000D5 System.Collections.IEnumerator VuforiaRepository::UpdateImageTargetDimensions(System.String,System.Single,System.Action`1<System.Boolean>)
 extern void VuforiaRepository_UpdateImageTargetDimensions_m84C11EDE1DE470BF70C9BB70FF148FE77543C053 (void);
-// 0x000000DF System.Collections.IEnumerator VuforiaRepository::DeleteImageTarget(System.String,System.Action`1<System.Boolean>)
+// 0x000000D6 System.Collections.IEnumerator VuforiaRepository::DeleteImageTarget(System.String,System.Action`1<System.Boolean>)
 extern void VuforiaRepository_DeleteImageTarget_m51577AC2CDDCD7AA32FAA22A1AACBEB957EFBDEE (void);
-// 0x000000E0 System.Collections.IEnumerator VuforiaRepository::GetImageTargetRating(System.String,System.Action`1<System.Int32>)
+// 0x000000D7 System.Collections.IEnumerator VuforiaRepository::GetImageTargetRating(System.String,System.Action`1<System.Int32>)
 extern void VuforiaRepository_GetImageTargetRating_mB6966EE6E80C33DE38C892D6CF818C348032291C (void);
-// 0x000000E1 System.Collections.IEnumerator VuforiaRepository::CreateImageTarget(UnityEngine.Texture2D,System.Action`1<System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>>)
+// 0x000000D8 System.Collections.IEnumerator VuforiaRepository::CreateImageTarget(UnityEngine.Texture2D,System.Action`1<System.Collections.Generic.KeyValuePair`2<System.String,ImageTarget>>)
 extern void VuforiaRepository_CreateImageTarget_mC77E3809FBD901BE7CC97F33836C47FFEA902E71 (void);
-// 0x000000E2 System.String VuforiaRepository::GetRandomString(System.Int32)
+// 0x000000D9 System.String VuforiaRepository::GetRandomString(System.Int32)
 extern void VuforiaRepository_GetRandomString_m6EE6A917D2FDE3BE6C31979D5763D03D1E55DFFA (void);
-// 0x000000E3 System.String VuforiaRepository::GetDateNow()
+// 0x000000DA System.String VuforiaRepository::GetDateNow()
 extern void VuforiaRepository_GetDateNow_m9909DB641278DE815A6552352106FBF2A519FEDD (void);
-// 0x000000E4 System.String VuforiaRepository::GetVWSAuth(System.String,System.String,System.String,System.String,System.String)
+// 0x000000DB System.String VuforiaRepository::GetVWSAuth(System.String,System.String,System.String,System.String,System.String)
 extern void VuforiaRepository_GetVWSAuth_mE596C73ED6191272068D9C03B768B78EB5A69E23 (void);
-// 0x000000E5 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::.ctor(System.Int32)
-extern void U3CUpdateImageTargetDimensionsU3Ed__3__ctor_mBAFC75AC667418EF68AEFB34D93720EE360F222F (void);
-// 0x000000E6 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.IDisposable.Dispose()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_IDisposable_Dispose_m0F3A7DC70E7B5768213508C9CA9CED26FC3DF613 (void);
-// 0x000000E7 System.Boolean VuforiaRepository/<UpdateImageTargetDimensions>d__3::MoveNext()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_MoveNext_m247C01D0A30E481495258018D8C1EAE79DCAD9D2 (void);
-// 0x000000E8 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::<>m__Finally1()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_U3CU3Em__Finally1_m129B034C1DCDF05B14ED0E810BAC6522263A2BAD (void);
-// 0x000000E9 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED232DA94D60AA96E55DBA58165054E8EFD6EA6E (void);
-// 0x000000EA System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.Reset()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_Reset_mB636A6A7ABC67D334D032B72F1559DEE14B42D25 (void);
-// 0x000000EB System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__3::System.Collections.IEnumerator.get_Current()
-extern void U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_get_Current_m51EE512BE3DD26858DAD2EF215A9D148539E080E (void);
-// 0x000000EC System.Void VuforiaRepository/<DeleteImageTarget>d__4::.ctor(System.Int32)
-extern void U3CDeleteImageTargetU3Ed__4__ctor_mCA6233372207329675DC1D824D61D3F0F99772DC (void);
-// 0x000000ED System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.IDisposable.Dispose()
-extern void U3CDeleteImageTargetU3Ed__4_System_IDisposable_Dispose_mFAE0D2C63BCDACC6947BEFE994D6338F2777443E (void);
-// 0x000000EE System.Boolean VuforiaRepository/<DeleteImageTarget>d__4::MoveNext()
-extern void U3CDeleteImageTargetU3Ed__4_MoveNext_m7664C57BD6FBB57B1712C312FBACF18B6FC6DD1E (void);
-// 0x000000EF System.Void VuforiaRepository/<DeleteImageTarget>d__4::<>m__Finally1()
-extern void U3CDeleteImageTargetU3Ed__4_U3CU3Em__Finally1_m1943F53017E2E3EFE3E617C8AC776C74021E831D (void);
-// 0x000000F0 System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CDeleteImageTargetU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7E793BAD9E7EC1675FB5815F9CECED19526FAC9C (void);
-// 0x000000F1 System.Void VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.Reset()
-extern void U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_Reset_mA142D8E341E5E61047965CB45226A0860D19DC81 (void);
-// 0x000000F2 System.Object VuforiaRepository/<DeleteImageTarget>d__4::System.Collections.IEnumerator.get_Current()
-extern void U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_get_Current_m821F0D61B05F2C8387E869CA5D37E5820D545C83 (void);
-// 0x000000F3 System.Void VuforiaRepository/<GetImageTargetRating>d__5::.ctor(System.Int32)
-extern void U3CGetImageTargetRatingU3Ed__5__ctor_mD2591FDB293D68B0F410A33260AF88FC86B2A15F (void);
-// 0x000000F4 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.IDisposable.Dispose()
-extern void U3CGetImageTargetRatingU3Ed__5_System_IDisposable_Dispose_m9BD281E3897480E001BC94ACBB4D8979B5470989 (void);
-// 0x000000F5 System.Boolean VuforiaRepository/<GetImageTargetRating>d__5::MoveNext()
-extern void U3CGetImageTargetRatingU3Ed__5_MoveNext_m63D3344A6DC29512EDAF2470AD4B0ECF4DBC5CE3 (void);
-// 0x000000F6 System.Void VuforiaRepository/<GetImageTargetRating>d__5::<>m__Finally1()
-extern void U3CGetImageTargetRatingU3Ed__5_U3CU3Em__Finally1_mBC583F8BDF59C5087BC015970BFEE3F8BAD033B5 (void);
-// 0x000000F7 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED98E22CDF6BF5B7DBB4EA9956882CC6347AEE8D (void);
-// 0x000000F8 System.Void VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.Reset()
-extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_Reset_m50C824923AE46C7833FF648230431B6347E59D5E (void);
-// 0x000000F9 System.Object VuforiaRepository/<GetImageTargetRating>d__5::System.Collections.IEnumerator.get_Current()
-extern void U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_get_Current_m9C86D5920791DAF475EA2B7019BFAF797AB343A5 (void);
-// 0x000000FA System.Void VuforiaRepository/<CreateImageTarget>d__6::.ctor(System.Int32)
-extern void U3CCreateImageTargetU3Ed__6__ctor_m358174F15127A54C36D3EB9B8C61BB3650684AFC (void);
-// 0x000000FB System.Void VuforiaRepository/<CreateImageTarget>d__6::System.IDisposable.Dispose()
-extern void U3CCreateImageTargetU3Ed__6_System_IDisposable_Dispose_m3F72879825F6C3836336A624EF174B8EA3E5261A (void);
-// 0x000000FC System.Boolean VuforiaRepository/<CreateImageTarget>d__6::MoveNext()
-extern void U3CCreateImageTargetU3Ed__6_MoveNext_m75E8844F29D927532A054EF3F380AAD4EF43E95F (void);
-// 0x000000FD System.Void VuforiaRepository/<CreateImageTarget>d__6::<>m__Finally1()
-extern void U3CCreateImageTargetU3Ed__6_U3CU3Em__Finally1_mECD0D11DFEA98BA68BC45E71F7E4A4388BCE7C5F (void);
-// 0x000000FE System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CCreateImageTargetU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m07700DF1DCC909AFCC7891938558D9663E789C2B (void);
-// 0x000000FF System.Void VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.Reset()
-extern void U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_Reset_mB9F44F8F95A7629022BD67578566F0DB1B352523 (void);
-// 0x00000100 System.Object VuforiaRepository/<CreateImageTarget>d__6::System.Collections.IEnumerator.get_Current()
-extern void U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_get_Current_m3DDE8450CAC7506EDE7E0B11338BA58C90663281 (void);
-// 0x00000101 System.Void ExtensionMethods.TransormExtensions::SetPositionAndRotation(UnityEngine.Transform,IWorldObject)
+// 0x000000DC System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__1::.ctor(System.Int32)
+extern void U3CUpdateImageTargetDimensionsU3Ed__1__ctor_m6269A9FD55994DDE1B0213F8CED8D40DBF58B78B (void);
+// 0x000000DD System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__1::System.IDisposable.Dispose()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_System_IDisposable_Dispose_mB8DFAA8C4A7EAA38CD47ADBB5382C09EE9C3566A (void);
+// 0x000000DE System.Boolean VuforiaRepository/<UpdateImageTargetDimensions>d__1::MoveNext()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_MoveNext_mC6BC25B9751A832D85A0EF9457FA4A6D7F998526 (void);
+// 0x000000DF System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__1::<>m__Finally1()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_U3CU3Em__Finally1_m402B2C2264D9E727826B665628BC56035A613136 (void);
+// 0x000000E0 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__1::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8F72FB7746DA3AD2FB63B7F0B4C01903BE3B76BD (void);
+// 0x000000E1 System.Void VuforiaRepository/<UpdateImageTargetDimensions>d__1::System.Collections.IEnumerator.Reset()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_IEnumerator_Reset_mBEE7B4F26C164E498B3FCBAD2642A3E53E84C4DA (void);
+// 0x000000E2 System.Object VuforiaRepository/<UpdateImageTargetDimensions>d__1::System.Collections.IEnumerator.get_Current()
+extern void U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_IEnumerator_get_Current_m631C44B8812BA555308A48037BE65DC894D1F80F (void);
+// 0x000000E3 System.Void VuforiaRepository/<DeleteImageTarget>d__2::.ctor(System.Int32)
+extern void U3CDeleteImageTargetU3Ed__2__ctor_m0ECDC6475C7F806D10A3C4935F22AEED2BC2CEA3 (void);
+// 0x000000E4 System.Void VuforiaRepository/<DeleteImageTarget>d__2::System.IDisposable.Dispose()
+extern void U3CDeleteImageTargetU3Ed__2_System_IDisposable_Dispose_mFB60B87EC6D0C255BC74806E97F9FAE79730A44C (void);
+// 0x000000E5 System.Boolean VuforiaRepository/<DeleteImageTarget>d__2::MoveNext()
+extern void U3CDeleteImageTargetU3Ed__2_MoveNext_m7F49FD4CEEC36BF103B841F3E731A51E3291B159 (void);
+// 0x000000E6 System.Void VuforiaRepository/<DeleteImageTarget>d__2::<>m__Finally1()
+extern void U3CDeleteImageTargetU3Ed__2_U3CU3Em__Finally1_mCC6DE8CD11A7E3BE25E5B2407204E3AD3A769A43 (void);
+// 0x000000E7 System.Object VuforiaRepository/<DeleteImageTarget>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDeleteImageTargetU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCE5F1E124D589644FBFAE94A8A53E92F02ABD333 (void);
+// 0x000000E8 System.Void VuforiaRepository/<DeleteImageTarget>d__2::System.Collections.IEnumerator.Reset()
+extern void U3CDeleteImageTargetU3Ed__2_System_Collections_IEnumerator_Reset_mD6DC74473BBA9863A0B3D51BEF1E374D820CA571 (void);
+// 0x000000E9 System.Object VuforiaRepository/<DeleteImageTarget>d__2::System.Collections.IEnumerator.get_Current()
+extern void U3CDeleteImageTargetU3Ed__2_System_Collections_IEnumerator_get_Current_m8641E8B5F1D7235C6289035330F7774403DF2676 (void);
+// 0x000000EA System.Void VuforiaRepository/<GetImageTargetRating>d__3::.ctor(System.Int32)
+extern void U3CGetImageTargetRatingU3Ed__3__ctor_m1213247A2554D4654767E9F493E361CC836F07E8 (void);
+// 0x000000EB System.Void VuforiaRepository/<GetImageTargetRating>d__3::System.IDisposable.Dispose()
+extern void U3CGetImageTargetRatingU3Ed__3_System_IDisposable_Dispose_m18A059E1E5BDC74C437AD0308148F48109D8C79B (void);
+// 0x000000EC System.Boolean VuforiaRepository/<GetImageTargetRating>d__3::MoveNext()
+extern void U3CGetImageTargetRatingU3Ed__3_MoveNext_m778B5B5EF4A6A40F9628EA82CDD2B6067934806E (void);
+// 0x000000ED System.Void VuforiaRepository/<GetImageTargetRating>d__3::<>m__Finally1()
+extern void U3CGetImageTargetRatingU3Ed__3_U3CU3Em__Finally1_m754476EC4E9F28C3B8D3F219191F25CF3D2B8572 (void);
+// 0x000000EE System.Object VuforiaRepository/<GetImageTargetRating>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CGetImageTargetRatingU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5D223A37FC4BEF25CF99A525D3CAEE7201763249 (void);
+// 0x000000EF System.Void VuforiaRepository/<GetImageTargetRating>d__3::System.Collections.IEnumerator.Reset()
+extern void U3CGetImageTargetRatingU3Ed__3_System_Collections_IEnumerator_Reset_m1CADABF0B650A7B5C043A8872ED571179859B923 (void);
+// 0x000000F0 System.Object VuforiaRepository/<GetImageTargetRating>d__3::System.Collections.IEnumerator.get_Current()
+extern void U3CGetImageTargetRatingU3Ed__3_System_Collections_IEnumerator_get_Current_mC76751FE84072DEA51056C87F0F4232EF8E3CFCA (void);
+// 0x000000F1 System.Void VuforiaRepository/<CreateImageTarget>d__4::.ctor(System.Int32)
+extern void U3CCreateImageTargetU3Ed__4__ctor_mD18444138A638FA22CFABC4DB01C65E3F4D96E39 (void);
+// 0x000000F2 System.Void VuforiaRepository/<CreateImageTarget>d__4::System.IDisposable.Dispose()
+extern void U3CCreateImageTargetU3Ed__4_System_IDisposable_Dispose_m6A05A367412C170821DB26F8DB4F98989EC6694C (void);
+// 0x000000F3 System.Boolean VuforiaRepository/<CreateImageTarget>d__4::MoveNext()
+extern void U3CCreateImageTargetU3Ed__4_MoveNext_mEE9A25E18BD49B88072D19B35AA9C7E9F82DFA83 (void);
+// 0x000000F4 System.Void VuforiaRepository/<CreateImageTarget>d__4::<>m__Finally1()
+extern void U3CCreateImageTargetU3Ed__4_U3CU3Em__Finally1_m22B05B3181298B3ABF975A5BD8E85A96D0FBF5C6 (void);
+// 0x000000F5 System.Object VuforiaRepository/<CreateImageTarget>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCreateImageTargetU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m696E000786F4934B2ACBC5974701896BCA857935 (void);
+// 0x000000F6 System.Void VuforiaRepository/<CreateImageTarget>d__4::System.Collections.IEnumerator.Reset()
+extern void U3CCreateImageTargetU3Ed__4_System_Collections_IEnumerator_Reset_mA67C9F40306F8C31727FEBD1DC868FDC649D19B6 (void);
+// 0x000000F7 System.Object VuforiaRepository/<CreateImageTarget>d__4::System.Collections.IEnumerator.get_Current()
+extern void U3CCreateImageTargetU3Ed__4_System_Collections_IEnumerator_get_Current_m9F68FD385B454017F6353E192E7DE287D5C3DFD0 (void);
+// 0x000000F8 System.Void ExtensionMethods.TransormExtensions::SetPositionAndRotation(UnityEngine.Transform,IWorldObject)
 extern void TransormExtensions_SetPositionAndRotation_mA01C31412B17250D9C8D7116D8C1CF8888BC5FE5 (void);
-static Il2CppMethodPointer s_methodPointers[257] = 
+static Il2CppMethodPointer s_methodPointers[248] = 
 {
 	Building__ctor_mFA4E6FF1B808B600BA046726206734FA40C5EE14,
 	BuildingCreator_add_WallsUpdated_m9C85A5AEF04E1BEE7423FE20DE92AA837DC5BE32,
@@ -566,32 +548,23 @@ static Il2CppMethodPointer s_methodPointers[257] =
 	Wall__ctor_m04126D2E920BD90F76660E756CDC65BCFEF2711B,
 	DatabaseObject_get_Id_mCD74C96D4CEF612EAA577D38F9EF9833F211AA66,
 	DatabaseObject__ctor_m3956E795269A15C7240827FDF65BEE351B08E37A,
+	FirebaseConfig__ctor_m3975E5E2CF515CC6835393CB6629FC209F720C9B,
 	FirebaseRepository_add_BuildingsUpdated_m4928A3317EAD405D5D7076DAD6E9E3CC6B6C7949,
 	FirebaseRepository_remove_BuildingsUpdated_mD930E7082D8875DAF82384BF6D90B2F6B0644049,
 	FirebaseRepository_get_Buildings_m327A472EEEB930B104751BBE9BFCE14C0289A63D,
 	FirebaseRepository_Awake_m3CE912382FF4E047925AA0E856CC761D8D2F7A8E,
-	FirebaseRepository_Start_mA5BA8294898F4639FCE8FF2D7ABBA7742CC18326,
 	FirebaseRepository_Update_mA0F89171AAEE7AFB967BC48D75577D9B1B8BD8BC,
-	FirebaseRepository_SignInUser_m5F453F58D71A7B4A543957109E95A2366D70EA00,
 	FirebaseRepository_UploadImageTarget_m22DF19AC205C17BCB7F12B4B7ECDBCDA714D3E83,
 	FirebaseRepository_FetchBuildingCollection_m370EA8C6E300DE7E30F923BA9B887A6593B361AE,
 	FirebaseRepository__ctor_mB81927B633BE6448ADC17BB835A8748731DDAE42,
-	FirebaseRepository_U3CFetchBuildingCollectionU3Eb__14_0_m616B4F6DC8C80105CC55D0206AB3324A3B9DDD6B,
-	U3CU3Ec__cctor_m6416270513A14F0BB3F888E61C12B7A082773B04,
-	U3CU3Ec__ctor_m011807B3ABD0050C2B029223103F0311F5BED357,
-	U3CU3Ec_U3CSignInUserU3Eb__12_0_mACD4E6AB5456A521E727EACB38A9A96923A74B1F,
-	U3CSignInUserU3Ed__12__ctor_m4A32BBCA3EFFCA9965FBFC82187A4771EFB8FAF2,
-	U3CSignInUserU3Ed__12_System_IDisposable_Dispose_m6FD319B17C5C786826C729ACE8CF802D92BF1F13,
-	U3CSignInUserU3Ed__12_MoveNext_m518B4869D5A8A68E8AEE5278A48500306EFC84B0,
-	U3CSignInUserU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFC6F7BA2F99C4834A86DADC037474F0153B718F4,
-	U3CSignInUserU3Ed__12_System_Collections_IEnumerator_Reset_m486410A6DE6BCC081F603693D21E67C2943EA12B,
-	U3CSignInUserU3Ed__12_System_Collections_IEnumerator_get_Current_m04B77D01C43FF96CD7E60AFEB6E9321E7A3AB827,
-	U3CUploadImageTargetU3Ed__13__ctor_m8083448B1958DE74FFCDCF04C30A89DD10E90286,
-	U3CUploadImageTargetU3Ed__13_System_IDisposable_Dispose_m1AAEB59D0A8AFD97FC2EB7A5CCC275C62E30005B,
-	U3CUploadImageTargetU3Ed__13_MoveNext_m0F386D6FC4FF69DA0FBEA7D866AD977433C58533,
-	U3CUploadImageTargetU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50787CBB307951F78C4CA4A8E775496A7F25E04B,
-	U3CUploadImageTargetU3Ed__13_System_Collections_IEnumerator_Reset_m88141D1DD49BD3D85666FB50AEBADA7A18DC2837,
-	U3CUploadImageTargetU3Ed__13_System_Collections_IEnumerator_get_Current_m8051560F3C7E163B66AD356EEFE701FD8BDE71A9,
+	FirebaseRepository_U3CAwakeU3Eb__10_0_m64B3A52274DB282C694090FA07CD9A41B1F3AD15,
+	FirebaseRepository_U3CFetchBuildingCollectionU3Eb__13_0_mA97A2E88E7EB63DFDD63C1A02D19151E64517165,
+	U3CUploadImageTargetU3Ed__12__ctor_m115443B11D162629EBFF368020E2D77225D22A51,
+	U3CUploadImageTargetU3Ed__12_System_IDisposable_Dispose_m1F34BFFA6D22497530B46EAEEE55333CB45BA8D9,
+	U3CUploadImageTargetU3Ed__12_MoveNext_m7FADC10988470445A17819AE29A51230E1C64DC1,
+	U3CUploadImageTargetU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDE10F4F5DB9FE3CE6EEB85E2400FF0CAB4E425A1,
+	U3CUploadImageTargetU3Ed__12_System_Collections_IEnumerator_Reset_m93E3A5662AA175B43F8D31E9F6D4EFFB50EC68CE,
+	U3CUploadImageTargetU3Ed__12_System_Collections_IEnumerator_get_Current_m31C84E4A4F290613AB6F181285460013CA192E76,
 	ImageTargetCoords_get_Position_m50EF9C70F6B8FEFDE5B964FC04DAB359058A1A7C,
 	ImageTargetCoords_get_Rotation_m95EE2C01B07C59F6AC9CFB0F6AE153B1A6E51E03,
 	ImageTargetCoords__ctor_m14885A8BE99D879338682111B54B6284629AFF42,
@@ -740,37 +713,37 @@ static Il2CppMethodPointer s_methodPointers[257] =
 	VuforiaRepository_GetRandomString_m6EE6A917D2FDE3BE6C31979D5763D03D1E55DFFA,
 	VuforiaRepository_GetDateNow_m9909DB641278DE815A6552352106FBF2A519FEDD,
 	VuforiaRepository_GetVWSAuth_mE596C73ED6191272068D9C03B768B78EB5A69E23,
-	U3CUpdateImageTargetDimensionsU3Ed__3__ctor_mBAFC75AC667418EF68AEFB34D93720EE360F222F,
-	U3CUpdateImageTargetDimensionsU3Ed__3_System_IDisposable_Dispose_m0F3A7DC70E7B5768213508C9CA9CED26FC3DF613,
-	U3CUpdateImageTargetDimensionsU3Ed__3_MoveNext_m247C01D0A30E481495258018D8C1EAE79DCAD9D2,
-	U3CUpdateImageTargetDimensionsU3Ed__3_U3CU3Em__Finally1_m129B034C1DCDF05B14ED0E810BAC6522263A2BAD,
-	U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED232DA94D60AA96E55DBA58165054E8EFD6EA6E,
-	U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_Reset_mB636A6A7ABC67D334D032B72F1559DEE14B42D25,
-	U3CUpdateImageTargetDimensionsU3Ed__3_System_Collections_IEnumerator_get_Current_m51EE512BE3DD26858DAD2EF215A9D148539E080E,
-	U3CDeleteImageTargetU3Ed__4__ctor_mCA6233372207329675DC1D824D61D3F0F99772DC,
-	U3CDeleteImageTargetU3Ed__4_System_IDisposable_Dispose_mFAE0D2C63BCDACC6947BEFE994D6338F2777443E,
-	U3CDeleteImageTargetU3Ed__4_MoveNext_m7664C57BD6FBB57B1712C312FBACF18B6FC6DD1E,
-	U3CDeleteImageTargetU3Ed__4_U3CU3Em__Finally1_m1943F53017E2E3EFE3E617C8AC776C74021E831D,
-	U3CDeleteImageTargetU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7E793BAD9E7EC1675FB5815F9CECED19526FAC9C,
-	U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_Reset_mA142D8E341E5E61047965CB45226A0860D19DC81,
-	U3CDeleteImageTargetU3Ed__4_System_Collections_IEnumerator_get_Current_m821F0D61B05F2C8387E869CA5D37E5820D545C83,
-	U3CGetImageTargetRatingU3Ed__5__ctor_mD2591FDB293D68B0F410A33260AF88FC86B2A15F,
-	U3CGetImageTargetRatingU3Ed__5_System_IDisposable_Dispose_m9BD281E3897480E001BC94ACBB4D8979B5470989,
-	U3CGetImageTargetRatingU3Ed__5_MoveNext_m63D3344A6DC29512EDAF2470AD4B0ECF4DBC5CE3,
-	U3CGetImageTargetRatingU3Ed__5_U3CU3Em__Finally1_mBC583F8BDF59C5087BC015970BFEE3F8BAD033B5,
-	U3CGetImageTargetRatingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mED98E22CDF6BF5B7DBB4EA9956882CC6347AEE8D,
-	U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_Reset_m50C824923AE46C7833FF648230431B6347E59D5E,
-	U3CGetImageTargetRatingU3Ed__5_System_Collections_IEnumerator_get_Current_m9C86D5920791DAF475EA2B7019BFAF797AB343A5,
-	U3CCreateImageTargetU3Ed__6__ctor_m358174F15127A54C36D3EB9B8C61BB3650684AFC,
-	U3CCreateImageTargetU3Ed__6_System_IDisposable_Dispose_m3F72879825F6C3836336A624EF174B8EA3E5261A,
-	U3CCreateImageTargetU3Ed__6_MoveNext_m75E8844F29D927532A054EF3F380AAD4EF43E95F,
-	U3CCreateImageTargetU3Ed__6_U3CU3Em__Finally1_mECD0D11DFEA98BA68BC45E71F7E4A4388BCE7C5F,
-	U3CCreateImageTargetU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m07700DF1DCC909AFCC7891938558D9663E789C2B,
-	U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_Reset_mB9F44F8F95A7629022BD67578566F0DB1B352523,
-	U3CCreateImageTargetU3Ed__6_System_Collections_IEnumerator_get_Current_m3DDE8450CAC7506EDE7E0B11338BA58C90663281,
+	U3CUpdateImageTargetDimensionsU3Ed__1__ctor_m6269A9FD55994DDE1B0213F8CED8D40DBF58B78B,
+	U3CUpdateImageTargetDimensionsU3Ed__1_System_IDisposable_Dispose_mB8DFAA8C4A7EAA38CD47ADBB5382C09EE9C3566A,
+	U3CUpdateImageTargetDimensionsU3Ed__1_MoveNext_mC6BC25B9751A832D85A0EF9457FA4A6D7F998526,
+	U3CUpdateImageTargetDimensionsU3Ed__1_U3CU3Em__Finally1_m402B2C2264D9E727826B665628BC56035A613136,
+	U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8F72FB7746DA3AD2FB63B7F0B4C01903BE3B76BD,
+	U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_IEnumerator_Reset_mBEE7B4F26C164E498B3FCBAD2642A3E53E84C4DA,
+	U3CUpdateImageTargetDimensionsU3Ed__1_System_Collections_IEnumerator_get_Current_m631C44B8812BA555308A48037BE65DC894D1F80F,
+	U3CDeleteImageTargetU3Ed__2__ctor_m0ECDC6475C7F806D10A3C4935F22AEED2BC2CEA3,
+	U3CDeleteImageTargetU3Ed__2_System_IDisposable_Dispose_mFB60B87EC6D0C255BC74806E97F9FAE79730A44C,
+	U3CDeleteImageTargetU3Ed__2_MoveNext_m7F49FD4CEEC36BF103B841F3E731A51E3291B159,
+	U3CDeleteImageTargetU3Ed__2_U3CU3Em__Finally1_mCC6DE8CD11A7E3BE25E5B2407204E3AD3A769A43,
+	U3CDeleteImageTargetU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCE5F1E124D589644FBFAE94A8A53E92F02ABD333,
+	U3CDeleteImageTargetU3Ed__2_System_Collections_IEnumerator_Reset_mD6DC74473BBA9863A0B3D51BEF1E374D820CA571,
+	U3CDeleteImageTargetU3Ed__2_System_Collections_IEnumerator_get_Current_m8641E8B5F1D7235C6289035330F7774403DF2676,
+	U3CGetImageTargetRatingU3Ed__3__ctor_m1213247A2554D4654767E9F493E361CC836F07E8,
+	U3CGetImageTargetRatingU3Ed__3_System_IDisposable_Dispose_m18A059E1E5BDC74C437AD0308148F48109D8C79B,
+	U3CGetImageTargetRatingU3Ed__3_MoveNext_m778B5B5EF4A6A40F9628EA82CDD2B6067934806E,
+	U3CGetImageTargetRatingU3Ed__3_U3CU3Em__Finally1_m754476EC4E9F28C3B8D3F219191F25CF3D2B8572,
+	U3CGetImageTargetRatingU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5D223A37FC4BEF25CF99A525D3CAEE7201763249,
+	U3CGetImageTargetRatingU3Ed__3_System_Collections_IEnumerator_Reset_m1CADABF0B650A7B5C043A8872ED571179859B923,
+	U3CGetImageTargetRatingU3Ed__3_System_Collections_IEnumerator_get_Current_mC76751FE84072DEA51056C87F0F4232EF8E3CFCA,
+	U3CCreateImageTargetU3Ed__4__ctor_mD18444138A638FA22CFABC4DB01C65E3F4D96E39,
+	U3CCreateImageTargetU3Ed__4_System_IDisposable_Dispose_m6A05A367412C170821DB26F8DB4F98989EC6694C,
+	U3CCreateImageTargetU3Ed__4_MoveNext_mEE9A25E18BD49B88072D19B35AA9C7E9F82DFA83,
+	U3CCreateImageTargetU3Ed__4_U3CU3Em__Finally1_m22B05B3181298B3ABF975A5BD8E85A96D0FBF5C6,
+	U3CCreateImageTargetU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m696E000786F4934B2ACBC5974701896BCA857935,
+	U3CCreateImageTargetU3Ed__4_System_Collections_IEnumerator_Reset_mA67C9F40306F8C31727FEBD1DC868FDC649D19B6,
+	U3CCreateImageTargetU3Ed__4_System_Collections_IEnumerator_get_Current_m9F68FD385B454017F6353E192E7DE287D5C3DFD0,
 	TransormExtensions_SetPositionAndRotation_mA01C31412B17250D9C8D7116D8C1CF8888BC5FE5,
 };
-static const int32_t s_InvokerIndices[257] = 
+static const int32_t s_InvokerIndices[248] = 
 {
 	4980,
 	4980,
@@ -826,26 +799,17 @@ static const int32_t s_InvokerIndices[257] =
 	6315,
 	6191,
 	4980,
+	6315,
 	4980,
 	4980,
 	6191,
 	6315,
 	6315,
-	6315,
-	6191,
 	2133,
 	6315,
 	6315,
 	4980,
-	9840,
-	6315,
 	4980,
-	4955,
-	6315,
-	6109,
-	6191,
-	6315,
-	6191,
 	4955,
 	6315,
 	6109,
@@ -1032,11 +996,11 @@ static const int32_t s_InvokerIndices[257] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[5] = 
 {
-	{ 0x0200001C, { 6, 4 } },
-	{ 0x0600005C, { 0, 1 } },
-	{ 0x0600005D, { 1, 1 } },
-	{ 0x0600005E, { 2, 2 } },
-	{ 0x0600005F, { 4, 2 } },
+	{ 0x0200001B, { 6, 4 } },
+	{ 0x06000053, { 0, 1 } },
+	{ 0x06000054, { 1, 1 } },
+	{ 0x06000055, { 2, 2 } },
+	{ 0x06000056, { 4, 2 } },
 };
 extern const uint32_t g_rgctx_JsonUtility_FromJson_TisWrapper_1_tDC117376FB7DFC921910190F97BFA3A9911239A3_m5A1CE94FD4DC9F8C8F850F9923DC32F99095B0A2;
 extern const uint32_t g_rgctx_JsonHelper_FromJson_TisT_t762A3CED041034C67BE1E48EA1017236AC2D7B53_mF639454A3F043760F9F8DB448ACA231147CC550F;
@@ -1065,7 +1029,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	257,
+	248,
 	s_methodPointers,
 	0,
 	NULL,

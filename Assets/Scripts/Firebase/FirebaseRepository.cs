@@ -6,7 +6,7 @@ using Firebase.Extensions;
 using System;
 using System.Collections.Generic;
 
-public class FirebaseRepository : MonoBehaviour
+public class FirebaseRepository : SingletonMonoBehaviour<FirebaseRepository>
 {
     private DatabaseReference db;
     private FirebaseAuth auth;
