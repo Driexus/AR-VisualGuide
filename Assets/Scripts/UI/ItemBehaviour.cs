@@ -8,11 +8,11 @@ public class ItemBehaviour : MonoBehaviour
     private Item _item;
     public Item Item => _item;
 
-    private DescriptionPanel _descriptionPanel;
+    private DescriptionPanelHandler _descriptionPanel;
 
     private void Start()
     {
-        _descriptionPanel = DescriptionPanel.Instance;
+        _descriptionPanel = DescriptionPanelHandler.Instance;
     }
 
     private void OnMouseDown()

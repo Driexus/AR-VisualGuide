@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class DescriptionPanel : SingletonMonoBehaviour<DescriptionPanel>
+public class DescriptionPanelHandler : SingletonMonoBehaviour<DescriptionPanelHandler>
 {
     public TMP_Text title;
     public TMP_Text description;

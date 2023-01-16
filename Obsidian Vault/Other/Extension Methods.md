@@ -1,0 +1,1 @@
+Contains a function to set the position and rotation of a Transform using an [[IWorldObject]].

@@ -1,0 +1,1 @@
+Implements the singleton pattern into monobehaviours using unity's component based architecture.

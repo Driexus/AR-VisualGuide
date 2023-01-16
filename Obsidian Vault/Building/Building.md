@@ -1,4 +1,4 @@
-Inherits from [[DatabaseObject]].
+Inherits from [[Database Object]].
 Holds the building data casted into:
 1) [[Wall]]
 2) [[Item Characteristics]]

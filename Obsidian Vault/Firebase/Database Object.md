@@ -1,0 +1,1 @@
+Simple class for constructing an object with an id (in database). Not really nessecary.

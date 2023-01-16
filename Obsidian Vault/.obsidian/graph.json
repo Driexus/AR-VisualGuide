@@ -13,10 +13,52 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "tag:#Repository",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "tag:#AbstractClass",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#Factory",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#File",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "tag:#Interface",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "tag:#ViewModel",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
     }
   ],
   "collapse-display": false,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -24,7 +66,7 @@
   "centerStrength": 0,
   "repelStrength": 0,
   "linkStrength": 0,
-  "linkDistance": 329,
-  "scale": 1.4019828977761013,
+  "linkDistance": 30,
+  "scale": 0.7132754626224473,
   "close": false
 }

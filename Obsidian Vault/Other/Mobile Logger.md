@@ -1,0 +1,1 @@
+Feeds the debug log into a text object.

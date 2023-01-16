@@ -1,0 +1,1 @@
+Changes the camera mask to hide certain layers.

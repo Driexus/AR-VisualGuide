@@ -8,19 +8,132 @@
         "type": "tabs",
         "children": [
           {
-            "id": "877626060b3db224",
+            "id": "c4853988d296f619",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "0a02840492652b1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Building/Building.md",
+                "file": "UI/Dropdowns/Item Selector.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "c4853988d296f619",
+            "id": "30461c099afd18e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UI/Dropdowns/Section Selector.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "208d614191f243dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vuforia/Camera Image Access.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e5e78029b9fac00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vuforia/Image Target.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38fc868b23bf14ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UI/Upload Panel Handler.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62a16b27b800cbff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vuforia/Patch Image Target.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1efc92cb4178a482",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vuforia/Vuforia Repository.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf5069f75049b93e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Other/Extension Methods.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7b2e9678e28f84b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Other/Mobile Logger.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fbbc0f75c9cd92f7",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -28,7 +141,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -57,7 +170,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ViewModel",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -74,7 +187,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -151,17 +265,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c4853988d296f619",
+  "active": "5e5ed7f65665d53b",
   "lastOpenFiles": [
-    "Building/Building.md",
-    "Building/Item Coords.md",
-    "DatabaseObject.md",
-    "Building/Wall.md",
-    "Building/Building Creator.md",
-    "Building/Building ViewModel.md",
-    "Building/Item.md",
-    "Building/Item Characteristics.md",
-    "Building/IWorldObject.md",
-    "Untitled.md"
+    "Other/Singleton Monobehaviour.md",
+    "Other/Mobile Logger.md",
+    "Other/Extension Methods.md",
+    "Vuforia/Vuforia Repository.md",
+    "Vuforia/Patch Image Target.md",
+    "UI/Upload Panel Handler.md",
+    "Vuforia/Image Uploader.md",
+    "Vuforia/Image Target.md",
+    "Vuforia/Camera Image Access.md",
+    "UI/Dropdowns/Section Selector.md"
   ]
 }
