@@ -1,12 +1,8 @@
-using UnityEngine;
 using System;
-using ExtensionMethods;
 
 public class ItemSelector : DropdownWrapper
 {
     public BuildingViewModel buildingVM;
-    public Transform itemTarget;
-
     private Item[] _items;
 
     protected override void Awake()
@@ -14,6 +10,7 @@ public class ItemSelector : DropdownWrapper
         base.Awake();
         buildingVM.CurrentSectionChanged += new EventHandler((object sender, EventArgs args) => RefreshDropdownOptions());
     }
+
     protected override string[] GetDropdownNames()
     {
         _items = buildingVM.SectionItems.ToArray();
@@ -28,6 +25,6 @@ public class ItemSelector : DropdownWrapper
     protected override void OnItemSelected(int optionIndex)
     {
         var selectedItem = _items[optionIndex];
-        itemTarget.SetPositionAndRotation(selectedItem);
+        buildingVM.SelectedItem = selectedItem;
     }
 }

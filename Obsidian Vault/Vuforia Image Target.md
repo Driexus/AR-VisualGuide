@@ -1,4 +1,4 @@
-"Image Targets represent images that Vuforia Engine can detect and track. The Engine detects and tracks the image by comparing extracted natural features from the camera image against a known target resource database." ~Vuforia Docs
+"Image Targets represent images that Vuforia Engine can detect and track. The Engine detects and tracks the image by comparing extracted natural features from the camera image against a known target resource database." ~ Vuforia Docs
 
 Documentation for image targets [here](https://library.vuforia.com/objects/image-targets) and for instant image targets (created during runtime) [here](https://library.vuforia.com/objects/create-and-load-targets-unity).
 

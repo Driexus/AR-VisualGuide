@@ -40,6 +40,20 @@ public class BuildingViewModel : SingletonMonoBehaviour<BuildingViewModel>
 
     public event EventHandler CurrentSectionChanged;
 
+    // Selected item events and variables
+    private Item _selectedItem;
+    public Item SelectedItem
+    {
+        get { return _selectedItem; }
+        set
+        {
+            _selectedItem = value;
+            SelectedItemChanged?.Invoke(this, null);
+        }
+    }
+
+    public event EventHandler SelectedItemChanged;
+
     private HashSet<string> _sections = new();
     public HashSet<string> Sections => _sections;
 

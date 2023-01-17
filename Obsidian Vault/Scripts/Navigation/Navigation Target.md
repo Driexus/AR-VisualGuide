@@ -1,0 +1,1 @@
+Listens to the [[Building ViewModel]] for the currently selected [[Item]] and updates the [[Navigation Target (Object)]] coordinates accordingly. If the target is not in the [[Navigation Mesh]] then moves it to the nearest position.

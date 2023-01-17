@@ -1,11 +1,11 @@
 {
   "collapse-filter": false,
-  "search": "-tag:#DataClass -path:Scripts/Other -tag:#AbstractClass",
+  "search": "-path:Scripts/Other -tag:#DataClass -tag:#AbstractClass",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:DataClass",
@@ -70,10 +70,10 @@
   "nodeSizeMultiplier": 0.840104166666667,
   "lineSizeMultiplier": 5,
   "collapse-forces": false,
-  "centerStrength": 0.0729166666666667,
-  "repelStrength": 4.79166666666667,
-  "linkStrength": 0.541666666666667,
-  "linkDistance": 177,
-  "scale": 0.5087618855792788,
+  "centerStrength": 0.151041666666667,
+  "repelStrength": 9.79166666666667,
+  "linkStrength": 0.432291666666667,
+  "linkDistance": 138,
+  "scale": 0.36288736930123655,
   "close": false
 }
