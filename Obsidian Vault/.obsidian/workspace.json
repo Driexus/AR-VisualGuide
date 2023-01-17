@@ -11,17 +11,9 @@
             "id": "fbbc0f75c9cd92f7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "83b6fc4a0979ee5a",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Scripts/Firebase/Firebase Repository.md",
+                "file": "Vuforia Image Target.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -29,15 +21,98 @@
             }
           },
           {
-            "id": "2f9f82eb5020e8e9",
+            "id": "957360a293dfb4e5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Vuforia Image Target.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19fa4bbdad681484",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Objects/Camera Image Access (Object).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1811cf27665355d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Objects/Image Uploader (Object).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0cfe70267c425c50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Objects/Upload Panel.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c6d48de47a895d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Objects/Camera Image Access (Object).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "393600fd1c30b26a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Objects/Building (Object).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3744f942191e44cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/UI/Item Behaviour.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -66,10 +141,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ViewModel",
+                "query": "tag:#Component",
                 "matchingCase": false,
                 "explainSearch": true,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
               }
@@ -103,6 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Vuforia Image Target.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,6 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Vuforia Image Target.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +217,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Vuforia Image Target.md"
+              }
             }
           }
         ],
@@ -161,17 +240,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f9f82eb5020e8e9",
+  "active": "957360a293dfb4e5",
   "lastOpenFiles": [
-    "Scripts/Firebase/Firebase Repository.md",
-    "Scripts/Firebase/Firebase Config.md",
-    "Scripts/Firebase/Image Target Coords.md",
-    "Scripts/Firebase/Database Object.md",
-    "Scripts/Vuforia/Image Target.md",
-    "Scripts/Vuforia/Image Uploader.md",
-    "Scripts/Vuforia/Vuforia Repository.md",
-    "Scripts/UI/Dropdowns/Item Selector.md",
-    "Scripts/Vuforia/Camera Image Access.md",
-    "Scripts/UI/Dropdowns/Section Selector.md"
+    "Vuforia Ground Plane.md",
+    "Vuforia Image Target.md",
+    "Objects/AR Camera.md",
+    "Objects/Navigation Target.md",
+    "Objects/Navigation Mesh.md",
+    "Objects/Log Text.md",
+    "Objects/Camera Image Access (Object).md",
+    "Objects/Event System.md",
+    "Objects/Distance Text.md",
+    "Objects/Firebase Repository (Object).md"
   ]
 }

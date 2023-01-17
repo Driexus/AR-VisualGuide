@@ -4,4 +4,4 @@ Repsonsible for fetching building data from firebase. Fires a fetch event on pro
 
 Responsible for authenticating the user from the [[Firebase Config File]] and [[Firebase Config]].
 
-#Repository
+#Repository #Component 
