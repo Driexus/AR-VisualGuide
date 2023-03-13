@@ -8656,7 +8656,7 @@ GameObject:
   - component: {fileID: 1925728906}
   - component: {fileID: 1925728908}
   m_Layer: 0
-  m_Name: Path Line
+  m_Name: Navigation Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

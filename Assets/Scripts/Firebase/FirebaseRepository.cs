@@ -10,26 +10,27 @@ public class FirebaseRepository : SingletonMonoBehaviour<FirebaseRepository>
 {
     private DatabaseReference db;
     private FirebaseAuth auth;
+    private TextAsset configText;
 
     // Using array insted of dictionary and calling event from update as a workaround for
     // https://stackoverflow.com/questions/71403836/continuewith-continuewithonmainthread-breaks-when-invoking-an-action-in-unity
-
     public event EventHandler BuildingsUpdated;
     private bool _mustCallBuildingsUpdatedListener = false;
 
     private Building[] _buildings;
     public Building[] Buildings { get { return _buildings; } }
 
-    public TextAsset configText;
+    
     private void Awake()
     {
         db = FirebaseDatabase.DefaultInstance.RootReference;
         auth = FirebaseAuth.DefaultInstance;
 
+        configText = Resources.Load<TextAsset>("UnityConfig");
         // Check if config file is present
         if (configText == null)
         {
-            Debug.LogError("Failed to find config file. Please create a proper one if it doesnt exist and link it to the FirebaseRepository");
+            Debug.LogError("Failed to find config file. Please create a proper one if it doesnt exist and place it into the Resources Folder");
             return;
         }
         FirebaseConfig config = JsonUtility.FromJson<FirebaseConfig>(configText.text);

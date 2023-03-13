@@ -93,7 +93,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,6 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Objects/Navigation Target (Object).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,6 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Objects/Navigation Target (Object).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +199,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Objects/Navigation Target (Object).md"
+              }
             }
           }
         ],
@@ -217,7 +222,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fbbc0f75c9cd92f7",
+  "active": "a4f9010cae59a7af",
   "lastOpenFiles": [
     "Scripts/Navigation/Navigation Path.md",
     "Objects/Settings Panel.md",
