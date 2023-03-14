@@ -63,49 +63,54 @@ extern void CameraCallback_EndInvoke_m64D370EA45BBA56CF1B29C19E1B766B43542D7A6 (
 extern void U3CU3Ec__DisplayClass25_0__ctor_m620E6180F5415478C7D6FC45F281ACD3416309A7 (void);
 // 0x0000001A System.String NativeCamera/<>c__DisplayClass25_0::<LoadImageAtPathAsync>b__0()
 extern void U3CU3Ec__DisplayClass25_0_U3CLoadImageAtPathAsyncU3Eb__0_m91C19BE3B97DB8F8CA61AA8B955919570F60DB5F (void);
-// 0x0000001B System.Void NativeCamera/<LoadImageAtPathAsync>d__25::MoveNext()
+// 0x0000001B System.Void NativeCamera/<LoadImageAtPathAsync>d__25::.ctor()
+extern void U3CLoadImageAtPathAsyncU3Ed__25__ctor_m17553DC61E1DA60ACB8FC30EE5F889B047C9BB11 (void);
+// 0x0000001C System.Void NativeCamera/<LoadImageAtPathAsync>d__25::MoveNext()
 extern void U3CLoadImageAtPathAsyncU3Ed__25_MoveNext_m8688976A868411521D0944F8E063B8D1300051E3 (void);
-// 0x0000001C System.Void NativeCamera/<LoadImageAtPathAsync>d__25::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000001D System.Void NativeCamera/<LoadImageAtPathAsync>d__25::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoadImageAtPathAsyncU3Ed__25_SetStateMachine_m12C97049E0BF35F22757C7C42235B7E12D3B1919 (void);
-// 0x0000001D System.Void NativeCamera/<>c__DisplayClass27_0::.ctor()
+// 0x0000001E System.Void NativeCamera/<>c__DisplayClass27_0::.ctor()
 extern void U3CU3Ec__DisplayClass27_0__ctor_m88F65D2A6CE992C4205A95E524E173D82F93209F (void);
-// 0x0000001E System.String NativeCamera/<>c__DisplayClass27_0::<GetVideoThumbnailAsync>b__0()
+// 0x0000001F System.String NativeCamera/<>c__DisplayClass27_0::<GetVideoThumbnailAsync>b__0()
 extern void U3CU3Ec__DisplayClass27_0_U3CGetVideoThumbnailAsyncU3Eb__0_mA500CC08FB4E098F7E0208FAC7B5E5EC6006C873 (void);
-// 0x0000001F System.Void NativeCamera/<GetVideoThumbnailAsync>d__27::MoveNext()
+// 0x00000020 System.Void NativeCamera/<GetVideoThumbnailAsync>d__27::.ctor()
+extern void U3CGetVideoThumbnailAsyncU3Ed__27__ctor_mC238C22749B9E3A2E7CE94A75276F5E853FF4C80 (void);
+// 0x00000021 System.Void NativeCamera/<GetVideoThumbnailAsync>d__27::MoveNext()
 extern void U3CGetVideoThumbnailAsyncU3Ed__27_MoveNext_mA24E419042CDB23650E45A84EFEFE8EFE407B8EA (void);
-// 0x00000020 System.Void NativeCamera/<GetVideoThumbnailAsync>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000022 System.Void NativeCamera/<GetVideoThumbnailAsync>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGetVideoThumbnailAsyncU3Ed__27_SetStateMachine_m20D09764EF4EC4563D719AC8125CC9CE85F6D830 (void);
-// 0x00000021 System.Void NativeCamera/<>c__DisplayClass28_0`1::.ctor()
-// 0x00000022 System.Void NativeCamera/<>c__DisplayClass28_0`1::<TryCallNativeAndroidFunctionOnSeparateThread>b__0()
-// 0x00000023 System.Void NativeCamera/<TryCallNativeAndroidFunctionOnSeparateThread>d__28`1::MoveNext()
-// 0x00000024 System.Void NativeCamera/<TryCallNativeAndroidFunctionOnSeparateThread>d__28`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-// 0x00000025 System.Void NativeCameraNamespace.NCCallbackHelper::Awake()
+// 0x00000023 System.Void NativeCamera/<>c__DisplayClass28_0`1::.ctor()
+// 0x00000024 System.Void NativeCamera/<>c__DisplayClass28_0`1::<TryCallNativeAndroidFunctionOnSeparateThread>b__0()
+// 0x00000025 System.Void NativeCamera/<TryCallNativeAndroidFunctionOnSeparateThread>d__28`1::.ctor()
+// 0x00000026 System.Void NativeCamera/<TryCallNativeAndroidFunctionOnSeparateThread>d__28`1::MoveNext()
+// 0x00000027 System.Void NativeCamera/<TryCallNativeAndroidFunctionOnSeparateThread>d__28`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000028 System.Void NativeCameraNamespace.NCCallbackHelper::Awake()
 extern void NCCallbackHelper_Awake_mE3A63B5B9F2BF8D9380A10938C023518513C42DA (void);
-// 0x00000026 System.Void NativeCameraNamespace.NCCallbackHelper::Update()
+// 0x00000029 System.Void NativeCameraNamespace.NCCallbackHelper::Update()
 extern void NCCallbackHelper_Update_mB751E20E799C93573FD3AF0BE18DECA33BAA6A9C (void);
-// 0x00000027 System.Void NativeCameraNamespace.NCCallbackHelper::CallOnMainThread(System.Action)
+// 0x0000002A System.Void NativeCameraNamespace.NCCallbackHelper::CallOnMainThread(System.Action)
 extern void NCCallbackHelper_CallOnMainThread_mF4C7C68F199FEE8034F6E1EFFE293DB4D92D5192 (void);
-// 0x00000028 System.Void NativeCameraNamespace.NCCallbackHelper::.ctor()
+// 0x0000002B System.Void NativeCameraNamespace.NCCallbackHelper::.ctor()
 extern void NCCallbackHelper__ctor_m079DDE184188CCFE394DA8337BB081D1E9E087A5 (void);
-// 0x00000029 System.Void NativeCameraNamespace.NCCameraCallbackAndroid::.ctor(NativeCamera/CameraCallback)
+// 0x0000002C System.Void NativeCameraNamespace.NCCameraCallbackAndroid::.ctor(NativeCamera/CameraCallback)
 extern void NCCameraCallbackAndroid__ctor_m7A49A723EBFBFC7215432493733AFCF632A8F5AA (void);
-// 0x0000002A System.Void NativeCameraNamespace.NCCameraCallbackAndroid::OnMediaReceived(System.String)
+// 0x0000002D System.Void NativeCameraNamespace.NCCameraCallbackAndroid::OnMediaReceived(System.String)
 extern void NCCameraCallbackAndroid_OnMediaReceived_mA794170C46D6C0CB63A52483CDA830D08530E62A (void);
-// 0x0000002B System.Void NativeCameraNamespace.NCCameraCallbackAndroid::MediaReceiveCallback(System.String)
+// 0x0000002E System.Void NativeCameraNamespace.NCCameraCallbackAndroid::MediaReceiveCallback(System.String)
 extern void NCCameraCallbackAndroid_MediaReceiveCallback_m4D9DC4F284214D4860573AE1709C0CF0FC7E8ACA (void);
-// 0x0000002C System.Void NativeCameraNamespace.NCCameraCallbackAndroid/<>c__DisplayClass3_0::.ctor()
+// 0x0000002F System.Void NativeCameraNamespace.NCCameraCallbackAndroid/<>c__DisplayClass3_0::.ctor()
 extern void U3CU3Ec__DisplayClass3_0__ctor_mAEE97D12D327C8C28EAB45ACDCB50E5DC04F50FB (void);
-// 0x0000002D System.Void NativeCameraNamespace.NCCameraCallbackAndroid/<>c__DisplayClass3_0::<OnMediaReceived>b__0()
+// 0x00000030 System.Void NativeCameraNamespace.NCCameraCallbackAndroid/<>c__DisplayClass3_0::<OnMediaReceived>b__0()
 extern void U3CU3Ec__DisplayClass3_0_U3COnMediaReceivedU3Eb__0_m2F42366AEBB844734D6B392AF6A392BF2BF19458 (void);
-// 0x0000002E System.Int32 NativeCameraNamespace.NCPermissionCallbackAndroid::get_Result()
+// 0x00000031 System.Int32 NativeCameraNamespace.NCPermissionCallbackAndroid::get_Result()
 extern void NCPermissionCallbackAndroid_get_Result_m0FBAA6C84093FCD7833C957E5C7CE381668100DF (void);
-// 0x0000002F System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::set_Result(System.Int32)
+// 0x00000032 System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::set_Result(System.Int32)
 extern void NCPermissionCallbackAndroid_set_Result_m875E1D987FD8099207FD71BC8FCCE424DEA1DC6A (void);
-// 0x00000030 System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::.ctor(System.Object)
+// 0x00000033 System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::.ctor(System.Object)
 extern void NCPermissionCallbackAndroid__ctor_mEE399CA43702611369BBFD6E72E3147E4C962FDC (void);
-// 0x00000031 System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::OnPermissionResult(System.Int32)
+// 0x00000034 System.Void NativeCameraNamespace.NCPermissionCallbackAndroid::OnPermissionResult(System.Int32)
 extern void NCPermissionCallbackAndroid_OnPermissionResult_m1133986BD48E36D9A799B42BD73C67EC51D3319D (void);
-static Il2CppMethodPointer s_methodPointers[49] = 
+static Il2CppMethodPointer s_methodPointers[52] = 
 {
 	NativeCamera_get_AJC_m06EF6C7725A276AC3F2639007C713591FE194E5E,
 	NativeCamera_get_Context_m4851E6BDFBF25FC16C4B48CE8F966336BE0BADFD,
@@ -133,12 +138,15 @@ static Il2CppMethodPointer s_methodPointers[49] =
 	CameraCallback_EndInvoke_m64D370EA45BBA56CF1B29C19E1B766B43542D7A6,
 	U3CU3Ec__DisplayClass25_0__ctor_m620E6180F5415478C7D6FC45F281ACD3416309A7,
 	U3CU3Ec__DisplayClass25_0_U3CLoadImageAtPathAsyncU3Eb__0_m91C19BE3B97DB8F8CA61AA8B955919570F60DB5F,
+	U3CLoadImageAtPathAsyncU3Ed__25__ctor_m17553DC61E1DA60ACB8FC30EE5F889B047C9BB11,
 	U3CLoadImageAtPathAsyncU3Ed__25_MoveNext_m8688976A868411521D0944F8E063B8D1300051E3,
 	U3CLoadImageAtPathAsyncU3Ed__25_SetStateMachine_m12C97049E0BF35F22757C7C42235B7E12D3B1919,
 	U3CU3Ec__DisplayClass27_0__ctor_m88F65D2A6CE992C4205A95E524E173D82F93209F,
 	U3CU3Ec__DisplayClass27_0_U3CGetVideoThumbnailAsyncU3Eb__0_mA500CC08FB4E098F7E0208FAC7B5E5EC6006C873,
+	U3CGetVideoThumbnailAsyncU3Ed__27__ctor_mC238C22749B9E3A2E7CE94A75276F5E853FF4C80,
 	U3CGetVideoThumbnailAsyncU3Ed__27_MoveNext_mA24E419042CDB23650E45A84EFEFE8EFE407B8EA,
 	U3CGetVideoThumbnailAsyncU3Ed__27_SetStateMachine_m20D09764EF4EC4563D719AC8125CC9CE85F6D830,
+	NULL,
 	NULL,
 	NULL,
 	NULL,
@@ -159,77 +167,74 @@ static Il2CppMethodPointer s_methodPointers[49] =
 };
 extern void ImageProperties__ctor_mDB1459622F0FFEEA741B63898D7CE5B41AA4F9EC_AdjustorThunk (void);
 extern void VideoProperties__ctor_m61A493A9C32C95FE9B3F84709AC0A2E92283F97D_AdjustorThunk (void);
-extern void U3CLoadImageAtPathAsyncU3Ed__25_MoveNext_m8688976A868411521D0944F8E063B8D1300051E3_AdjustorThunk (void);
-extern void U3CLoadImageAtPathAsyncU3Ed__25_SetStateMachine_m12C97049E0BF35F22757C7C42235B7E12D3B1919_AdjustorThunk (void);
-extern void U3CGetVideoThumbnailAsyncU3Ed__27_MoveNext_mA24E419042CDB23650E45A84EFEFE8EFE407B8EA_AdjustorThunk (void);
-extern void U3CGetVideoThumbnailAsyncU3Ed__27_SetStateMachine_m20D09764EF4EC4563D719AC8125CC9CE85F6D830_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[6] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
 {
 	{ 0x06000013, ImageProperties__ctor_mDB1459622F0FFEEA741B63898D7CE5B41AA4F9EC_AdjustorThunk },
 	{ 0x06000014, VideoProperties__ctor_m61A493A9C32C95FE9B3F84709AC0A2E92283F97D_AdjustorThunk },
-	{ 0x0600001B, U3CLoadImageAtPathAsyncU3Ed__25_MoveNext_m8688976A868411521D0944F8E063B8D1300051E3_AdjustorThunk },
-	{ 0x0600001C, U3CLoadImageAtPathAsyncU3Ed__25_SetStateMachine_m12C97049E0BF35F22757C7C42235B7E12D3B1919_AdjustorThunk },
-	{ 0x0600001F, U3CGetVideoThumbnailAsyncU3Ed__27_MoveNext_mA24E419042CDB23650E45A84EFEFE8EFE407B8EA_AdjustorThunk },
-	{ 0x06000020, U3CGetVideoThumbnailAsyncU3Ed__27_SetStateMachine_m20D09764EF4EC4563D719AC8125CC9CE85F6D830_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[49] = 
+static const int32_t s_InvokerIndices[52] = 
 {
-	9707,
-	9707,
-	9707,
-	9700,
-	9700,
-	9686,
-	9738,
-	7185,
-	6742,
-	9686,
-	9686,
-	6840,
-	6840,
-	6601,
-	6601,
+	9811,
+	9811,
+	9811,
+	9804,
+	9804,
+	9790,
+	9842,
+	7241,
+	6798,
+	9790,
+	9790,
+	6896,
+	6896,
+	6657,
+	6657,
 	0,
-	9600,
-	9601,
-	978,
-	975,
-	2703,
-	4943,
-	1292,
-	4943,
-	6260,
-	6136,
-	6260,
-	4943,
-	6260,
-	6136,
-	6260,
-	4943,
+	9689,
+	9690,
+	979,
+	976,
+	2712,
+	4980,
+	1294,
+	4980,
+	6315,
+	6191,
+	6315,
+	6315,
+	4980,
+	6315,
+	6191,
+	6315,
+	6315,
+	4980,
 	0,
 	0,
 	0,
 	0,
-	6260,
-	6260,
-	4943,
-	6260,
-	4943,
-	4943,
-	4943,
-	6260,
-	6260,
-	6106,
-	4918,
-	4943,
-	4918,
+	0,
+	6315,
+	6315,
+	4980,
+	6315,
+	4980,
+	4980,
+	4980,
+	6315,
+	6315,
+	6161,
+	4955,
+	4980,
+	4955,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[3] = 
 {
-	{ 0x0200000E, { 4, 2 } },
-	{ 0x0200000F, { 6, 9 } },
-	{ 0x06000010, { 0, 4 } },
+	{ 0x0200000E, { 6, 2 } },
+	{ 0x0200000F, { 8, 8 } },
+	{ 0x06000010, { 0, 6 } },
 };
+extern const uint32_t g_rgctx_U3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1_t4E0509C4D5CA6D787DB427176658DD6C11728138;
+extern const uint32_t g_rgctx_U3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1__ctor_m124048D1433D737498E87F48183D74A4A770C9FF;
 extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_Create_mD7B84B18BFB1AE83670414E9C1E10A6519A1B8B7;
 extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_t1B209B4B83112A76F5E126B8DA14875DE5408DDD;
 extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_Start_TisU3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1_t4E0509C4D5CA6D787DB427176658DD6C11728138_m00397499C440257740B25973BF0EFF747E6DA56E;
@@ -244,9 +249,10 @@ extern const uint32_t g_rgctx_Func_1_tD5709229FBC7624ECDEF885C47CCAF0895801505;
 extern const uint32_t g_rgctx_Func_1_Invoke_m1163DF2DB5CAF60F3F22C8E43F69CD29DAAE95B9;
 extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_SetException_m6A1E7176021A3D9E1E3A63601A6B0B9CC3859653;
 extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_SetResult_m295906BA1FB09E9A576515A6B6DA7513CAFF86A9;
-extern const uint32_t g_rgctx_AsyncTaskMethodBuilder_1_SetStateMachine_m2D0AA2866857DDB111A99C5893FF5BE086B90160;
-static const Il2CppRGCTXDefinition s_rgctxValues[15] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[16] = 
 {
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1_t4E0509C4D5CA6D787DB427176658DD6C11728138 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_U3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1__ctor_m124048D1433D737498E87F48183D74A4A770C9FF },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_Create_mD7B84B18BFB1AE83670414E9C1E10A6519A1B8B7 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_t1B209B4B83112A76F5E126B8DA14875DE5408DDD },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_Start_TisU3CTryCallNativeAndroidFunctionOnSeparateThreadU3Ed__28_1_t4E0509C4D5CA6D787DB427176658DD6C11728138_m00397499C440257740B25973BF0EFF747E6DA56E },
@@ -261,22 +267,21 @@ static const Il2CppRGCTXDefinition s_rgctxValues[15] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_1_Invoke_m1163DF2DB5CAF60F3F22C8E43F69CD29DAAE95B9 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_SetException_m6A1E7176021A3D9E1E3A63601A6B0B9CC3859653 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_SetResult_m295906BA1FB09E9A576515A6B6DA7513CAFF86A9 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncTaskMethodBuilder_1_SetStateMachine_m2D0AA2866857DDB111A99C5893FF5BE086B90160 },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_NativeCamera_Runtime_CodeGenModule;
 const Il2CppCodeGenModule g_NativeCamera_Runtime_CodeGenModule = 
 {
 	"NativeCamera.Runtime.dll",
-	49,
+	52,
 	s_methodPointers,
-	6,
+	2,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,
 	3,
 	s_rgctxIndices,
-	15,
+	16,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,
