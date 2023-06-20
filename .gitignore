@@ -37,6 +37,9 @@ sysinfo.txt
 *.unitypackage
 *.aab
 
+# Include final build
+!APKs/FinalBuild/VisualGuide.apk
+
 # Firebase config passwords
 google-services.json
 google-services.json.meta
