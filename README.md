@@ -8,6 +8,7 @@ This application was the main objective of a thesis for the Electrical and Compu
 ## Demo
 
 The finished application APK ready to use is provided inside the project [here](https://github.com/Driexus/AR-VisualGuide/tree/main/APKs/FinalBuild/VisualGuide.apk).
+
 A short demo may be found [here](https://youtube.com/shorts/i4_P2L0y6VQ?feature=share).
 
 
