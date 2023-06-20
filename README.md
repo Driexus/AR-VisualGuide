@@ -1,6 +1,6 @@
 # AR-VisualGuide
 
-AR-VisualGuide is a prototype application developed mainly in Unity for use in Android, which aims to provide visitors of the Archeological Museum of Thessaloniki navigational assistance and information about the various exhibits. 
+AR-VisualGuide is a prototype application developed mainly in Unity for use in Android, which aims to provide visitors of the Archeological Museum of Thessaloniki with navigational assistance and information about the various exhibits. 
 
 This application was the main objective of a thesis for the Electrical and Computer Engineering degree, which may be found **here**. 
 
@@ -44,4 +44,4 @@ In order for the application to be of relatively small size as well as not be in
 Therefore, Firebase was used due to the provided ease of the implementation details and the personal experience of the developer. Probably though, a more traditional SQL database would be a better fit for this project.
 
 ## Documentation
-Inside the project there is an obsidian vault which may be used with [Obsidian](https://obsidian.md/) and provides a lot of extra info about specific classes, their purpose and their usage.
+Inside the project there is an obsidian vault which may be used with [Obsidian](https://obsidian.md/) to provide a lot of extra info about specific classes, their purpose and their usage.
